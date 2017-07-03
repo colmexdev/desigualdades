@@ -48,7 +48,7 @@
   <div class="header-top">
     <div class="container">
       <div class="row">
-        <div class="logo"> <a href="index.html"><img src="<%= image_url("logo.png") %>" alt="TRADES" class="img-responsive"></a> </div>
+        <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="TRADES" class="img-responsive"></a> </div>
         <div class="header-top-right">
           <ul>
             <li>
@@ -65,7 +65,7 @@
   </div>
   <div class="mainmenu-area" id="menu-fixed">
     <div class="container">
-      <div class="row"> <a href="index.html" class="logo-menu"><img src="<%= image_url("fixed-logo.png") %>" alt="TRADES" /></a>
+      <div class="row"> <a href="index.html" class="logo-menu"><img src="images/fixed-logo.png" alt="TRADES" /></a>
         <div class="nav-menu">
           <nav class="navbar navbar-default"> 
             <!-- Marca y hamburguesa para dispositivos pequeños -->
@@ -97,52 +97,35 @@
   <div class="section-overlay">
     <div class="container">
       <div class="breadcrumb-area">
-        <h2 class="breadcrumb-title">Seminarios de investigación</h2>
+        <h2 class="breadcrumb-title">Publicaciones seleccionadas de académicos de El Colegio de México en temas de desigualdadades</h2>
       </div>
     </div>
   </div>
 </section>
 <!-- Fin de banner superior --> 
-<!-- Inicio de sección de seminarios -->
-<section class="section causes-section">
+<!-- Sección de la información -->
+<section class="section helping-section">
   <div class="container">
     <div class="row">
-      <div class="section-heading">
-        <h3><br>
-          Seminarios en curso</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="causes">
-        <div class="col-sm-4">
-          <div class="single-causes-box">
-            <div class="causes-img"> <img src="<%= image_url("trades.png") %>" alt="Seminario permanente sobre  bienestar, trabajo y desigualdad"> </div>
-            <div class="causes-content">
-				<p>Con financiamiento de la Fundación Ford y con la coordinación de <a href="http://cedua.colmex.mx/directorio/item/s%C3%A1nchez-pe%C3%B1a-landy-lizbeth.html" target="_blank">Landy Sánchez</a>.<br><br></p>
-				<p class="text-center"><a href="http://trades.colmex.mx/" target="_blank" class="btn-two">Más información</a></p> </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="single-causes-box">
-            <div class="causes-img"> <img src="<%= image_url("migdep.png") %>" alt="Seminario permanente sobre migración, desigualdad y políticas públicas"> </div>
-            <div class="causes-content">
-				<p>Con financiamiento del Servicio Alemán de Intercambio Académico (DAAD) y con la coordinación de <a href="http://cedua.colmex.mx/masferrer_claudia.html" target="_blank">Claudia Masferrer</a>.</p>
-              <p class="text-center"><a href="#" class="btn-two">Más información</a></p> </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="single-causes-box">
-            <div class="causes-img"> <img src="<%= image_url("sedes.png") %>" alt="Seminario permanente sobre desigualdad socioeconómica, con énfasis en educación"> </div>
-            <div class="causes-content">
-				<p>Con la coordinación de <a href="http://ces.colmex.mx/140" target="_blank">Patricio Solís</a>.<br><br><br><br></p>
-              <p class="text-center"><a href="#" class="btn-two">Más información</a></p> </div>
-          </div>
-        </div>
+      <div class="helping-description col-xs-12 col-md-10">
+        
+		  <ul class="order-list">
+			  <li>Campos, R. (2016). <em>Cooperación y preferencias sociales. Análisis económico sobre altruismo, justicia, confianza y equidad</em>. México: El Colegio de México.<br><a href="http://libros.colmex.mx/index.php/novedades-editoriales/item/cooperacion-y-preferencias-sociales" target="_blank">Ver documento</a></li>
+			  <li>Cortés, F. y Orlandina de Oliveira (coords.) (2010). Desigualdad social.  En Ordorica, Manuel y Prud’homme, Jean François (eds.), <em>Los Grandes Problemas de México</em>, tomo V. México: El Colegio de México.<br><a href="http://2010.colmex.mx/16tomos/V.pdf" target="_blank">Ver documento</a></li>
+			  <li>Esquivel, G. (2015). <em>Desigualdad Extrema en México: Concentración del Poder Económico y Político</em>. OXFAM México.<br><a href="http://www.cambialasreglas.org/pdf/desigualdadextrema_informe.pdf" target="_blank">Ver documento</a></li>
+			  <li>Flamand, L. y Moreno, C. (2015). <em>Seguro popular y federalismo en México. Un análisis de política públic</em>a. México: Centro de Investigación y Docencia Económicas.<br><a href="http://www.libreriacide.com/?P=producto&PRODfamily=libros&PRODclassification=1&PRODproduct=2427#.WMyCOhJ97OZ" target="_blank">Ver documento</a></li>
+			  <li>Sánchez, L. (2014). Desigualdad y trabajo doméstico en las parejas de doble ingreso en México. En Brigida García y Edith Pacheco (coords), <em>Uso del Tiempo y Trabajo no remunerado en México</em>. México: El Colegio de México-ONU Mujeres-INMUJERES, pp. 471-507.<br><a href="http://libros.colmex.mx/index.php/historias-minimas/item/uso-del-tiempo-y-trabajo-no-remunerado-en-mexico" target="_blank">Ver documento</a></li>
+			  <li>Solís, P. (2013). Desigualdad vertical y horizontal en las transiciones educativas en México. <em>Estudios Sociológicos</em>, 31, pp. 63-95.<br><a href="https://www.jstor.org/stable/43202534?seq=1#page_scan_tab_contents" target="_blank">Ver documento</a></li>
+			  <li>Solís, P. y Boado M. (coords.). (2016). <em>Y sin embargo se mueve...Estratificación social y movilidad intergeneracional de clase en América Latina</em>. México: Centro de Estudios Espinosa Yglesias-El Colegio de México.<br><a href="http://libros.colmex.mx/index.php/novedades-editoriales/item/y-sin-embargo-de-mueve" target="_blank">Ver documento</a></li>
+			  <li>Tepichín, A. (coord.). (2015). <em>La subversión de los imaginarios: tres ensayos, tres contextos</em>. México: El Colegio de México.<br><a href="http://libros.colmex.mx/index.php/novedades-editoriales/item/la-subversion-de-los-imaginarios-tres-ensayos-tres-contextos" target="_blank">Ver documento</a></li>
+			  <li>Tepichín, A. (2015). <em>Conocimiento de la pobreza desde un enfoque de género. Propuesta de un marco analítico</em>. México: El Colegio de México.<br><a href="http://libros.colmex.mx/index.php/novedades-editoriales/item/conocimiento-de-la-pobreza-desde-un-enfoque-de-genero-propuesta-de-un-marco-analitico" target="_blank">Ver documento</a></li>
+		  </ul>
       </div>
     </div>
   </div>
 </section>
-<!-- Fin de la sección de seminarios -->  
+
+<!-- Fin de sección de la información --> 
 <!-- Pie de página -->
 <footer class="footer-section">
   <div class="footer-bottom">
