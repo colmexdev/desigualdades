@@ -9,4 +9,4 @@
 # production:
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
-SECRET: 67719655b14858623e1b66ae111785886c8c32427e1a41c2aae3bd05e1f3cbbfd32024ed57a8d9b541bd7dd3cd02e97f38bb476b6bd648be1b3cda0e37851c28
+SECRET: "67719655b14858623e1b66ae111785886c8c32427e1a41c2aae3bd05e1f3cbbfd32024ed57a8d9b541bd7dd3cd02e97f38bb476b6bd648be1b3cda0e37851c28"
