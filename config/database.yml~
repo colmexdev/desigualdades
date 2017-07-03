@@ -29,7 +29,7 @@ development:
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: postgres
+  #username: desigualdades
 
   # The password associated with the postgres role (username).
   #password:
@@ -80,8 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: videos_pred
-  username: postgres
-  password: postgres
-  host: localhost
-  port: 5432
+  database: desigualdades_production
+  username: desigualdades
+  password: <%= ENV['DESIGUALDADES_DATABASE_PASSWORD'] %>
