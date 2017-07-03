@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'inicio' => 'inicio#inicio'
   get 'red' => 'inicio#red', :as => :red
-  get 'publicaciones' => 'inicio#publicaciones' :as => :publicaciones
+  get 'publicaciones' => 'inicio#publicaciones', :as => :publicaciones
   get 'seminarios' => 'inicio#seminarios', :as => :seminarios
 
   # The priority is based upon order of creation: first created -> highest priority.
