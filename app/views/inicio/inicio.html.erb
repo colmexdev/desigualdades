@@ -51,7 +51,7 @@ phpinfo();
   <div class="header-top">
     <div class="container">
       <div class="row">
-        <div class="logo"> <a href="index.html"><img src="<%= image_url("logo.png") %>" alt="Red de estudios sobre desigualdades" class="img-responsive"></a> </div>
+        <div class="logo"> <a href="<%= root_path %>"><img src="<%= image_url("logo.png") %>" alt="Red de estudios sobre desigualdades" class="img-responsive"></a> </div>
         <div class="header-top-right">
           <ul>
             <!--li> <span class="flaticon-letter"></span>
@@ -74,7 +74,7 @@ phpinfo();
   </div>
   <div class="mainmenu-area" id="menu-fixed">
     <div class="container">
-      <div class="row"> <a href="index.html" class="logo-menu"><img src="<%= image_url("fixed-logo.png") %>" alt="Red de estudios sobre desigualdades" /></a>
+      <div class="row"> <a href="<%= root_path %>" class="logo-menu"><img src="<%= image_url("fixed-logo.png") %>" alt="Red de estudios sobre desigualdades" /></a>
         <div class="nav-menu">
           <nav class="navbar navbar-default"> 
             <!-- Marca y hamburguesa para dispositivos pequeños -->
@@ -87,10 +87,10 @@ phpinfo();
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li class="active"> <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Inicio</span></a> </li>
-                <li><a href="red.html">Sobre la Red</a></li>
-                <li><a href="seminarios.html"><span>Seminarios</span></a></li>
-                <li><a href="publicaciones.html"><span>Publicaciones</span></a></li>
+                <li class="active"> <a href="<%= root_path %>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Inicio</span></a> </li>
+                <li><a href="<%= red_path %>">Sobre la Red</a></li>
+                <li><a href="<%= seminarios_path %>"><span>Seminarios</span></a></li>
+                <li><a href="<%= publicaciones_path %>"><span>Publicaciones</span></a></li>
               </ul>
             </div>
             <!-- /.navbar-collapse --> 
@@ -135,7 +135,7 @@ phpinfo();
 		  <p>&nbsp;</p>
         <p>En El Colegio de México, el estudio de los distintos tipos de desigualdad es una tradición. Se han explorado las desigualdades económicas, educativas, sociales y de género; así mismo se han preparado numerosas investigaciones sobre desigualdades regionales, de capacidades gubernamentales, de organización social o culturales con perspectivas tanto históricas como contemporáneas.</p>
         <p>La agenda de investigación de El Colegio incluye estudios sobre su origen y evolución, las interacciones entre los diversos ámbitos donde se producen, así como sobre los procesos políticos, económicos e institucionales que les dan forma.</p>
-        <a href="red.html" class="btn-two">Más información</a> </div>
+        <a href="<%= red_path %>" class="btn-two">Más información</a> </div>
       <div class="col-md-5">
         <div class="helping-img"><a class="twitter-timeline" data-lang="es" data-width="400" data-height="600" data-link-color="#E81C4F" href="https://twitter.com/des_igualdades">Tweets by des_igualdades</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
       </div>

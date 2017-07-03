@@ -132,7 +132,7 @@
         </div>
         <div class="col-sm-4">
           <div class="single-causes-box">
-            <div class="causes-img"> <img src="images/sedes.png" alt="Seminario permanente sobre desigualdad socioeconómica, con énfasis en educación"> </div>
+            <div class="causes-img"> <img src="<%= image_url("sedes.png") %>" alt="Seminario permanente sobre desigualdad socioeconómica, con énfasis en educación"> </div>
             <div class="causes-content">
 				<p>Con la coordinación de <a href="http://ces.colmex.mx/140" target="_blank">Patricio Solís</a>.<br><br><br><br></p>
               <p class="text-center"><a href="#" class="btn-two">Más información</a></p> </div>

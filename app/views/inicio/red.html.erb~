@@ -48,7 +48,7 @@
   <div class="header-top">
     <div class="container">
       <div class="row">
-        <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="TRADES" class="img-responsive"></a> </div>
+        <div class="logo"> <a href="index.html"><img src="<%= image_url("logo.png") %>" alt="TRADES" class="img-responsive"></a> </div>
         <div class="header-top-right">
           <ul>
             <li>
@@ -65,7 +65,7 @@
   </div>
   <div class="mainmenu-area" id="menu-fixed">
     <div class="container">
-      <div class="row"> <a href="index.html" class="logo-menu"><img src="images/fixed-logo.png" alt="TRADES" /></a>
+      <div class="row"> <a href="index.html" class="logo-menu"><img src="<%= image_url("fixed-logo.png") %>" alt="TRADES" /></a>
         <div class="nav-menu">
           <nav class="navbar navbar-default"> 
             <!-- Marca y hamburguesa para dispositivos pequeños -->

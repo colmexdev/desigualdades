@@ -48,7 +48,7 @@
   <div class="header-top">
     <div class="container">
       <div class="row">
-        <div class="logo"> <a href="index.html"><img src="<%= image_url("logo.png") %>" alt="TRADES" class="img-responsive"></a> </div>
+        <div class="logo"> <a href="<%= root_path %>"><img src="<%= image_url("logo.png") %>" alt="TRADES" class="img-responsive"></a> </div>
         <div class="header-top-right">
           <ul>
             <li>
@@ -65,7 +65,7 @@
   </div>
   <div class="mainmenu-area" id="menu-fixed">
     <div class="container">
-      <div class="row"> <a href="index.html" class="logo-menu"><img src="<%= image_url("fixed-logo.png") %>" alt="TRADES" /></a>
+      <div class="row"> <a href="<%= root_path %>" class="logo-menu"><img src="<%= image_url("fixed-logo.png") %>" alt="TRADES" /></a>
         <div class="nav-menu">
           <nav class="navbar navbar-default"> 
             <!-- Marca y hamburguesa para dispositivos pequeños -->
@@ -78,10 +78,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li><a href="index.html"><span>Inicio</span></a></li>
-                <li><a href="red.html">Sobre la Red</a></li>
-                <li><a href="seminarios.html"><span>Seminarios</span></a></li>
-                <li><a href="publicaciones.html"><span>Publicaciones</span></a></li>
+                <li><a href="<%= root_path %>"><span>Inicio</span></a></li>
+                <li><a href="<%= red_path %>">Sobre la Red</a></li>
+                <li><a href="<%= seminarios_path %>"><span>Seminarios</span></a></li>
+                <li><a href="<%= publicaciones_path %>"><span>Publicaciones</span></a></li>
               </ul>
             </div>
             <!-- /.navbar-collapse --> 
