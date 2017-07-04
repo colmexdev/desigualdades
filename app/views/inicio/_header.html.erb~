@@ -1,0 +1,47 @@
+<header class="header">
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="logo"> <a href="<%= root_path %>"><img src="<%= image_url("logo.png") %>" alt="TRADES" class="img-responsive"></a> </div>
+        <div class="header-top-right">
+          <ul>
+            <li>
+              <div class="social-icon">
+                <ul>
+                  <li><a href="https://twitter.com/des_igualdades" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mainmenu-area" id="menu-fixed">
+    <div class="container">
+      <div class="row"> <a href="<%= root_path %>" class="logo-menu"><img src="<%= image_url("fixed-logo.png") %>" alt="TRADES" /></a>
+        <div class="nav-menu">
+          <nav class="navbar navbar-default"> 
+            <!-- Marca y hamburguesa para dispositivos pequeños -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+              <!-- Este menú sólo se mostrará en dispositivos de lectura --> 
+              <span class="sr-only">Menú de navegación</span> <span class="icon-bar-one bar-stick"></span> <span class="icon-bar-two bar-stick"></span> <span class="icon-bar-three bar-stick"></span> </button>
+            </div>
+            
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="<%= root_path %>"><span>Inicio</span></a></li>
+                <li><a href="<%= red_path %>">Sobre la Red</a></li>
+                <li><a href="<%= seminarios_path %>"><span>Seminarios</span></a></li>
+                <li><a href="<%= publicaciones_path %>"><span>Publicaciones</span></a></li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse --> 
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
