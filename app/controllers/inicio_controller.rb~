@@ -1,5 +1,5 @@
 class InicioController < ApplicationController
-  require PrincipalHelper
+  include PrincipalHelper
 
   def inicio
     begin
@@ -14,7 +14,7 @@ class InicioController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.json { render json: {ev_big: @eb_big, ev_med: @ev_small, ev_small: @ev_tiny}}
+      format.json { render json: {ev_big: @ev_big, ev_med: @ev_small, ev_small: @ev_tiny}}
     end
   end
 
