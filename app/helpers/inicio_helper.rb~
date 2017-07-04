@@ -11,7 +11,7 @@ module InicioHelper
     end
     j = 0
     primer_item = true;
-    for i in 1..slides
+    for i in 1..slides + 1
       k = 1
 			if j >= sliders.each.length
 				break
