@@ -1,4 +1,6 @@
 class InicioController < ApplicationController
+  include PrincipalHelper
+
   def inicio
     begin
       cliente = TinyTds::Client.new username: 'agendaPRED', password: '@g3NDa#', host: '172.16.40.220', port: '1433'

@@ -1,13 +1,20 @@
 class InicioController < ApplicationController
+  require PrincipalHelper
+
   def inicio
     begin
       cliente = TinyTds::Client.new username: 'agendaPRED', password: '@g3NDa#', host: '172.16.40.220', port: '1433'
       @resultado = cliente.execute("USE Agenda")
       @resultado.do
       @resultado = cliente.execute("SELECT * FROM dbo.vw_EventosDesigualdades WHERE DATEADD(day, DATEDIFF(day,'19000101',PARSE(fechaFin AS DATE USING 'es-ES')), CAST(horaFin AS DATETIME2(1))) >= CAST(GETDATE() AS DATETIME2(1))  ORDER BY PARSE(fechaInicio AS DATE USING 'es-ES') ASC, horaInicio ASC")
-      gon.ev_big, gon.ev_small, gon.ev_tiny = construye_slider_eventos(@resultado)
+      @ev_big, @ev_small, @ev_tiny = construye_slider_eventos(@resultado)
     rescue
-      gon.ev_big, gon.ev_small, gon.ev_tiny = "", "" ,""
+      @ev_big, @ev_small, @ev_tiny = "", "" ,""
+    end
+
+    respond_to do |format|
+      format.html
+      format.json { render json: {ev_big: @eb_big, ev_med: @ev_small, ev_small: @ev_tiny}}
     end
   end
 
