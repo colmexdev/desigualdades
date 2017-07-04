@@ -65,7 +65,7 @@ module InicioHelper
     bloque_html = bloque_html + fila["sede"].to_s + ', 
 <br><span>' + fila["institucionSede"].to_s + "</span></p></div></div>"
 
-    bloque_html = bloque_html + '<div class="liga_evento"><a href="'+fila["liga"].to_s+'" class="liga_evento" target="_blank">' + t('eventos.liga') + ' +' + '</a></div>'
+    bloque_html = bloque_html + '<div class="liga_evento"><a href="'+fila["liga"].to_s+'" class="liga_evento" target="_blank">' + "Más información" + ' +' + '</a></div>'
 
     bloque_html = bloque_html + "</div>"
     return bloque_html
