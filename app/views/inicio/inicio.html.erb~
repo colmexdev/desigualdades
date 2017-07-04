@@ -27,6 +27,34 @@
       <!-- Controles izquierdo y derecho --> 
     </div>
   </div>
+
+
+	<div class="row"> <!-- Fila para eventos -->
+		<div class="col-md-12" id="div_eventos"> <!-- Columnas para eventos -->
+			<div id="carouselEventos" class="carousel slide" data-ride="carousel" data-interval="false">
+
+				<!-- Wrapper for slides -->
+		    <div class="carousel-inner" id="render_eventos" role="listbox" >
+
+		    </div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#carouselEventos" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a class="right carousel-control" href="#carouselEventos" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Siguiente</span>
+				</a>
+			</div> <!-- Cierre de slider -->
+
+
+		</div> <!-- Cierre de columnas para eventos -->
+	</div> <!-- Cierre de fila para eventos -->
+
+
+
 </section>
 <!-- Fin de slider --> 
 <!-- Aquí irían los eventos --> 
@@ -387,7 +415,7 @@
 </section-->
 <!-- Fin de la sección de seminarios --> 
 <!-- Pie de página -->
-<%= render 'principal/footer' %>
+<%= render 'inicio/footer' %>
 <!-- End Footer Section --> 
 <% if false %>
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> 

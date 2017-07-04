@@ -27,6 +27,34 @@
       <!-- Controles izquierdo y derecho --> 
     </div>
   </div>
+
+
+	<div class="row"> <!-- Fila para eventos -->
+		<div class="col-md-12" id="div_eventos"> <!-- Columnas para eventos -->
+			<div id="carouselEventos" class="carousel slide" data-ride="carousel" data-interval="false">
+
+				<!-- Wrapper for slides -->
+		    <div class="carousel-inner" id="render_eventos" role="listbox" >
+
+		    </div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#carouselEventos" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a class="right carousel-control" href="#carouselEventos" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Siguiente</span>
+				</a>
+			</div> <!-- Cierre de slider -->
+
+
+		</div> <!-- Cierre de columnas para eventos -->
+	</div> <!-- Cierre de fila para eventos -->
+
+
+
 </section>
 <!-- Fin de slider --> 
 <!-- Aquí irían los eventos --> 
@@ -418,3 +446,13 @@
 <!-- Main Js --> 
 <script src="assets/js/functions.js"></script>
 <% end %>
+<script type="text/javascript">
+	$.ajax({
+		method: 'get',
+		dataType: 'JSON',
+		url: '<%= root_path %>',
+		success: function(result){
+			console.log(result);
+		}
+	});
+</script>
