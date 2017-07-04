@@ -1,96 +1,9 @@
-<!doctype html>
-<html class="no-js" lang="es">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Red de estudios sobre desigualdades</title>
-<meta name="description" content="En El Colegio de México, el estudio de los distintos tipos de desigualdad es una tradición. Se han explorado las desigualdades económicas, educativas, sociales y de género; así mismo se han preparado numerosas investigaciones sobre desigualdades regionales, de capacidades gubernamentales, de organización social o culturales con perspectivas tanto históricas como contemporáneas. La agenda de investigación de El Colegio incluye estudios sobre su origen y evolución, las interacciones entre los diversos ámbitos donde se producen, así como sobre los procesos políticos, económicos e institucionales que les dan forma.">
-<link rel="icon" type="image/png" href="images/favicon.png" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Bootsrarp Css -->
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<!-- Font Awesome Css -->
-<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-<!-- Reset Css -->
-<link rel="stylesheet" href="assets/css/normalize.css">
-<!-- Flaticon css  -->
-<link rel="stylesheet" href="assets/font/flaticon.css">
-<!-- Swiper Css -->
-<link rel="stylesheet" href="assets/css/swiper.min.css">
-<!-- LightCase css -->
-<link rel="stylesheet" href="assets/css/lightcase.css">
-<!-- flexSlider css -->
-<link rel="stylesheet" href="assets/css/flexslider.css">
-<!-- nstSlider css -->
-<link rel="stylesheet" href="assets/css/jquery.nstSlider.css">
-<!-- Main css -->
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/responsive.css">
-<script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-93856341-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-</head>
-
-<body>
 <!--[if lt IE 8]>
             <p class="browserupgrade">Está usando un navegador <strong>obsoleto</strong>. Le sugerimos <a href="http://browsehappy.com/">actualizar su navegador</a> para mejorar su navegación.</p>
         <![endif]--> 
 <!-- Sección del encabezado -->
-<header class="header">
-  <div class="header-top">
-    <div class="container">
-      <div class="row">
-        <div class="logo"> <a href="index.html"><img src="<%= image_url("logo.png") %>" alt="TRADES" class="img-responsive"></a> </div>
-        <div class="header-top-right">
-          <ul>
-            <li>
-              <div class="social-icon">
-                <ul>
-                  <li><a href="https://twitter.com/des_igualdades" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="mainmenu-area" id="menu-fixed">
-    <div class="container">
-      <div class="row"> <a href="index.html" class="logo-menu"><img src="<%= image_url("fixed-logo.png") %>" alt="TRADES" /></a>
-        <div class="nav-menu">
-          <nav class="navbar navbar-default"> 
-            <!-- Marca y hamburguesa para dispositivos pequeños -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
-              <!-- Este menú sólo se mostrará en dispositivos de lectura --> 
-              <span class="sr-only">Menú de navegación</span> <span class="icon-bar-one bar-stick"></span> <span class="icon-bar-two bar-stick"></span> <span class="icon-bar-three bar-stick"></span> </button>
-            </div>
-            
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li><a href="index.html"><span>Inicio</span></a></li>
-                <li><a href="red.html">Sobre la Red</a></li>
-                <li><a href="seminarios.html"><span>Seminarios</span></a></li>
-                <li><a href="publicaciones.html"><span>Publicaciones</span></a></li>
-              </ul>
-            </div>
-            <!-- /.navbar-collapse --> 
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+<%= render 'inicio/header' %>
 <!-- Fin de sección de encabezado --> 
 <!-- Banner superior -->
 <section class="breadcrumb-section">
@@ -156,6 +69,7 @@
   </div>
 </footer>
 <!-- End Footer Section --> 
+<% if false %>
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> 
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.12.0.min.js"><\/script>')</script> 
 <!-- Bootstarp js --> 
@@ -183,5 +97,4 @@
 <script src="assets/js/jquery.nstSlider.min.js"></script> 
 <!-- Main Js --> 
 <script src="assets/js/functions.js"></script>
-</body>
-</html>
+<% end %>
