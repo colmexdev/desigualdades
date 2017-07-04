@@ -8,7 +8,10 @@ module InicioHelper
     slides = (sliders.each.length / 4).ceil
     j = 0
     primer_item = true;
-    for i in 1..slides + 1
+    if sliders.each.length % 4 != 0
+      slides = slides + 1
+    end
+    for i in 1..slides
       k = 1
 			if j >= sliders.each.length
 				break
