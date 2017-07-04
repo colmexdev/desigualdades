@@ -1,3 +1,209 @@
-// Place all the styles related to the inicio controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+//Clases que afectan la sección de eventos
+#div_eventos{
+	height: 230px;
+	text-align: center;
+	overflow: hidden;
+	border-bottom: solid 1px rgba(50,50,50,0.3);
+
+	.carousel.slide{
+		position: relative;
+		height: 100%;
+		text-align: center;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+
+		.carousel-control.right, .carousel-control.left{
+			opacity: 0.9;
+			width: 40px;
+			color: #993366;
+			text-shadow: none;
+			background-color: rgba(131,131,131,0.3);
+			background-image: none;
+			
+		}
+
+		.carousel-inner{
+			height:100%;
+
+			.item{
+				float: left;
+				text-align: center;
+				height: 100%;
+				width: calc(100% - 40px);
+				width: -moz-calc(100% - 40px);
+				width: -webkit-calc(100% - 40px);
+				padding-left: 40px;
+
+				.evento{
+					float: left;
+					height: 100%;
+					padding: 0 3% 0 1%;
+					width: 25%;
+					text-align: center;
+
+					.img_evento{
+						float: left;
+						width: 55px;
+						height: 100%;
+						
+						img{
+							width: 80%;
+							padding-top: 15px;
+							margin-right: 25px;
+						}
+					}
+
+					.desc_evento{
+						max-width: calc(100% - 88px);
+						max-width: -moz-calc(100% - 88px);
+						max-width: -webkit-calc(100% - 88px);
+						width: 75%;
+						height: 100%;
+						overflow: hidden;
+					
+						.tipo_evento{
+							width: 100%;
+							height: 25%;
+							vertical-align: bottom;
+							text-align: left;
+							position: relative;
+							font-weight: 600;
+
+							p{
+								line-height: 1.1;
+								position: absolute;
+								bottom: 0;
+								font-size: 16px;
+								text-align: left;
+							}
+
+							@media only screen and (max-width: 450px){
+								p { font-size: 14px; }
+							}
+						}
+
+						.titulo_evento{
+							width: 100%;
+							height: 25%;
+							font-size: 15px;
+							text-align: left;
+							color: #5E002B;
+							line-height: 1.2em;
+							position: relative;
+							height: 2.4em;
+							overflow: hidden;	
+							font-weight: 600;	
+							margin-bottom: 10px;	
+
+							p { text-align: left; }
+
+							@media only screen and (max-width: 450px){
+								p { font-size: 13px; }
+							}
+						}
+
+						.titulo_evento:after {
+							content: "";
+							text-align: right;
+							position: absolute;
+							bottom: 0;
+							right: 0;
+							width: 30%;
+							height: 1.2em;
+							background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+						}
+
+						.lugar_fecha_evento{
+							width: 100%;
+							height: 37.5%;
+
+							.cal{
+								padding-top: 3px;
+								min-width: 20px;
+								width: 8.33%;
+								height: 100%;
+								float: left;
+							}
+
+							.datos_evento{
+								display: inline-block;
+								padding-left: 10px;
+								max-width: calc(100% - 22px);
+								max-width: -webkit-calc(100% - 22px);
+								max-width: -moz-calc(100% - 22px);
+								width: 91.66%;
+								height: 100%;
+								color: #333333;
+								position: relative;
+								overflow: hidden;
+								white-space: nowrap;
+
+								p { font-size: 13px; text-align: left; }
+
+								@media only screen and (max-width: 450px){
+									p { font-size: 11px; }
+								}
+							}
+							
+							.datos_evento:after {
+								content: "";
+								text-align: right;
+								position: absolute;
+								bottom: 0;
+								right: 0;
+								width: 10%;
+								height: 100%;
+								background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+							}
+						}
+
+						.liga_evento{
+							width: 100%;
+							height: 12.5%;
+							text-align: right;
+							padding-top: 10px;
+							font-weight: 600;
+							font-size: 14px;
+							
+							a{ color: #5E002B; }
+							a:hover, a:active{ color: #470020; }
+						}
+
+						@media only screen and (max-width:450px){
+							.liga_evento { font-size: 12px; }
+						}
+					}
+				}
+
+				@media only screen and (min-width: 785px) and (max-width: 1150px){
+					.evento { 
+						width: 50%;
+						padding: 0 6%;
+
+						.img_evento { 
+							max-width: 105px;
+
+							img { padding-top: 25px; } 
+						}
+						
+					}
+				}
+
+				@media only screen and (max-width: 785px){
+					.evento { 
+						width: 100%;
+						padding: 0 5%;
+
+						.img_evento { 
+
+							img { padding-top: 25px; } 
+						}
+						
+					}
+				}
+
+			}
+		}
+	}
+}
