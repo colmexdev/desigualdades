@@ -1,3 +1,14 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+function scaleEvents(big,med,small){
+	try{
+		if(small == ""){
+			$("#div_eventos").css("height","0");
+		}
+		else{
+			if(ancho < 785){ document.getElementById("render_eventos").innerHTML = small; }
+			else if(ancho < 1150){ document.getElementById("render_eventos").innerHTML = med; }
+			else{ document.getElementById("render_eventos").innerHTML = big;}
+		}
+	}
+	catch(err){
+	}
+}

@@ -1,3 +1,4 @@
+var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
 function scaleEvents(big,med,small){
 	try{
 		if(small == ""){
