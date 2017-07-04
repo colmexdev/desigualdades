@@ -1,5 +1,5 @@
 class InicioController < ApplicationController
-  include PrincipalHelper
+  include InicioHelper
 
   def inicio
     begin

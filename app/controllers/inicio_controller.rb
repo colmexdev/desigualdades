@@ -8,7 +8,8 @@ class InicioController < ApplicationController
       @resultado.do
       @resultado = cliente.execute("SELECT * FROM dbo.vw_EventosDesigualdades WHERE DATEADD(day, DATEDIFF(day,'19000101',PARSE(fechaFin AS DATE USING 'es-ES')), CAST(horaFin AS DATETIME2(1))) >= CAST(GETDATE() AS DATETIME2(1))  ORDER BY PARSE(fechaInicio AS DATE USING 'es-ES') ASC, horaInicio ASC")
       @ev_big, @ev_small, @ev_tiny = construye_slider_eventos(@resultado)
-    rescue
+    rescue => e
+      logger.error e.message
       @ev_big, @ev_small, @ev_tiny = "", "" ,""
     end
 
