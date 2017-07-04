@@ -452,7 +452,6 @@
 		dataType: 'JSON',
 		url: '<%= root_path %>',
 		success: function(result){
-			console.log(result);
 			scaleEvents(result["ev_big"],result["ev_med"],result["ev_small"]);
 		}
 	});
