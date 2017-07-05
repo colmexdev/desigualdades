@@ -498,8 +498,8 @@
 	}
 
 	function trace(id,ind,link){
-		var html = '<div class="' + id + '" id="' + id + "-" + ind + '">';
-		html += '<iframe src="' + link + '"></iframe></div>';
+		var html = '<div id="trades-vid-cont-'+ind+'"><div class="' + id + '" id="' + id + "-" + ind + '">';
+		html += '<iframe src="' + link + '"></iframe></div></div>';
 		return html;
 	}
 
@@ -512,6 +512,7 @@
 			$("#trades-vids").html("");
 			for(var i = 0; i < 10; i++){
 				$("#trades-vids").html($("#trades-vids").html() + trace("slide-vid",i,"https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg"));
+				$("#trades-vid-cont-"+i).css('width',($("#trades-cont").width()-50)*0.33);
 				$("#slide-vid-"+i).css('width',(($("#trades-cont").width()-50)*0.33)-20);
 				$("#slide-vid-"+i+" iframe").attr("width",$("#slide-vid-"+i).width()).attr("height",$("#slide-vid-"+i).height());
 			}

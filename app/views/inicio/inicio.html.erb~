@@ -471,10 +471,6 @@
 	height: 100%;
 }
 
-#trades-vids{
-	width: auto;
-}
-
 .slide-vid{
 	float: left;
 	display: inline-block;
@@ -519,7 +515,7 @@
 				$("#slide-vid-"+i).css('width',(($("#trades-cont").width()-50)*0.33)-20);
 				$("#slide-vid-"+i+" iframe").attr("width",$("#slide-vid-"+i).width()).attr("height",$("#slide-vid-"+i).height());
 			}
-
+			$("#trades-vids").width(10 * $("#slide-vid-0").width());
 		}
 	});
 </script>
