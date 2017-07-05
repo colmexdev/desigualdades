@@ -234,6 +234,8 @@
 				</div>
 			</div>
 			<div id="trades-cont">
+				<div id="trades-vids">
+				</div>
 			</div>
 			<div id="trades-right">
 				<div id="trades-link-r" style="display:table;">
@@ -450,7 +452,7 @@
 }
 
 #trades-right, #trades-cont, #trades-left{
-	float: right;
+	float: left;
 }
 
 #trades-cont{
@@ -458,6 +460,7 @@
 	width: -moz-calc(100% - 50px);
 	width: calc(100% - 50px);
 	height: 100%;
+	overflow:	hidden;
 }
 
 #trades-link-r, #trades-link-l{
@@ -468,10 +471,11 @@
 	height: 100%;
 }
 
+#trades-vids{
+	width: auto;
+}
+
 .slide-vid{
-	width: -webkit-calc(33% - 15px);
-	width: -moz-calc(33% - 15px);
-	width: calc(33% - 15px);
 	float: right;
 	display: inline-block;
 	height: 100%;
@@ -509,9 +513,10 @@
 		url: '<%= root_path %>',
 		success: function(result){
 			scaleEvents(result["ev_big"],result["ev_med"],result["ev_small"]);
-			$("#trades-cont").html("");
+			$("#trades-vids").html("");
 			for(var i = 0; i < 10; i++){
-				$("#trades-cont").html($("#trades-cont").html() + trace("slide-vid",i,"https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg"));
+				$("#trades-vids").html($("#trades-vids").html() + trace("slide-vid",i,"https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg"));
+				$("#slide-vid-"+i).css('width',($("#trades-cont").width()*0.33)-15);
 			}
 
 		}
