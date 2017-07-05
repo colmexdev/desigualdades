@@ -525,9 +525,9 @@
 				$("#trades-vids").html($("#trades-vids").html() + trace("slide-vid",i,"https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg"));
 				$("#trades-vid-cont-"+i).css('width',($("#trades-cont").width())*0.333334);
 				$("#slide-vid-"+i).css('width',(($("#trades-cont").width())*0.333334)-20);
-				$("#slide-vid-"+i+" iframe").attr("width",$("#slide-vid-"+i).width()).attr("height",$("#slide-vid-"+i).height());
+				$("#slide-vid-"+i+" iframe").attr("width",$("#slide-vid-"+i).width()).attr("height",$("#slide-vid-"+i).height()-20);
 			}
-			$("#trades-vids").width(10 * $("#slide-vid-0").width()-15);
+			$("#trades-vids").width(10 * $("#slide-vid-0").width());
 		}
 	});
 </script>
