@@ -417,6 +417,21 @@
 <!-- Pie de página -->
 <%= render 'inicio/footer' %>
 <!-- End Footer Section --> 
+<style>
+.slide-vid{
+	width: 33%;
+	float: right;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+	top: 0;
+	right: 0;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+</style>
 <script type="text/javascript">
 	function VideoSlide(link,id,index,pos){
 		this.link = link || "";
@@ -424,10 +439,10 @@
 		this.pos = pos || "";
 		this.id = id || "";
 		this.slide = function(side){
-			
+			console.log($("#"+this.id+"-"+this.index).css("left"));
 		};
 		this.trace = function(){
-			var html = '<div class"' + this.id + '" id="' + this.id + "-" + this.index + '">';
+			var html = '<div class="' + this.id + '" id="' + this.id + "-" + this.index + '">';
 			html += '<iframe src="' + this.link + '"></iframe></div>';
 			return html;
 		}
