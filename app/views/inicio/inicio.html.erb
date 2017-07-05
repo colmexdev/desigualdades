@@ -463,6 +463,10 @@
 	overflow:	hidden;
 }
 
+#trades-vids{
+	height: 100%;
+}
+
 #trades-link-r, #trades-link-l{
 	display: table;
 	text-align: center;
@@ -523,7 +527,7 @@
 				$("#slide-vid-"+i).css('width',(($("#trades-cont").width())*0.333334)-20);
 				$("#slide-vid-"+i+" iframe").attr("width",$("#slide-vid-"+i).width()).attr("height",$("#slide-vid-"+i).height());
 			}
-			$("#trades-vids").width(10 * $("#slide-vid-0").width());
+			$("#trades-vids").width(10 * $("#slide-vid-0").width()-15);
 		}
 	});
 </script>
