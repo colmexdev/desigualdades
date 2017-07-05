@@ -85,6 +85,7 @@
       </div>
     </div>
     <div class="row">
+<% if false %>
       <div class="swiper-container-two">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -225,6 +226,10 @@
         </div>
       </div>
     </div>
+<% end %>
+		<div id="trades-container">
+
+		</div>
   </div>
 </section>
 <!-- End Logo Section -->
@@ -418,6 +423,13 @@
 <%= render 'inicio/footer' %>
 <!-- End Footer Section --> 
 <style>
+#trades-container{
+	margin: 0 auto;
+	overflow: hidden;
+	width: 75%;
+	height: 130px;
+}
+
 .slide-vid{
 	width: 33%;
 	float: right;
@@ -457,13 +469,11 @@
 		url: '<%= root_path %>',
 		success: function(result){
 			scaleEvents(result["ev_big"],result["ev_med"],result["ev_small"]);
-			$(".swiper-container-horizontal")[0].innerHTML = function(){
-				var html = "";
-				for(var i = 0; i < 10; i++){
-					html += trace("slide-vid",i,"https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg");
-				}
-				return html;
+			$(".swiper-container-horizontal")[0].innerHTML = "";
+			for(var i = 0; i < 10; i++){
+				$(".swiper-container-horizontal")[0].innerHTML += trace("slide-vid",i,"https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg");
 			}
+
 		}
 	});
 </script>
