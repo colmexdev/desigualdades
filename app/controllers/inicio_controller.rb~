@@ -2,6 +2,7 @@ class InicioController < ApplicationController
   include InicioHelper
 
   def inicio
+    I18n.locale = :es
     begin
       cliente = TinyTds::Client.new username: 'agendaPRED', password: '@g3NDa#', host: '172.16.40.220', port: '1433'
       @resultado = cliente.execute("USE Agenda")
