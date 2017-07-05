@@ -469,9 +469,9 @@
 		url: '<%= root_path %>',
 		success: function(result){
 			scaleEvents(result["ev_big"],result["ev_med"],result["ev_small"]);
-			$("#trades-cont").html("");
+			$("#trades-container").html("");
 			for(var i = 0; i < 10; i++){
-				$("#trades-cont").html($("#trades-cont").html() + trace("slide-vid",i,"https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg"));
+				$("#trades-container").html($("#trades-container").html() + trace("slide-vid",i,"https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg"));
 			}
 
 		}
