@@ -438,14 +438,17 @@
 		this.index = index || -1;
 		this.pos = pos || "";
 		this.id = id || "";
-		this.slide = function(side){
-			console.log($("#"+this.id+"-"+this.index).css("left"));
-		};
-		this.trace = function(){
-			var html = '<div class="' + this.id + '" id="' + this.id + "-" + this.index + '">';
-			html += '<iframe src="' + this.link + '"></iframe></div>';
-			return html;
-		}
+	}
+
+	function slide(side,id,ind){
+		var width = $("#"+id+"-"+ind).css("width");
+		$("#"+id+"-"+ind).css("left",(this.ind*width*(side == "left" ? 1 : -1 )));
+	}
+
+	function trace(id,ind,link){
+		var html = '<div class="' + id + '" id="' + id + "-" + ind + '">';
+		html += '<iframe src="' + link + '"></iframe></div>';
+		return html;
 	}
 
 	$.ajax({
@@ -454,6 +457,13 @@
 		url: '<%= root_path %>',
 		success: function(result){
 			scaleEvents(result["ev_big"],result["ev_med"],result["ev_small"]);
+			$(".swiper-container-horizontal")[0].innerHTML = function(){
+				var html = "";
+				for(var i = 0; i < 10; i++){
+					html += trace("slide-vid",i,"https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg");
+				}
+				return html;
+			}
 		}
 	});
 </script>

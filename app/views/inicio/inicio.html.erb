@@ -457,13 +457,11 @@
 		url: '<%= root_path %>',
 		success: function(result){
 			scaleEvents(result["ev_big"],result["ev_med"],result["ev_small"]);
-			$(".swiper-container-horizontal")[0].innerHTML = function(){
-				var html = "";
-				for(var i = 0; i < 10; i++){
-					html += trace("slide-vid",i,"https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg");
-				}
-				return html;
+			$(".swiper-container-horizontal")[0].innerHTML = "";
+			for(var i = 0; i < 10; i++){
+				$(".swiper-container-horizontal")[0].innerHTML += trace("slide-vid",i,"https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg");
 			}
+
 		}
 	});
 </script>
