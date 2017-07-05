@@ -471,7 +471,7 @@
 	height: 100%;
 }
 
-.slide-vid{
+.trades-vid-cont, .slide-vid{
 	float: left;
 	display: inline-block;
 	height: 100%;
@@ -498,7 +498,7 @@
 	}
 
 	function trace(id,ind,link){
-		var html = '<div id="trades-vid-cont-'+ind+'"><div class="' + id + '" id="' + id + "-" + ind + '">';
+		var html = '<div class="trades-vid-cont" id="trades-vid-cont-'+ind+'"><div class="' + id + '" id="' + id + "-" + ind + '">';
 		html += '<iframe src="' + link + '"></iframe></div></div>';
 		return html;
 	}
