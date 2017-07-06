@@ -512,7 +512,7 @@
 			hijos[0].style.opacity = 0;
 			hijos[3].style.opacity = 0;
 			$("#trades-vids")[0].insertBefore(hijos[hijos.length-1],hijos[0]);
-			$("#trades-vids")[0].childNodes[1].style.transition = "all 0.5s linear 0.4s";
+			$("#trades-vids")[0].childNodes[1].style.transition = "all 0.5s linear 0.2s";
 			$("#trades-vids")[0].childNodes[1].style.opacity = 1;
 		}
 		else{
@@ -520,7 +520,7 @@
 			hijos[4].style.transition = "all 0 ease 0";
 			hijos[4].opacity = 0;
 			$("#trades-vids")[0].appendChild(hijos[0]);
-			$("#trades-vids")[0].childNodes[3].style.transition = "all 0.5s linear 0.4s";
+			$("#trades-vids")[0].childNodes[3].style.transition = "all 0.5s linear 0.2s";
 			$("#trades-vids")[0].childNodes[3].style.opacity = 1;
 		}
 	}
@@ -541,7 +541,7 @@
 			for(var i = 0; i < 10; i++){
 				$("#trades-vids").html($("#trades-vids").html() + trace("slide-vid",i,"https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg"));
 				$("#trades-vid-cont-"+i).css({'width':($("#trades-cont").width())*0.333334,"opacity":(i<3 ? 1 : 0)});
-				$("#slide-vid-"+i).css('width',$("#trades-vids").height()/0.65 /*0.5625*/);
+				$("#slide-vid-"+i).css('width',$("#trades-vids").height()/0.7 /*0.5625*/);
 				$("#slide-vid-"+i+" iframe").attr("width",$("#slide-vid-"+i).width()).attr("height",$("#slide-vid-"+i).height());
 				if(i>3 && i==9){
 					$("#trades-vids")[0].insertBefore($("#trades-vids")[0].childNodes[9],$("#trades-vids")[0].childNodes[0]);
@@ -552,6 +552,15 @@
 	});
 
 $(window).on("resize",function(){
-	
+	for(var i = 0; i < 10; i++){
+		//$("#trades-vids").html($("#trades-vids").html() + trace("slide-vid",i,"https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg"));
+		$("#trades-vid-cont-"+i).css({'width':($("#trades-cont").width())*0.333334});
+		$("#slide-vid-"+i).css('width',$("#trades-vids").height()/0.7 /*0.5625*/);
+		$("#slide-vid-"+i+" iframe").attr("width",$("#slide-vid-"+i).width()).attr("height",$("#slide-vid-"+i).height());
+		//if(i>3 && i==9){
+		//	$("#trades-vids")[0].insertBefore($("#trades-vids")[0].childNodes[9],$("#trades-vids")[0].childNodes[0]);
+		//}
+	}
+	$("#trades-vids").width(10 * $("#trades-vid-cont-0").width()).css("left",$("#trades-vid-cont-0").width()*(-1));
 });
 </script>
