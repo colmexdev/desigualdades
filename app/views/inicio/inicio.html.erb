@@ -538,7 +538,7 @@
 				$("#trades-vids").html($("#trades-vids").html() + trace("slide-vid",i,"https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg"));
 				$("#trades-vid-cont-"+i).css({'width':$("#trades-cont").width()*0.333334,"opacity":(i<3 ? 1 : 0)});
 				$("#slide-vid-"+i).css('width',$("#trades-cont").width()*0.23 /*0.5625*/);
-				$("#slide-vid-"+i+" iframe").attr("width",$("#trades-cont").width()*0.23).attr("height",etComputedStyle($("#slide-vid-"+i)[0].parentNode).height.replace("px",""));
+				$("#slide-vid-"+i+" iframe").attr("width",$("#trades-cont").width()*0.23).attr("height",getComputedStyle($("#slide-vid-"+i)[0].parentNode).height.replace("px",""));
 				if(i>3 && i==9){
 					$("#trades-vids")[0].insertBefore($("#trades-vids")[0].childNodes[9],$("#trades-vids")[0].childNodes[0]);
 				}
