@@ -545,7 +545,7 @@
 			for(var i = 0; i < 10; i++){
 				$("#trades-vids").html($("#trades-vids").html() + trace("slide-vid",i,"https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg"));
 				$("#trades-vid-cont-"+i).css({'width':($("#trades-cont").width())*0.333334,"opacity":(i<3 ? 1 : 0)});
-				$("#slide-vid-"+i).css('width',$("#trades-vid-cont-"+i).width()*0.7 /*0.5625*/);
+				$("#slide-vid-"+i).css('width',($("#trades-cont").width())*0.222222 /*0.5625*/);
 				$("#slide-vid-"+i+" iframe").attr("width",$("#slide-vid-"+i).width()).attr("height",$("#slide-vid-"+i).height());
 				if(i>3 && i==9){
 					$("#trades-vids")[0].insertBefore($("#trades-vids")[0].childNodes[9],$("#trades-vids")[0].childNodes[0]);
@@ -559,7 +559,7 @@ $(window).on("resize",function(){
 	for(var i = 0; i < 10; i++){
 		//$("#trades-vids").html($("#trades-vids").html() + trace("slide-vid",i,"https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg"));
 		$("#trades-vid-cont-"+i).css({'width':($("#trades-cont").width())*0.333334});
-		$("#slide-vid-"+i).css('width',$("#trades-vid-cont-"+i).width()*0.7 /*0.5625*/);
+		$("#slide-vid-"+i).css('width',($("#trades-cont").width())*0.222222 /*0.5625*/);
 		$("#slide-vid-"+i+" iframe").attr("width",$("#slide-vid-"+i).width()).attr("height",$("#slide-vid-"+i).height());
 		//if(i>3 && i==9){
 		//	$("#trades-vids")[0].insertBefore($("#trades-vids")[0].childNodes[9],$("#trades-vids")[0].childNodes[0]);
