@@ -466,10 +466,10 @@
 #trades-vids{
 	height: 100%;
 	position: relative;
-	-webkit-transition: left 0.1s linear 0.4s;
-	-moz-transition: left 0.1s linear 0.4s;
-	-o-transition: left 0.1s linear 0.4s;
-	transition: left 0.1s linear 0.4s;
+	-webkit-transition: left 0.1s linear 0.8s;
+	-moz-transition: left 0.1s linear 0.8s;
+	-o-transition: left 0.1s linear 0.8s;
+	transition: left 0.1s linear 0.8s;
 }
 
 #trades-link-r, #trades-link-l{
@@ -485,10 +485,10 @@
 	display: inline-block;
 	height: 100%;
 	position: relative;
-	-webkit-transition: all 0.3s linear;
-	-moz-transition: all 0.3s linear;
-	-o-transition: all 0.3s linear;
-	transition: all 0.3s linear;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
 }
 
 .slide-vid{
@@ -516,7 +516,7 @@
 			hijos[0].style.opacity = 0;
 			hijos[3].style.opacity = 0;
 			$("#trades-vids")[0].insertBefore(hijos[hijos.length-1],hijos[0]);
-			$("#trades-vids")[0].childNodes[1].style.transition = "all 0.5s linear 0.2s";
+			$("#trades-vids")[0].childNodes[1].style.transition = "opacity 0.5s linear 0.2s";
 			$("#trades-vids")[0].childNodes[1].style.opacity = 1;
 		}
 		else{
@@ -524,7 +524,7 @@
 			hijos[4].style.transition = "all 0 ease 0";
 			hijos[4].opacity = 0;
 			$("#trades-vids")[0].appendChild(hijos[0]);
-			$("#trades-vids")[0].childNodes[3].style.transition = "all 0.5s linear 0.2s";
+			$("#trades-vids")[0].childNodes[3].style.transition = "opacity 0.5s linear 0.2s";
 			$("#trades-vids")[0].childNodes[3].style.opacity = 1;
 		}
 	}

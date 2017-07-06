@@ -466,6 +466,10 @@
 #trades-vids{
 	height: 100%;
 	position: relative;
+	-webkit-transition: left 0.1s linear 0.4s;
+	-moz-transition: left 0.1s linear 0.4s;
+	-o-transition: left 0.1s linear 0.4s;
+	transition: left 0.1s linear 0.4s;
 }
 
 #trades-link-r, #trades-link-l{
