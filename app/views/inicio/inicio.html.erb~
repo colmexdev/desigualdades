@@ -230,7 +230,7 @@
 		<div id="trades-container">
 			<div id="trades-left">
 				<div id="trades-link-l" style="display:table;">
-	<i class="fa fa-chevron-left" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;"></i>
+	<i class="fa fa-chevron-left" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;" onclick="slide('prev');"></i>
 				</div>
 			</div>
 			<div id="trades-cont">
@@ -239,7 +239,7 @@
 			</div>
 			<div id="trades-right">
 				<div id="trades-link-r" style="display:table;">
-	<i class="fa fa-chevron-right" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;"></i>
+	<i class="fa fa-chevron-right" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;" onclick="slide('next');"></i>
 				</div>
 			</div>
 		</div>
@@ -439,7 +439,7 @@
 #trades-container{
 	margin: 0 auto;
 	overflow: hidden;
-	width: 75%;
+	width: 100%;
 	height: 130px;
 }
 
@@ -505,10 +505,22 @@
 
 	function slide(side){
 		var hijos = $("#trades-vids")[0].childNodes;
-		if(side == "prev")
+		if(side == "prev"){
+			hijos[hijos.length-1].style.transition = "all 0 ease 0";
+			hijos[hijos.length-1].style.opacity = 0;
+			hijos[2].style.opacity = 0;
 			$("#trades-vids")[0].insertBefore(hijos[hijos.length-1],hijos[0]);
-		else
+			hijos[0].style.transition = "all 0.3s linear 0";
+			hijos[0].style.opacity = 1;
+		}
+		else{
+			hijos[0].style.opacity = 0;
+			hijos[3].style.transition = "all 0 ease 0";
+			hijos[3].opacity = 0;
 			$("#trades-vids")[0].appendChild(hijos[0]);
+			hijos[2].style.transition = "all 0.3s linear 0";
+			hijos[2].style.opacity = 1;
+		}
 	}
 
 	function trace(id,ind,link){
@@ -527,7 +539,7 @@
 			for(var i = 0; i < 10; i++){
 				$("#trades-vids").html($("#trades-vids").html() + trace("slide-vid",i,"https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg"));
 				$("#trades-vid-cont-"+i).css('width',($("#trades-cont").width())*0.333334);
-				$("#slide-vid-"+i).css('width',(($("#trades-cont").width())*0.333334)-20);
+				$("#slide-vid-"+i).css('width',$("#trades-vids").height()(/*($("#trades-cont").width())*0.333334)-20*/);
 				$("#slide-vid-"+i+" iframe").attr("width",$("#slide-vid-"+i).width()).attr("height",$("#slide-vid-"+i).height());
 			}
 			$("#trades-vids").width(10 * $("#trades-vid-cont-0").width());
