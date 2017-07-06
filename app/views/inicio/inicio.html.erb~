@@ -503,9 +503,12 @@
 		this.id = id || "";
 	}
 
-	function slide(side,id,ind){
-		var width = $("#"+id+"-"+ind).css("width");
-		$("#"+id+"-"+ind).css("left",(this.ind*width*(side == "left" ? 1 : -1 )));
+	function slide(side){
+		var hijos = $("#trades-vids")[0].childNodes;
+		if(side == "prev")
+			$("#trades-vids")[0].insertBefore(hijos[hijos.length-1],hijos[0]);
+		else
+			$("#trades-vids")[0].appendChild(hijos[0]);
 	}
 
 	function trace(id,ind,link){
@@ -527,7 +530,7 @@
 				$("#slide-vid-"+i).css('width',(($("#trades-cont").width())*0.333334)-20);
 				$("#slide-vid-"+i+" iframe").attr("width",$("#slide-vid-"+i).width()).attr("height",$("#slide-vid-"+i).height());
 			}
-			$("#trades-vids").width(10 * $("#slide-vid-0").width());
+			$("#trades-vids").width(10 * $("#trades-vid-cont-0").width());
 		}
 	});
 </script>

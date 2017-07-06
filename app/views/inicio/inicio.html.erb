@@ -230,7 +230,7 @@
 		<div id="trades-container">
 			<div id="trades-left">
 				<div id="trades-link-l" style="display:table;">
-	<i class="fa fa-chevron-left" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;"></i>
+	<i class="fa fa-chevron-left" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;" onclick="slide('prev');"></i>
 				</div>
 			</div>
 			<div id="trades-cont">
@@ -239,7 +239,7 @@
 			</div>
 			<div id="trades-right">
 				<div id="trades-link-r" style="display:table;">
-	<i class="fa fa-chevron-right" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;"></i>
+	<i class="fa fa-chevron-right" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;" onclick="slide('next');"></i>
 				</div>
 			</div>
 		</div>
@@ -503,9 +503,12 @@
 		this.id = id || "";
 	}
 
-	function slide(side,id,ind){
-		var width = $("#"+id+"-"+ind).css("width");
-		$("#"+id+"-"+ind).css("left",(this.ind*width*(side == "left" ? 1 : -1 )));
+	function slide(side){
+		var hijos = $("#trades-vids")[0].childNodes;
+		if(side == "prev")
+			$("#trades-vids")[0].insertBefore(hijos[hijos.length-1],hijos[0]);
+		else
+			$("#trades-vids")[0].appendChild(hijos[0]);
 	}
 
 	function trace(id,ind,link){
