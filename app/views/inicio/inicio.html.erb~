@@ -505,6 +505,7 @@
 
 	function slide(side){
 		var hijos = $("#trades-vids")[0].childNodes;
+		if(hijos.length < 4) return true;
 		if(side == "prev"){
 			hijos[hijos.length-1].style.transition = "all 0 ease 0";
 			hijos[hijos.length-1].style.opacity = 0;
