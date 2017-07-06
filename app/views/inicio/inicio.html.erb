@@ -508,20 +508,20 @@
 		var hijos = $("#trades-vids")[0].childNodes;
 		if(hijos.length < 4) return true;
 		if(side == "prev"){
-			hijos[hijos.length-1].style.transition = "all 0 ease 0";
-			hijos[hijos.length-1].style.opacity = 0;
-			hijos[2].style.opacity = 0;
+			hijos[0].style.transition = "all 0 ease 0";
+			hijos[0].style.opacity = 0;
+			hijos[3].style.opacity = 0;
 			$("#trades-vids")[0].insertBefore(hijos[hijos.length-1],hijos[0]);
-			$("#trades-vids")[0].childNodes[0].style.transition = "all 0.5s linear 0.4s";
-			$("#trades-vids")[0].childNodes[0].style.opacity = 1;
+			$("#trades-vids")[0].childNodes[1].style.transition = "all 0.5s linear 0.4s";
+			$("#trades-vids")[0].childNodes[1].style.opacity = 1;
 		}
 		else{
 			hijos[0].style.opacity = 0;
-			hijos[3].style.transition = "all 0 ease 0";
-			hijos[3].opacity = 0;
+			hijos[4].style.transition = "all 0 ease 0";
+			hijos[4].opacity = 0;
 			$("#trades-vids")[0].appendChild(hijos[0]);
-			$("#trades-vids")[0].childNodes[2].style.transition = "all 0.5s linear 0.4s";
-			$("#trades-vids")[0].childNodes[2].style.opacity = 1;
+			$("#trades-vids")[0].childNodes[3].style.transition = "all 0.5s linear 0.4s";
+			$("#trades-vids")[0].childNodes[3].style.opacity = 1;
 		}
 	}
 
