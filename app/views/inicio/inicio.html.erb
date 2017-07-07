@@ -243,7 +243,7 @@
 	}
 
 	function slide(side,id){
-		var hijos = $("#'+id+'-vids")[0].childNodes;
+		var hijos = $("#"+id+"-vids")[0].childNodes;
 		if(hijos.length < 4) return true;
 		var transition = supportedProp(["MozTransition","WebkitTransition","OTransition","transition"]);
 		var width = hijos[1].style.width;
