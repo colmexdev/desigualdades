@@ -281,13 +281,13 @@
 			if(!resize) container.html(container.html() + trace(cl,id,i,trades_links[i]));
 			$("#"+cl+"-"+i).css({'width':wrapper.width()/vpv});
 			$("#"+id+"-"+i).css('width',wrapper.width()*prop);
-			$("#"+id+"-"+i+" iframe").attr("width",wrapper.width()*prop).attr("height",wrapper.width()*prop*150/257);
+			$("#"+id+"-"+i+" iframe").attr("width",wrapper.width()*prop).attr("height",wrapper.width()*prop*5/7);
 			if(!resize && i>3 && i==links.length-1){
 				container[0].insertBefore(container[0].childNodes[links.length-1],container[0].childNodes[0]);
 			}
 		}
 		container.width(links.length * $("#"+id+"-1").width()).css("left",(links.length < 3 ? "0" : (wrapper.width()/vpv*(-1))));
-		parent.css("height",wrapper.width()*prop*150/257);
+		parent.css("height",wrapper.width()*prop*5/7);
 	}
 
 	function drawSlider(parent,links,id){
