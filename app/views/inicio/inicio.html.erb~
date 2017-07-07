@@ -286,7 +286,7 @@
 				container[0].insertBefore(container[0].childNodes[links.length-1],container[0].childNodes[0]);
 			}
 		}
-		container.width(links.length * $("#"+id+"-1").width()).css("left",(links.length < 3 ? "0" : (wrapper.width()/vpv*(-1))));
+		container.width(links.length * $("#"+id+"-1").width()).css("left",(links.length < 4 ? (links.length < 3 ? (wrapper.width()/(vpv*links.length)) : "0" ) : (wrapper.width()/vpv*(-1))));
 		parent.css("height",wrapper.width()*prop*5/7);
 	}
 
