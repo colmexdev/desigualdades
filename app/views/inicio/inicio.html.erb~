@@ -343,6 +343,7 @@
 	display: inline-block;
 	height: 100%;
 	position: relative;
+	overflow: hidden;
 }
 
 .slide-vid{
@@ -411,7 +412,7 @@
 					$("#trades-vids")[0].insertBefore($("#trades-vids")[0].childNodes[trades_links.length-1],$("#trades-vids")[0].childNodes[0]);
 				}
 			}
-			$("#trades-vids").width(trades_vids.length * $("#trades-vid-cont-0").width()).css("left",$("#trades-vid-cont-0").width()*(-1));
+			$("#trades-vids").width(trades_links.length * $("#trades-vid-cont-0").width()).css("left",$("#trades-vid-cont-0").width()*(-1));
 			$("#trades-container").css("height",$("#trades-vids").width()*0.04025);
 		}
 	});
