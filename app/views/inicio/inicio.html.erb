@@ -373,6 +373,7 @@
 		var transition = supportedProp(["MozTransition","WebkitTransition","OTransition","transition"]);
 		var width = hijos[1].style.width;
 		if(side == "prev"){
+			window.getComputedStyle(hijos[hijos.length-1]).width;
 			hijos[hijos.length-1].style[transition] = "all 0 ease 0";
 			hijos[hijos.length-1].style.width = 0;
 
@@ -385,6 +386,7 @@
 
 		}
 		else{
+			window.getComputedStyle(hijos[0]).width;
 			hijos[0].style[transition] = "width 0.5s linear 0s";
 			hijos[0].style.width = 0;
 			$("#trades-vids")[0].appendChild(hijos[0]);
