@@ -357,31 +357,35 @@
 <script type="text/javascript">
 	var trades_links = ["https://www.youtube.com/embed/8SnQVVPNw6w?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/ZYZCmFunfbU?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/eWb2M4Poqro?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/BykjexAPL3Y?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/CEC06t_6qqs?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/H2ANspIXN00?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/H2ANspIXN00?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/DorfXrf7aUI?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/mbq0U3PjLY4?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/999kFh_ZWkw?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/azJ1E3Oo9Do?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/BVUqbXythNY?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/-NmnkuDAS_0?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/0IY88aic3Bw?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg"]
 
-	function VideoSlide(link,id,index,pos){
-		this.link = link || "";
-		this.index = index || -1;
-		this.pos = pos || "";
-		this.id = id || "";
+	function supportedProp(proparray){
+		var root=document.documentElement //reference root element of document
+		for (var i=0; i<proparray.length; i++){ //loop through possible properties
+	    if (proparray[i] in root.style){ //if property exists on element (value will be string, empty string if not set)
+	    	return proparray[i] //return that string
+	    }
+		}
 	}
 
 	function slide(side){
 		var hijos = $("#trades-vids")[0].childNodes;
 		if(hijos.length < 4) return true;
+		var transition = supportedProp(["MozTransition","WebkitTransition","OTransition","transition"]);
+		var width = hijos[1].style.width;
 		if(side == "prev"){
-			hijos[0].style.transition = "all 0 ease 0";
-			hijos[0].style.opacity = 0;
-			hijos[3].style.opacity = 0;
+			hijos[hijos.length-1].style[transition] = "all 0 ease 0";
+			hijos[hijos.length-1].style.width = 0;
+			//hijos[3].style.opacity = 0;
 			$("#trades-vids")[0].insertBefore(hijos[hijos.length-1],hijos[0]);
-			$("#trades-vids")[0].childNodes[1].style.transition = "opacity 0.5s linear";
-			$("#trades-vids")[0].childNodes[1].style.opacity = 1;
+			$("#trades-vids")[0].childNodes[1].style[transition] = "width 0.5s linear";
+			$("#trades-vids")[0].childNodes[1].style.width = width;
 		}
 		else{
-			hijos[0].style.opacity = 0;
-			hijos[4].style.transition = "all 0 ease 0";
-			hijos[4].opacity = 0;
+			hijos[0].style[transition] = "width 0.5s linear";
+			hijos[0].style.width = 0;
+			//hijos[4].opacity = 0;
 			$("#trades-vids")[0].appendChild(hijos[0]);
-			$("#trades-vids")[0].childNodes[3].style.transition = "opacity 0.5s linear";
-			$("#trades-vids")[0].childNodes[3].style.opacity = 1;
+			$("#trades-vids")[0].childNodes[hijos.length-1].style[transition] = "all 0 ease 0";
+			$("#trades-vids")[0].childNodes[hijos.length-1].style.width = width;
 		}
 	}
 

@@ -404,7 +404,7 @@
 			$("#trades-vids").html("");
 			for(var i = 0; i < trades_links.length; i++){
 				$("#trades-vids").html($("#trades-vids").html() + trace("slide-vid",i,trades_links[i]));
-				$("#trades-vid-cont-"+i).css({'width':$("#trades-cont").width()*0.333334,"opacity":(i<3 ? 1 : 0)});
+				$("#trades-vid-cont-"+i).css({'width':$("#trades-cont").width()*0.333334});
 				$("#slide-vid-"+i).css('width',$("#trades-cont").width()*0.23 /*0.5625*/);
 				$("#slide-vid-"+i+" iframe").attr("width",$("#trades-cont").width()*0.23).attr("height",$("#trades-cont").width()*0.23*150/257);
 				if(i>3 && i==trades_links.length-1){
