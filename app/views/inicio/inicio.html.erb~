@@ -169,7 +169,7 @@
 <%= render 'inicio/footer' %>
 <!-- End Footer Section --> 
 <style>
-.container{
+.contain{
 	margin: 0 auto;
 	overflow: hidden;
 	width: 100%;
@@ -292,7 +292,7 @@
 
 	function drawSlider(parent,links,id){
 		parent.html("");
-		parent.html(parent.html() + '<div class="container" id="'+id+'-container">' );
+		parent.html(parent.html() + '<div class="contain" id="'+id+'-container">' );
 		if(links.length > 3){
 			parent.html(parent.html() + '<div class="left" id="'+id+'-left">');
 			parent.html(parent.html() + '<div class="link-l" id="'+id+'-link-l" style="display:table;">');
