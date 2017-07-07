@@ -262,7 +262,7 @@
 			hijos[0].style.width = 0;
 			setTimeout(function(){
 			$("#"+id+"-vids")[0].appendChild(hijos[0]);
-			window.getComputedStyle($("#trades-vids")[0].childNodes[hijos.length-1]).width;
+			window.getComputedStyle($("#"+id+"-vids")[0].childNodes[hijos.length-1]).width;
 				$("#"+id+"-vids")[0].childNodes[hijos.length-1].style[transition] = "all 0 ease 0s";
 				$("#"+id+"-vids")[0].childNodes[hijos.length-1].style.width = width;
 			},401);
