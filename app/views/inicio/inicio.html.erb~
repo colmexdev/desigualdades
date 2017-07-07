@@ -378,8 +378,8 @@
 
 			$("#trades-vids")[0].insertBefore(hijos[hijos.length-1],hijos[0]);
 
+			$("#trades-vids")[0].childNodes[0].style.width = width;
 			$("#trades-vids")[0].childNodes[0].style[transition] = "width 0.5s linear 1s";
-	
 			$("#trades-vids")[0].childNodes[0].style.width = width;
 
 
@@ -388,7 +388,8 @@
 			hijos[0].style[transition] = "width 0.5s linear 0s";
 			hijos[0].style.width = 0;
 			$("#trades-vids")[0].appendChild(hijos[0]);
-			
+
+				$("#trades-vids")[0].childNodes[hijos.length-1].style.width = width;
 				$("#trades-vids")[0].childNodes[hijos.length-1].style[transition] = "all 0 ease 1s";
 				$("#trades-vids")[0].childNodes[hijos.length-1].style.width = width;
 	
@@ -418,7 +419,7 @@
 				}
 			}
 			$("#trades-vids").width(trades_links.length * $("#trades-vid-cont-0").width()).css("left",$("#trades-vid-cont-0").width()*(-1));
-			$("#trades-container").css("height",$("#trades-vids").width()*0.04025);
+			$("#trades-container").css("height",$("#trades-vids").width()*0.02525);
 		}
 	});
 
@@ -430,6 +431,6 @@ $(window).on("resize",function(){
 		$("#slide-vid-"+i+" iframe").attr("width",$("#trades-cont").width()*0.23).attr("height",$("#trades-cont").width()*0.23*150/257);
 	}
 	$("#trades-vids").width(trades_links.length * $("#trades-vid-cont-0").width()).css("left",$("#trades-cont").width()*0.333334*(-1));
-	$("#trades-container").css("height",$("#trades-vids").width()*0.04025);
+	$("#trades-container").css("height",$("#trades-vids").width()*0.02525);
 });
 </script>
