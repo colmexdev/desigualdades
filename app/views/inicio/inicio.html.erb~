@@ -29,8 +29,8 @@
   </div>
 
 
-	<div class="row"> <!-- Fila para eventos -->
-		<div class="col-md-12" id="div_eventos"> <!-- Columnas para eventos -->
+	<div class="row" style="margin:0;"> <!-- Fila para eventos -->
+		<div class="col-md-12" id="div_eventos" style="padding:0;"> <!-- Columnas para eventos -->
 			<div id="carouselEventos" class="carousel slide" data-ride="carousel" data-interval="false">
 
 				<!-- Wrapper for slides -->
@@ -118,102 +118,7 @@
               <p class="text-center"><a href="http://migdep.colmex.mx/" target="_blank" class="btn-two">Más información</a></p>
       </div>
     </div>
-    <div class="row">
-      <div class="swiper-container-two">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="single-logo">
-                 <div class="cajavideo">
-                  <div class="embed-container">
-                    <iframe src="https://www.youtube.com/embed/GEJGloH3EfA?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_" allowfullscreen></iframe>
-                  </div>
-                </div>
-                </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="single-logo">
-                 <div class="cajavideo">
-                  <div class="embed-container">
-                    <iframe src="https://www.youtube.com/embed/NEcTi96eZc0?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_" allowfullscreen></iframe>
-                  </div>
-                </div>
-                </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="single-logo">
-                 <div class="cajavideo">
-                  <div class="embed-container">
-                    <iframe src="https://www.youtube.com/embed/L2PBpXSyfPs?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_" allowfullscreen></iframe>
-                  </div>
-                </div>
-                </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="single-logo">
-                 <div class="cajavideo">
-                  <div class="embed-container">
-                    <iframe src="https://www.youtube.com/embed/FFp6xJy7BJo?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_" allowfullscreen></iframe>
-                  </div>
-                </div>
-                </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="single-logo">
-                 <div class="cajavideo">
-                  <div class="embed-container">
-                    <iframe src="https://www.youtube.com/embed/RKmGaENEPTg?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_" allowfullscreen></iframe>
-                  </div>
-                </div>
-                </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="single-logo">
-                 <div class="cajavideo">
-                  <div class="embed-container">
-                    <iframe src="https://www.youtube.com/embed/Q5JO4BNTdgo?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_" allowfullscreen></iframe>
-                  </div>
-                </div>
-                </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="single-logo">
-                 <div class="cajavideo">
-                  <div class="embed-container">
-                    <iframe src="https://www.youtube.com/embed/xYgWAjJqbgs?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_" allowfullscreen></iframe>
-                  </div>
-                </div>
-                </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="single-logo">
-                 <div class="cajavideo">
-                  <div class="embed-container">
-                    <iframe src="https://www.youtube.com/embed/LYz4SlreS9w?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_"  allowfullscreen></iframe>
-                  </div>
-                </div>
-                </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="single-logo">
-                 <div class="cajavideo">
-                  <div class="embed-container">
-                    <iframe src="https://www.youtube.com/embed/eJh2oXbG3gU?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_"  allowfullscreen></iframe>
-                  </div>
-                </div>
-                </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="single-logo">
-                 <div class="cajavideo">
-                  <div class="embed-container">
-                    <iframe src="https://www.youtube.com/embed/Ru8Kg0wMoNg?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_"  allowfullscreen></iframe>
-                  </div>
-                </div>
-                </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
   </div>
 </section>
 <!-- End Logo Section -->
@@ -338,7 +243,7 @@
 	height: 100%;
 }
 
-.trades-vid-cont, .slide-vid{
+.vid-cont, .slide-vid{
 	float: left;
 	display: inline-block;
 	height: 100%;
@@ -356,7 +261,9 @@
 }
 </style>
 <script type="text/javascript">
-	var trades_links = ["https://www.youtube.com/embed/8SnQVVPNw6w?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/ZYZCmFunfbU?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/eWb2M4Poqro?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/BykjexAPL3Y?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/CEC06t_6qqs?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/H2ANspIXN00?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/DorfXrf7aUI?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/mbq0U3PjLY4?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/999kFh_ZWkw?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/azJ1E3Oo9Do?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/BVUqbXythNY?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/-NmnkuDAS_0?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/0IY88aic3Bw?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg"]
+	var trades_links = ["https://www.youtube.com/embed/8SnQVVPNw6w?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/ZYZCmFunfbU?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/eWb2M4Poqro?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/BykjexAPL3Y?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/CEC06t_6qqs?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/H2ANspIXN00?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/DorfXrf7aUI?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/mbq0U3PjLY4?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/999kFh_ZWkw?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/azJ1E3Oo9Do?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/BVUqbXythNY?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/-NmnkuDAS_0?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/0IY88aic3Bw?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg"];
+
+var migdep_links = ["https://www.youtube.com/embed/GEJGloH3EfA?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/NEcTi96eZc0?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/L2PBpXSyfPs?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/FFp6xJy7BJo?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/RKmGaENEPTg?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/Q5JO4BNTdgo?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/xYgWAjJqbgs?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/eJh2oXbG3gU?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/Ru8Kg0wMoNg?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_"];
 
 	function supportedProp(proparray){
 		var root=document.documentElement //reference root element of document
@@ -389,19 +296,34 @@
 			window.getComputedStyle(hijos[0]).width;
 			hijos[0].style[transition] = "width 0.5s linear 0s";
 			hijos[0].style.width = 0;
+			setTimeout(function(){
 			$("#trades-vids")[0].appendChild(hijos[0]);
-
 			window.getComputedStyle($("#trades-vids")[0].childNodes[hijos.length-1]).width;
 				$("#trades-vids")[0].childNodes[hijos.length-1].style[transition] = "all 0 ease 0s";
 				$("#trades-vids")[0].childNodes[hijos.length-1].style.width = width;
-	
+			},501);
 		}
 	}
 
-	function trace(id,ind,link){
-		var html = '<div class="trades-vid-cont" style="text-align:center;" id="trades-vid-cont-'+ind+'"><div class="' + id + '" id="' + id + "-" + ind + '">';
+	function trace(cl,id,ind,link){
+		var html = '<div class="vid-cont" style="text-align:center;" id="' + cl + '-'+ind+'"><div class="' + 'slide-vid' + '" id="' + id + "-" + ind + '">';
 		html += '<iframe src="' + link + '"></iframe></div></div>';
 		return html;
+	}
+
+	function renderSlider(wrapper,container,links,cl,id,vpv,prop){
+		$("#trades-vids").html("");
+		for(var i = 0; i < trades_links.length; i++){
+			$("#trades-vids").html($("#trades-vids").html() + trace("trades-cont","slide-vid",i,trades_links[i]));
+			$("#trades-vid-cont-"+i).css({'width':$("#trades-cont").width()*0.333334});
+			$("#slide-vid-"+i).css('width',$("#trades-cont").width()*0.23 /*0.5625*/);
+			$("#slide-vid-"+i+" iframe").attr("width",$("#trades-cont").width()*0.23).attr("height",$("#trades-cont").width()*0.23*150/257);
+			if(i>3 && i==trades_links.length-1){
+				$("#trades-vids")[0].insertBefore($("#trades-vids")[0].childNodes[trades_links.length-1],$("#trades-vids")[0].childNodes[0]);
+			}
+		}
+		$("#trades-vids").width(trades_links.length * $("#trades-vid-cont-0").width()).css("left",$("#trades-vid-cont-0").width()*(-1));
+		$("#trades-container").css("height",$("#trades-vids").width()*0.02525);
 	}
 
 	$.ajax({
@@ -410,18 +332,7 @@
 		url: '<%= root_path %>',
 		success: function(result){
 			scaleEvents(result["ev_big"],result["ev_med"],result["ev_small"]);
-			$("#trades-vids").html("");
-			for(var i = 0; i < trades_links.length; i++){
-				$("#trades-vids").html($("#trades-vids").html() + trace("slide-vid",i,trades_links[i]));
-				$("#trades-vid-cont-"+i).css({'width':$("#trades-cont").width()*0.333334});
-				$("#slide-vid-"+i).css('width',$("#trades-cont").width()*0.23 /*0.5625*/);
-				$("#slide-vid-"+i+" iframe").attr("width",$("#trades-cont").width()*0.23).attr("height",$("#trades-cont").width()*0.23*150/257);
-				if(i>3 && i==trades_links.length-1){
-					$("#trades-vids")[0].insertBefore($("#trades-vids")[0].childNodes[trades_links.length-1],$("#trades-vids")[0].childNodes[0]);
-				}
-			}
-			$("#trades-vids").width(trades_links.length * $("#trades-vid-cont-0").width()).css("left",$("#trades-vid-cont-0").width()*(-1));
-			$("#trades-container").css("height",$("#trades-vids").width()*0.02525);
+			renderSlider($("#trades-cont"),$("#trades-vids"),trades_links,"trades-vid-cont","trades-slide-vid",3,0.24);
 		}
 	});
 
