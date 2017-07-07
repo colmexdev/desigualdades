@@ -63,16 +63,16 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-       <div class="causes-img"> <img src="<%= image_url("colmex1.png") %>" alt="El Colegio de México"> </div>
+      	<div class="causes-img"> <img src="<%= image_url("colmex1.png") %>" alt="El Colegio de México"> </div>
 		  <p>&nbsp;</p>
         <p>En El Colegio de México, el estudio de los distintos tipos de desigualdad es una tradición. Se han explorado las desigualdades económicas, educativas, sociales y de género; así mismo se han preparado numerosas investigaciones sobre desigualdades regionales, de capacidades gubernamentales, de organización social o culturales con perspectivas tanto históricas como contemporáneas.</p>
         <p>La agenda de investigación de El Colegio incluye estudios sobre su origen y evolución, las interacciones entre los diversos ámbitos donde se producen, así como sobre los procesos políticos, económicos e institucionales que les dan forma.</p>
         <a href="<%= red_path %>" class="btn-two">Más información</a> </div>
-      <div class="col-md-5">
-        <div class="helping-img"><a class="twitter-timeline" data-lang="es" data-width="400" data-height="600" data-link-color="#E81C4F" href="https://twitter.com/des_igualdades">Tweets by des_igualdades</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
-      </div>
-    </div>
-  </div>
+      	<div class="col-md-5">
+        	<div class="helping-img"><a class="twitter-timeline" data-lang="es" data-width="400" data-height="600" data-link-color="#E81C4F" href="https://twitter.com/des_igualdades">Tweets by des_igualdades</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
+      	</div>
+    	</div>
+ 		</div>
 </section>
 <!-- Fin sección de ayuda -->
 <!-- Logo Section -->
@@ -84,28 +84,10 @@
 				<p class="text-center"><a href="http://trades.colmex.mx/" target="_blank" class="btn-two">Más información</a></p>
       </div>
     </div>
-    <div class="row">
-<% if false %>
+    <div class="row" id="trades-slider">
 
-    
-<% end %>
-		<div id="trades-container">
-			<div id="trades-left">
-				<div id="trades-link-l" style="display:table;">
-	<i class="fa fa-chevron-left" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;" onclick="slide('prev');"></i>
-				</div>
-			</div>
-			<div id="trades-cont">
-				<div id="trades-vids">
-				</div>
-			</div>
-			<div id="trades-right">
-				<div id="trades-link-r" style="display:table;">
-	<i class="fa fa-chevron-right" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;" onclick="slide('next');"></i>
-				</div>
-			</div>
-		</div>
-  </div>
+  	</div>
+	</div>
 </section>
 <!-- End Logo Section -->
 <hr>
@@ -203,14 +185,14 @@
 <%= render 'inicio/footer' %>
 <!-- End Footer Section --> 
 <style>
-#trades-container{
+.container{
 	margin: 0 auto;
 	overflow: hidden;
 	width: 100%;
 	height: 130px;
 }
 
-#trades-left, #trades-right{
+.left, .right{
 	width: 25px;
 	height: 100%;
 	display: inline-block;
@@ -218,11 +200,11 @@
 	color: #993366;
 }
 
-#trades-right, #trades-cont, #trades-left{
+.right, .cont, .left{
 	float: left;
 }
 
-#trades-cont{
+.cont{
 	width: -webkit-calc(100% - 50px);
 	width: -moz-calc(100% - 50px);
 	width: calc(100% - 50px);
@@ -230,12 +212,12 @@
 	overflow:	hidden;
 }
 
-#trades-vids{
+.vids{
 	height: 100%;
 	position: relative;
 }
 
-#trades-link-r, #trades-link-l{
+.link-r, .link-l{
 	display: table;
 	text-align: center;
 	cursor: pointer;
@@ -283,14 +265,10 @@ var migdep_links = ["https://www.youtube.com/embed/GEJGloH3EfA?list=PLhIF5xewDHR
 			window.getComputedStyle(hijos[hijos.length-1]).width;
 			hijos[hijos.length-1].style[transition] = "all 0 ease 0";
 			hijos[hijos.length-1].style.width = 0;
-
 			$("#trades-vids")[0].insertBefore(hijos[hijos.length-1],hijos[0]);
-
 			window.getComputedStyle($("#trades-vids")[0].childNodes[0]).width;
 			$("#trades-vids")[0].childNodes[0].style[transition] = "width 0.4s linear 0s";
 			$("#trades-vids")[0].childNodes[0].style.width = width;
-
-
 		}
 		else{
 			window.getComputedStyle(hijos[0]).width;
@@ -322,8 +300,33 @@ var migdep_links = ["https://www.youtube.com/embed/GEJGloH3EfA?list=PLhIF5xewDHR
 				container[0].insertBefore(container[0].childNodes[links.length-1],container[0].childNodes[0]);
 			}
 		}
-		container.width(links.length * $("#"+id+"-1").width()).css("left",$("#"+cl+"-1").width()*(-1));
+		container.width(links.length * $("#"+id+"-1").width()).css("left",$("#trades-vids")[0].childNodes[1].style.width*(-1));
 		parent.css("height",wrapper.width()*prop*150/257);
+	}
+
+	function drawSlider(parent,links,id){
+		parent.html("");
+		parent.html(parent.html() + '<div class="container" id="'+id+'-container">' );
+		if(links.length > 3){
+			parent.html(parent.html() + '<div class="left" id="'+id+'-left">');
+			parent.html(parent.html() + '<div class="link-l" id="'+id+'-link-l" style="display:table;">');
+			parent.html(parent.html() + '<i class="fa fa-chevron-left" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;" onclick="slide('+"'prev'"+');"></i>');
+			parent.html(parent.html() + '</div>');
+			parent.html(parent.html() + '</div>');	
+		}
+		parent.html(parent.html() + '<div class="cont" id="'+id+'-cont">');
+		parent.html(parent.html() + '<div class="vids" id="'+id+'-vids">');
+		parent.html(parent.html() + '</div>');
+		parent.html(parent.html() + '</div>');
+		if(links.length > 3){
+			parent.html(parent.html() + '<div class="right" id="'+id+'-right">');
+			parent.html(parent.html() + '<div class="link-r" id="'+id+'-link-r" style="display:table;">');
+			parent.html(parent.html() + '<i class="fa fa-chevron-right" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;" onclick="slide('+"'next'"+');"></i>');
+			parent.html(parent.html() + '</div>');
+			parent.html(parent.html() + '</div>');
+		}
+		parent.html(parent.html() + '</div>');
+
 	}
 
 	$.ajax({
@@ -332,6 +335,7 @@ var migdep_links = ["https://www.youtube.com/embed/GEJGloH3EfA?list=PLhIF5xewDHR
 		url: '<%= root_path %>',
 		success: function(result){
 			scaleEvents(result["ev_big"],result["ev_med"],result["ev_small"]);
+			drawSlider($("#trades-slider"),trades_links,"trades")
 			renderSlider($("#trades-container"),$("#trades-cont"),$("#trades-vids"),trades_links,"trades-vid-cont","trades-slide-vid",3,0.24,false);
 		}
 	});
