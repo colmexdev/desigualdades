@@ -242,8 +242,8 @@
 		}
 	}
 
-	function slide(side){
-		var hijos = $("#trades-vids")[0].childNodes;
+	function slide(side,id){
+		var hijos = $("#'+id+'-vids")[0].childNodes;
 		if(hijos.length < 4) return true;
 		var transition = supportedProp(["MozTransition","WebkitTransition","OTransition","transition"]);
 		var width = hijos[1].style.width;
@@ -251,20 +251,20 @@
 			window.getComputedStyle(hijos[hijos.length-1]).width;
 			hijos[hijos.length-1].style[transition] = "all 0 ease 0";
 			hijos[hijos.length-1].style.width = 0;
-			$("#trades-vids")[0].insertBefore(hijos[hijos.length-1],hijos[0]);
-			window.getComputedStyle($("#trades-vids")[0].childNodes[0]).width;
-			$("#trades-vids")[0].childNodes[0].style[transition] = "width 0.4s linear 0s";
-			$("#trades-vids")[0].childNodes[0].style.width = width;
+			$("#"+id+"-vids")[0].insertBefore(hijos[hijos.length-1],hijos[0]);
+			window.getComputedStyle($("#"+id+"-vids")[0].childNodes[0]).width;
+			$("#"+id+"-vids")[0].childNodes[0].style[transition] = "width 0.4s linear 0s";
+			$("#"+id+"-vids")[0].childNodes[0].style.width = width;
 		}
 		else{
 			window.getComputedStyle(hijos[0]).width;
 			hijos[0].style[transition] = "width 0.4s linear 0s";
 			hijos[0].style.width = 0;
 			setTimeout(function(){
-			$("#trades-vids")[0].appendChild(hijos[0]);
+			$("#"+id+"-vids")[0].appendChild(hijos[0]);
 			window.getComputedStyle($("#trades-vids")[0].childNodes[hijos.length-1]).width;
-				$("#trades-vids")[0].childNodes[hijos.length-1].style[transition] = "all 0 ease 0s";
-				$("#trades-vids")[0].childNodes[hijos.length-1].style.width = width;
+				$("#"+id+"-vids")[0].childNodes[hijos.length-1].style[transition] = "all 0 ease 0s";
+				$("#"+id+"-vids")[0].childNodes[hijos.length-1].style.width = width;
 			},501);
 		}
 	}
@@ -291,28 +291,28 @@
 	}
 
 	function drawSlider(parent,links,id){
-		parent.html("");
-		parent.html(parent.html() + '<div class="contain" id="'+id+'-container">' );
+		var html = "";
+		html += '<div class="contain" id="'+id+'-container">';
 		if(links.length > 3){
-			parent.html(parent.html() + '<div class="left" id="'+id+'-left">');
-			parent.html(parent.html() + '<div class="link-l" id="'+id+'-link-l" style="display:table;">');
-			parent.html(parent.html() + '<i class="fa fa-chevron-left" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;" onclick="slide('+"'prev'"+');"></i>');
-			parent.html(parent.html() + '</div>');
-			parent.html(parent.html() + '</div>');	
+			html += '<div class="left" id="'+id+'-left">';
+			html += '<div class="link-l" id="'+id+'-link-l" style="display:table;">';
+			html += '<i class="fa fa-chevron-left" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;" onclick="slide('+"'prev'"+');"></i>';
+			html += '</div>';
+			html += '</div>';	
 		}
-		parent.html(parent.html() + '<div class="cont" id="'+id+'-cont">');
-		parent.html(parent.html() + '<div class="vids" id="'+id+'-vids">');
-		parent.html(parent.html() + '</div>');
-		parent.html(parent.html() + '</div>');
+		html += '<div class="cont" id="'+id+'-cont">';
+		html += '<div class="vids" id="'+id+'-vids">';
+		html += '</div>';
+		html += '</div>';
 		if(links.length > 3){
-			parent.html(parent.html() + '<div class="right" id="'+id+'-right">');
-			parent.html(parent.html() + '<div class="link-r" id="'+id+'-link-r" style="display:table;">');
-			parent.html(parent.html() + '<i class="fa fa-chevron-right" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;" onclick="slide('+"'next'"+');"></i>');
-			parent.html(parent.html() + '</div>');
-			parent.html(parent.html() + '</div>');
+			html += '<div class="right" id="'+id+'-right">';
+			html += '<div class="link-r" id="'+id+'-link-r" style="display:table;">';
+			html += '<i class="fa fa-chevron-right" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;" onclick="slide('+"'next'"+');"></i>';
+			html += '</div>';
+			html += '</div>';
 		}
-		parent.html(parent.html() + '</div>');
-
+		html += '</div>';
+		parent.html(html);
 	}
 
 	$.ajax({
