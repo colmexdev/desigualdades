@@ -180,7 +180,7 @@
 	width: 25px;
 	height: 100%;
 	display: inline-block;
-	background-color: rgba(131,131,131,0.3);
+	/*background-color: rgba(131,131,131,0.3);*/
 	color: #993366;
 }
 
@@ -281,13 +281,13 @@
 			if(!resize) container.html(container.html() + trace(cl,id,i,trades_links[i]));
 			$("#"+cl+"-"+i).css({'width':wrapper.width()/vpv});
 			$("#"+id+"-"+i).css('width',wrapper.width()*prop);
-			$("#"+id+"-"+i+" iframe").attr("width",wrapper.width()*prop).attr("height",wrapper.width()*prop*150/257);
+			$("#"+id+"-"+i+" iframe").attr("width",wrapper.width()*prop).attr("height",wrapper.width()*prop*5/7);
 			if(!resize && i>3 && i==links.length-1){
 				container[0].insertBefore(container[0].childNodes[links.length-1],container[0].childNodes[0]);
 			}
 		}
 		container.width(links.length * $("#"+id+"-1").width()).css("left",(links.length < 3 ? "0" : (wrapper.width()/vpv*(-1))));
-		parent.css("height",wrapper.width()*prop*150/257);
+		parent.css("height",wrapper.width()*prop*5/7);
 	}
 
 	function drawSlider(parent,links,id){
@@ -296,7 +296,7 @@
 		if(links.length > 3){
 			html += '<div class="left" id="'+id+'-left">';
 			html += '<div class="link-l" id="'+id+'-link-l" style="display:table;">';
-			html += '<i class="fa fa-chevron-left" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;" onclick="slide('+"'prev','"+id+"'"+');"></i>';
+			html += '<i class="fa fa-chevron-left" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;font-size:26px;" onclick="slide('+"'prev','"+id+"'"+');"></i>';
 			html += '</div>';
 			html += '</div>';	
 		}
@@ -307,7 +307,7 @@
 		if(links.length > 3){
 			html += '<div class="right" id="'+id+'-right">';
 			html += '<div class="link-r" id="'+id+'-link-r" style="display:table;">';
-			html += '<i class="fa fa-chevron-right" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;" onclick="slide('+"'next','"+id+"'"+');"></i>';
+			html += '<i class="fa fa-chevron-right" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;font-size:26px;" onclick="slide('+"'next','"+id+"'"+');"></i>';
 			html += '</div>';
 			html += '</div>';
 		}
