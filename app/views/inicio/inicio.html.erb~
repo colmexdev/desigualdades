@@ -101,6 +101,10 @@
       </div>
     </div>
 
+    <div class="row" id="migdep-slider">
+
+  	</div>
+
   </div>
 </section>
 <!-- End Logo Section -->
@@ -114,29 +118,8 @@
               <p class="text-center"><a href="http://sedes.colmex.mx/" target="_blank" class="btn-two">Más información</a></p>
       </div>
     </div>
-    <div class="row">
-      <div class="swiper-container-two">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="single-logo">
-                 <div class="cajavideo">
-                  <div class="embed-container">
-                    <iframe src="https://www.youtube.com/embed/Hc1WbGcl7DE?list=PLhIF5xewDHRw7GKFenyPu25flVLaxozCx" allowfullscreen></iframe>
-                  </div>
-                </div>
-                </div>
-          </div>
-          <!--div class="swiper-slide">
-            <div class="single-logo">
-                 <div class="cajavideo">
-                  <div class="embed-container">
-                    <iframe src="https://www.youtube.com/embed/Ru8Kg0wMoNg?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_"  allowfullscreen></iframe>
-                  </div>
-                </div>
-                </div>
-          </div-->
-        </div>
-      </div>
+    <div class="row" id="sedes-slider">
+
     </div>
   </div>
 </section>
@@ -245,7 +228,9 @@
 <script type="text/javascript">
 	var trades_links = ["https://www.youtube.com/embed/8SnQVVPNw6w?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/ZYZCmFunfbU?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/eWb2M4Poqro?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/BykjexAPL3Y?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/CEC06t_6qqs?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/H2ANspIXN00?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/DorfXrf7aUI?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/_dPQFCn_IA8?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/mbq0U3PjLY4?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/999kFh_ZWkw?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/azJ1E3Oo9Do?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/BVUqbXythNY?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/-NmnkuDAS_0?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg","https://www.youtube.com/embed/0IY88aic3Bw?list=PLhIF5xewDHRzOPocgWse9lG5o3FQEkmwg"];
 
-var migdep_links = ["https://www.youtube.com/embed/GEJGloH3EfA?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/NEcTi96eZc0?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/L2PBpXSyfPs?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/FFp6xJy7BJo?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/RKmGaENEPTg?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/Q5JO4BNTdgo?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/xYgWAjJqbgs?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/eJh2oXbG3gU?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/Ru8Kg0wMoNg?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_"];
+	var migdep_links = ["https://www.youtube.com/embed/GEJGloH3EfA?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/NEcTi96eZc0?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/L2PBpXSyfPs?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/FFp6xJy7BJo?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/RKmGaENEPTg?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/Q5JO4BNTdgo?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/xYgWAjJqbgs?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/eJh2oXbG3gU?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/Ru8Kg0wMoNg?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_"];
+
+	var sedes_links = ["https://www.youtube.com/embed/Hc1WbGcl7DE?list=PLhIF5xewDHRw7GKFenyPu25flVLaxozCx"];
 
 	function supportedProp(proparray){
 		var root=document.documentElement //reference root element of document
@@ -337,10 +322,16 @@ var migdep_links = ["https://www.youtube.com/embed/GEJGloH3EfA?list=PLhIF5xewDHR
 			scaleEvents(result["ev_big"],result["ev_med"],result["ev_small"]);
 			drawSlider($("#trades-slider"),trades_links,"trades")
 			renderSlider($("#trades-container"),$("#trades-cont"),$("#trades-vids"),trades_links,"trades-vid-cont","trades-slide-vid",3,0.24,false);
+			drawSlider($("#migdep-slider"),migdep_links,"migdep")
+			renderSlider($("#migdep-container"),$("#migdep-cont"),$("#migdep-vids"),migdep_links,"migdep-vid-cont","migdep-slide-vid",3,0.24,false);
+			drawSlider($("#sedes-slider"),sedes_links,"sedes")
+			renderSlider($("#sedes-container"),$("#sedes-cont"),$("#sedes-vids"),sedes_links,"sedes-vid-cont","sedes-slide-vid",3,0.24,false);
 		}
 	});
 
 $(window).on("resize",function(){
 			renderSlider($("#trades-container"),$("#trades-cont"),$("#trades-vids"),trades_links,"trades-vid-cont","trades-slide-vid",3,0.24,true);
+			renderSlider($("#migdep-container"),$("#migdep-cont"),$("#migdep-vids"),migdep_links,"migdep-vid-cont","migdep-slide-vid",3,0.24,true);
+			renderSlider($("#sedes-container"),$("#sedes-cont"),$("#sedes-vids"),sedes_links,"sedes-vid-cont","sedes-slide-vid",3,0.24,true);
 });
 </script>
