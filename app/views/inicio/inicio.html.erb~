@@ -379,9 +379,9 @@
 			$("#trades-vids")[0].insertBefore(hijos[hijos.length-1],hijos[0]);
 
 			$("#trades-vids")[0].childNodes[0].style[transition] = "width 0.5s linear 1s";
-			setTimeout(function(){
+	
 			$("#trades-vids")[0].childNodes[0].style.width = width;
-			},800);
+
 
 		}
 		else{
