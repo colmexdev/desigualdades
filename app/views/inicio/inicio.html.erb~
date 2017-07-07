@@ -322,8 +322,8 @@ var migdep_links = ["https://www.youtube.com/embed/GEJGloH3EfA?list=PLhIF5xewDHR
 				container[0].insertBefore(container[0].childNodes[links.length-1],container[0].childNodes[0]);
 			}
 		}
-		container.width(links.length * $("#"+id+"-0").width()).css("left",$("#"+id+"-0").width()*(-1));
-		parent.css("height",wrapper.width()*prop);
+		container.width(links.length * $("#"+id+"-0").width()).css("left",$("#"+cl+"-0").width()*(-1));
+		parent.css("height",container.width()*prop/links.length);
 	}
 
 	$.ajax({
