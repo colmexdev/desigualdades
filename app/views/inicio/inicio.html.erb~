@@ -375,11 +375,11 @@
 		if(side == "prev"){
 			hijos[hijos.length-1].style[transition] = "all 0 ease 0";
 			hijos[hijos.length-1].style.width = 0;
-			alert("ancho de " + $("#trades-vids")[0].childNodes[0].id + " : " + hijos[hijos.length-1].style.width);
+			alert("ancho de " + $("#trades-vids")[0].childNodes[hijos.length-1].id + " : " + hijos[hijos.length-1].style.width);
 			$("#trades-vids")[0].insertBefore(hijos[hijos.length-1],hijos[0]);
 			$("#trades-vids")[0].childNodes[0].style[transition] = "width 0.5s linear";
 			$("#trades-vids")[0].childNodes[0].style.width = width;
-			alert("ancho de " + $("#trades-vids")[0].childNodes[0].id + " : " + hijos[hijos.length-1].style.width);
+			alert("ancho de " + $("#trades-vids")[0].childNodes[0].id + " : " + hijos[0].style.width);
 		}
 		else{
 			hijos[0].style[transition] = "width 0.5s linear";
