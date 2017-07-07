@@ -286,7 +286,7 @@
 				container[0].insertBefore(container[0].childNodes[links.length-1],container[0].childNodes[0]);
 			}
 		}
-		container.width(links.length * $("#"+id+"-1").width()).css("left",wrapper.width()/vpv);
+		container.width(links.length * $("#"+id+"-1").width()).css("left",wrapper.width()/vpv*(-1));
 		parent.css("height",wrapper.width()*prop*150/257);
 	}
 
