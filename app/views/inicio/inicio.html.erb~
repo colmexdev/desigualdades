@@ -231,7 +231,7 @@
 
 	var migdep_links = ["https://www.youtube.com/embed/GEJGloH3EfA?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/NEcTi96eZc0?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/L2PBpXSyfPs?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/FFp6xJy7BJo?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/RKmGaENEPTg?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/Q5JO4BNTdgo?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/xYgWAjJqbgs?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/eJh2oXbG3gU?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_","https://www.youtube.com/embed/Ru8Kg0wMoNg?list=PLhIF5xewDHRzgJYB3TKwsQlJY85JjxOk_"];
 
-	var sedes_links = ["https://www.youtube.com/embed/Hc1WbGcl7DE?list=PLhIF5xewDHRw7GKFenyPu25flVLaxozCx"];
+	var sedes_links = ["https://www.youtube.com/embed/Hc1WbGcl7DE?list=PLhIF5xewDHRw7GKFenyPu25flVLaxozCx","https://www.youtube.com/embed/Hc1WbGcl7DE?list=PLhIF5xewDHRw7GKFenyPu25flVLaxozCx"];
 
 	function supportedProp(proparray){
 		var root=document.documentElement //reference root element of document
