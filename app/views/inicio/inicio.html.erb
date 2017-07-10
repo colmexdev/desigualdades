@@ -280,9 +280,9 @@
 		else{
 			$("#"+sect+"-left").css("visibility",(links.length <= vpv ? 'hidden' : ''));
 			$("#"+sect+"-right").css("visibility",(links.length <= vpv ? 'hidden' : ''));
-			$("#"+sect+"-left")[0].dataset.vpv=vpv;
-			$("#"+sect+"-right")[0].dataset.vpv=vpv;
 		}
+		$("#"+sect+"-left")[0].dataset.vpv=vpv;
+		$("#"+sect+"-right")[0].dataset.vpv=vpv;
 		for(var i = 0; i < links.length; i++){
 			if(!resize) container.html(container.html() + trace(cl,id,i,links[i]));
 			$("#"+cl+"-"+i).css({'width':wrapper.width()/vpv});
@@ -293,7 +293,7 @@
 				container[0].insertBefore(container[0].childNodes[links.length-1],container[0].childNodes[0]);
 			}
 		}
-		container.width(links.length * ( links.length <= vpv ? (wrapper.width()/vpv) : $("#"+id+"-1").width())).css("left",(links.length <= vpv ? (wrapper.width()*0.5*(1-(links.length/vpv))) : (wrapper.width()/vpv*(-1))));
+		container.width(links.length * ( links.length <= vpv ? (wrapper.width()/*/vpv*/) : $("#"+id+"-1").width())).css("left",(links.length <= vpv ? (wrapper.width()*0.5*(1-(links.length/vpv))) : (/*wrapper.width()*/getComputedStyle(wrapper[0]).width/vpv*(-1))));
 		parent.css("height",wrapper.width()*prop*5/7);
 	}
 
