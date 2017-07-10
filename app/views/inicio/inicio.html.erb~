@@ -242,9 +242,9 @@
 		}
 	}
 
-	function slide(side,id){
+	function slide(side,id,element){
 		var hijos = $("#"+id+"-vids")[0].childNodes;
-		if(hijos.length < 4) return true;
+		if(hijos.length < element.dataset.vpv) return true;
 		var transition = supportedProp(["MozTransition","WebkitTransition","OTransition","transition"]);
 		var width = hijos[1].style.width;
 		if(side == "prev"){
@@ -278,8 +278,10 @@
 	function renderSlider(sect,parent,wrapper,container,links,cl,id,vpv,prop,resize){
 		if(!resize) container.html("");
 		else{
-			$("#"+sect+"-left").css("visibility",(links.length <= vpv ? 'hidden' : '')).dataset.vpv=vpv;
+			$("#"+sect+"-left").css("visibility",(links.length <= vpv ? 'hidden' : ''));
 			$("#"+sect+"-right").css("visibility",(links.length <= vpv ? 'hidden' : '')).dataset.vpv=vpv;
+			$("#"+sect+"-left")[0].dataset.vpv=vpv;
+			$("#"+sect+"-right")[0].dataset.vpv=vpv;
 		}
 		for(var i = 0; i < links.length; i++){
 			if(!resize) container.html(container.html() + trace(cl,id,i,links[i]));
