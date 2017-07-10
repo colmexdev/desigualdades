@@ -328,11 +328,11 @@
 			var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
 			scaleEvents(result["ev_big"],result["ev_med"],result["ev_small"]);
 			drawSlider($("#trades-slider"),trades_links,"trades",3)
-			renderSlider($("#trades-container"),$("#trades-cont"),$("#trades-vids"),trades_links,"trades-vid-cont","trades-slide-vid",(ancho < 792 ? 2 : 3),(ancho < 792 ? 0.4 : 0.3),false);
+			renderSlider("trades",$("#trades-container"),$("#trades-cont"),$("#trades-vids"),trades_links,"trades-vid-cont","trades-slide-vid",(ancho < 792 ? 2 : 3),(ancho < 792 ? 0.4 : 0.3),false);
 			drawSlider($("#migdep-slider"),migdep_links,"migdep",3)
-			renderSlider($("#migdep-container"),$("#migdep-cont"),$("#migdep-vids"),migdep_links,"migdep-vid-cont","migdep-slide-vid",(ancho < 792 ? 2 : 3),(ancho < 792 ? 0.4 : 0.3),false);
+			renderSlider("migdep",$("#migdep-container"),$("#migdep-cont"),$("#migdep-vids"),migdep_links,"migdep-vid-cont","migdep-slide-vid",(ancho < 792 ? 2 : 3),(ancho < 792 ? 0.4 : 0.3),false);
 			drawSlider($("#sedes-slider"),sedes_links,"sedes",3)
-			renderSlider($("#sedes-container"),$("#sedes-cont"),$("#sedes-vids"),sedes_links,"sedes-vid-cont","sedes-slide-vid",(ancho < 792 ? 2 : 3),(ancho < 792 ? 0.4 : 0.3),false);
+			renderSlider("sedes",$("#sedes-container"),$("#sedes-cont"),$("#sedes-vids"),sedes_links,"sedes-vid-cont","sedes-slide-vid",(ancho < 792 ? 2 : 3),(ancho < 792 ? 0.4 : 0.3),false);
 		}
 	});
 
