@@ -294,14 +294,14 @@
 	function drawSlider(parent,links,id,vpv){
 		var html = "";
 		html += '<div class="contain" id="'+id+'-container">';
-		if(links.length > vpv){
-			html += '<div class="left" id="'+id+'-left">';
+		
+			html += '<div class="left" id="'+id+'-left"' + (links.length <= vpv ? ' style="visibility:hidden;"' : '') + '>';
 			html += '<div class="link-l" id="'+id+'-link-l" style="display:table;">';
-			html += '<i class="fa fa-chevron-left" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;font-size:26px;" onclick="slide('+"'prev','"+id+"'"+');"></i>';
+			html += '<i class="fa fa-chevron-left" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;font-size:26px;"' + (links.length <= vpv ? ' onclick="slide('+"'prev','"+id+"'"+');"' : '') + '></i>';
 			html += '</div>';
 			html += '</div>';	
-		}
-		html += '<div class="cont" id="'+id+'-cont"' + (links.length <= vpv ? 'style="margin-left:50px;"' : "" ) + '>';
+		
+		html += '<div class="cont" id="'+id+'-cont">';
 		html += '<div class="vids" id="'+id+'-vids">';
 		html += '</div>';
 		html += '</div>';

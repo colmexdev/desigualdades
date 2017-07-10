@@ -291,21 +291,21 @@
 		parent.css("height",wrapper.width()*prop*5/7);
 	}
 
-	function drawSlider(parent,links,id){
+	function drawSlider(parent,links,id,vpv){
 		var html = "";
 		html += '<div class="contain" id="'+id+'-container">';
-		if(links.length > 3){
+		if(links.length > vpv){
 			html += '<div class="left" id="'+id+'-left">';
 			html += '<div class="link-l" id="'+id+'-link-l" style="display:table;">';
 			html += '<i class="fa fa-chevron-left" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;font-size:26px;" onclick="slide('+"'prev','"+id+"'"+');"></i>';
 			html += '</div>';
 			html += '</div>';	
 		}
-		html += '<div class="cont" id="'+id+'-cont">';
+		html += '<div class="cont" id="'+id+'-cont"' + (links.length <= vpv ? 'style="margin-left:50px;"' : "" ) + '>';
 		html += '<div class="vids" id="'+id+'-vids">';
 		html += '</div>';
 		html += '</div>';
-		if(links.length > 3){
+		if(links.length > vpv){
 			html += '<div class="right" id="'+id+'-right">';
 			html += '<div class="link-r" id="'+id+'-link-r" style="display:table;">';
 			html += '<i class="fa fa-chevron-right" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;font-size:26px;" onclick="slide('+"'next','"+id+"'"+');"></i>';
@@ -323,11 +323,11 @@
 		success: function(result){
 			var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
 			scaleEvents(result["ev_big"],result["ev_med"],result["ev_small"]);
-			drawSlider($("#trades-slider"),trades_links,"trades")
+			drawSlider($("#trades-slider"),trades_links,"trades",3)
 			renderSlider($("#trades-container"),$("#trades-cont"),$("#trades-vids"),trades_links,"trades-vid-cont","trades-slide-vid",(ancho < 792 ? 2 : 3),(ancho < 792 ? 0.4 : 0.3),false);
-			drawSlider($("#migdep-slider"),migdep_links,"migdep")
+			drawSlider($("#migdep-slider"),migdep_links,"migdep",3)
 			renderSlider($("#migdep-container"),$("#migdep-cont"),$("#migdep-vids"),migdep_links,"migdep-vid-cont","migdep-slide-vid",(ancho < 792 ? 2 : 3),(ancho < 792 ? 0.4 : 0.3),false);
-			drawSlider($("#sedes-slider"),sedes_links,"sedes")
+			drawSlider($("#sedes-slider"),sedes_links,"sedes",3)
 			renderSlider($("#sedes-container"),$("#sedes-cont"),$("#sedes-vids"),sedes_links,"sedes-vid-cont","sedes-slide-vid",(ancho < 792 ? 2 : 3),(ancho < 792 ? 0.4 : 0.3),false);
 		}
 	});
