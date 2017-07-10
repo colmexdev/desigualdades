@@ -279,7 +279,7 @@
 		if(!resize) container.html("");
 		else{
 			$("#"+sect+"-left").css("visibility",(links.length <= vpv ? 'hidden' : ''));
-			$("#"+sect+"-right").css("visibility",(links.length <= vpv ? 'hidden' : '')).dataset.vpv=vpv;
+			$("#"+sect+"-right").css("visibility",(links.length <= vpv ? 'hidden' : ''));
 			$("#"+sect+"-left")[0].dataset.vpv=vpv;
 			$("#"+sect+"-right")[0].dataset.vpv=vpv;
 		}
