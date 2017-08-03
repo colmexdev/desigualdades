@@ -10,7 +10,6 @@ class InicioController < ApplicationController
       @resultado = cliente.execute("SELECT * FROM dbo.vw_EventosDesigualdades  ORDER BY PARSE(fechaInicio AS DATE USING 'es-ES') DESC, horaInicio DESC")
       @ev_big, @ev_small, @ev_tiny = construye_slider_eventos(@resultado)
     rescue => e
-      logger.debug e.message
       @ev_big, @ev_small, @ev_tiny = "", "" ,""
     end
 
