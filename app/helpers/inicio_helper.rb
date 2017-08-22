@@ -50,7 +50,7 @@ module InicioHelper
   def construirEvento(fila, chico = false)
     centros = ['ceaa', 'cedua', 'cee', 'ceh', 'cei', 'cell', 'ces', 'colmex', 'bdcv', 'piem']
     bloque_html = '<div class="img_evento">'
-    bloque_html = bloque_html + ( centros.include?(fila["centroSiglas"].mb_chars.downcase) ? ActionController::Base.helpers.image_tag(fila["centroSiglas"].mb_chars.downcase + ".png", :class => "img_sede") : '') + "</div>"
+    bloque_html = bloque_html + ( centros.include?(fila["centroSiglas"].mb_chars.downcase) ? ActionController::Base.helpers.image_tag("circulo-red.png", :class => "img_sede") : '') + "</div>"
 
     bloque_html = bloque_html + '<div class="desc_evento">'
 
