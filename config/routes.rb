@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'red' => 'inicio#red', :as => :red
   get 'publicaciones' => 'inicio#publicaciones', :as => :publicaciones
   get 'seminarios' => 'inicio#seminarios', :as => :seminarios
+  get 'videos' => 'inicio#videos', :as => :videos
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
