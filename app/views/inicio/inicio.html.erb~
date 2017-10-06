@@ -106,7 +106,7 @@
             <div class="causes-img"> <img src="<%= image_url("migdep.png") %>" alt="Seminario permanente sobre migración, desigualdad y políticas públicas"> </div>
             <div class="causes-content">
 				<p>Con financiamiento del Servicio Alemán de Intercambio Académico (DAAD) y con la coordinación de <a href="http://cedua.colmex.mx/masferrer_claudia.html" target="_blank">Claudia Masferrer</a>.</p>
-              <p class="text-center"><a href="http://migdep.colmex.mx" class="btn-two">Más información</a></p> </div>
+              <p class="text-center"><a href="http://migdep.colmex.mx" target="_blank" class="btn-two">Más información</a></p> </div>
           </div>
         </div>
         <div class="col-sm-4">
@@ -114,7 +114,7 @@
             <div class="causes-img"> <img src="<%= image_url("sedes.png") %>" alt="Seminario permanente sobre desigualdad socioeconómica, con énfasis en educación"> </div>
             <div class="causes-content">
 				<p>Con la coordinación de <a href="http://ces.colmex.mx/140" target="_blank">Patricio Solís</a>.<br><br><br><br></p>
-              <p class="text-center"><a href="http://sedes.colmex.mx" class="btn-two">Más información</a></p> </div>
+              <p class="text-center"><a href="http://sedes.colmex.mx" target="_blank" class="btn-two">Más información</a></p> </div>
           </div>
         </div>
       </div>
