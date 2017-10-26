@@ -86,10 +86,10 @@
 				<a class="link-panel" onclick="hideLink(event,'#ops-lat','<%= panel_index_path(:set => "Catálogo de sitios", :offset => 0) %>')">Catálogo de sitios</a>
 				</li>
 				<% end %>
+			<% end %>
 				<li class="op-gest">
 				<a class="link-panel" href="<%= destroy_admin_session_path %>" data-method="DELETE" rel="nofollow">Cerrar sesión</a>
 				</li>
-			<% end %>
 			</ul>
 		</div>
 		<div id="graphs-gest">
