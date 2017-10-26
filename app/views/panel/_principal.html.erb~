@@ -58,13 +58,13 @@
 <% @news.each do |n| %>
 	<div class="g">
 		<div class="header">
-			<a href="<%= n.liga %>"><h3><%= n.header %></h3></a>
+			<a href="<%= n[:liga] %>"><h3><%= n[:header] %></h3></a>
 		</div>
 		<div class="src">
-			<h5><%= n.src %></h5>
+			<h5><%= n[:src] %></h5>
 		</div>
 		<div class="abst">
-			<p><%= n.abst %></p>
+			<p><%= n[:abst] %></p>
 		</div>
 	</div>
 <% end %>
