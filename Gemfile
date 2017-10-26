@@ -19,9 +19,6 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-# gon para pasar parámetros a Javascript
-gem 'gon'
-
 #analytics-ruby para integrar Segment.io para analíticos
 #gem 'analytics-ruby', '~> 2.0.0', :require => "segment/analytics"
 
