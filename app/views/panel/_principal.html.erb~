@@ -70,6 +70,9 @@
 <% end %>
 </div>
 
+<script type="text/javascript">
+
+</script>
 
 <% if false %>
 <script src="//d3js.org/topojson.v1.min.js"></script>
