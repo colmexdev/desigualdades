@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   devise_for :admins, :controllers => { :registrations => "registrations", :sessions => "sessions"}
+
+  devise_scope :admin do
+    get "/acceder" => "admins/sessions#new"
+  end
+
   get 'inicio' => 'inicio#inicio'
   get 'red' => 'inicio#red', :as => :red
   get 'publicaciones' => 'inicio#publicaciones', :as => :publicaciones
