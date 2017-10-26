@@ -4,6 +4,14 @@ class PanelController < ApplicationController
   #before_action :get_object_fields, only: [:index, :crear, :actualizar, :eliminar, :mostrar]
 
   def principal
+    @site = HTTParty.get("https://www.google.com.mx/search?q=Desigualdad&tbm=nws")
+    @parse = Nokogiri::HTML(@site)
+    @news = []
+    @parse.xpath("//div[@class='g']").each do |g|
+      @head = g.xpath(".//h3")
+      @src = g.xpath(".//div[@class='slp']/span").split(" - ")
+      @news << {header: @head.text, link: @head.xpath("./a").attribute("href").gsub(/\/url\?q=/,""), src: @src[0], date: src[1], abst: g.xpath(".//div[@class='st']").text}
+    end
 		#grupos = @sets.map {|k,v| v[:model]}
     #@groups = []
     #grupos.each_with_index do |g,i|

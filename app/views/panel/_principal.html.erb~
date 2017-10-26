@@ -76,6 +76,7 @@
   stroke-width: .5px;
 }
 </style>
+<% if false %>
 <script type="text/javascript">
 	var tooltip = d3.select("#tooltip-backend");
 
@@ -908,7 +909,5 @@ function queryCoreReportingApi(profileId) {
 
 }
 </script>
-<style>
-
-</style>
 <script src="https://apis.google.com/js/client.js?onload=authorize"></script>
+<% end %>

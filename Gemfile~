@@ -19,9 +19,6 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-# gon para pasar parámetros a Javascript
-gem 'gon'
-
 #analytics-ruby para integrar Segment.io para analíticos
 #gem 'analytics-ruby', '~> 2.0.0', :require => "segment/analytics"
 
@@ -55,6 +52,10 @@ gem 'remotipart', '~> 1.2'
 
 # d3-rails para realizar visualizaciones
 gem 'd3-rails'
+
+#HTTParty para hacer requests a otros sitios (web scraping)
+gem 'httparty'
+gem 'nokogiri'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -53,6 +53,9 @@ gem 'remotipart', '~> 1.2'
 # d3-rails para realizar visualizaciones
 gem 'd3-rails'
 
+#HTTParty para hacer requests a otros sitios (web scraping)
+gem 'httparty'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
