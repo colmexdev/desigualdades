@@ -1,3 +1,4 @@
+<% if false %>
 <%= text_field_tag :fecha_desde, "", {"data-uk-datepicker" => "{format: 'DD-MM-YYYY'}", :onchange => ("filterAnalytics('"+ panel_princ_path + "');")} %>
 
 <%= text_field_tag :fecha_hasta, "", {"data-uk-datepicker" => "{format: 'DD-MM-YYYY'}", :onchange => ("filterAnalytics('"+ panel_princ_path + "');")} %>
@@ -51,13 +52,28 @@
 	<svg id="svg_sp">
 	</svg>
 </div>
+<% end %>
 
-<div id="query-output"></div>
+<div id="query-output">
+<% @news.each do |n| %>
+	<div class="g">
+		<div class="header">
+			<a href="<%= n.link %>"><h3><%= n.header %></h3></a>
+		</div>
+		<div class="src">
+			<h5><%= n.src %></h5>
+		</div>
+		<div class="abst">
+			<p><%= n.abst %></p>
+		</div>
+	</div>
+<% end %>
+</div>
 
 
+<% if false %>
 <script src="//d3js.org/topojson.v1.min.js"></script>
 <style>
-
 /* Mapa */
 .graticule {
   fill: none;
@@ -76,7 +92,6 @@
   stroke-width: .5px;
 }
 </style>
-<% if false %>
 <script type="text/javascript">
 	var tooltip = d3.select("#tooltip-backend");
 
