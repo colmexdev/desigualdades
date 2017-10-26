@@ -6,7 +6,8 @@ class ApplicationController < ActionController::Base
 
   protected
   def after_sign_in_path_for(resource)
-    /(admins)|(acceder)/.match(request.original_fullpath) ? root_path : stored_location_for(:admin)
+    root_path
+    #/(admins)|(acceder)/.match(request.original_fullpath) ? root_path : stored_location_for(:admin)
   end
 
   def after_sign_out_path_for(resource_or_scope)
@@ -14,6 +15,6 @@ class ApplicationController < ActionController::Base
   end
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:usuario, :password, :password_confirmation])
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:usuario, :password, :password_confirmation, :role])
   end
 end
