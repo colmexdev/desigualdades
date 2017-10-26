@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
 
   protected
   def after_sign_in_path_for(resource)
-    root_path
+    panel_path
     #/(admins)|(acceder)/.match(request.original_fullpath) ? root_path : stored_location_for(:admin)
   end
 

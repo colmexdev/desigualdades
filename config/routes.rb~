@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :admins, :controllers => { :registrations => "registrations", :sessions => "sessions"}
 
   devise_scope :admin do
-    get "/acceder" => "admins/sessions#new"
+    get "/acceder" => "devise/sessions#new"
   end
 
   get 'inicio' => 'inicio#inicio'
