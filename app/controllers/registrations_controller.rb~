@@ -11,7 +11,7 @@ class RegistrationsController < Devise::RegistrationsController
     respond_to do |format|
       if resource.save
         format.html { redirect_to root_path, notice: 'Admin was successfully created.' }
-        format.json { render :show, status: :created, location: root_path }
+        format.json { render :show, status: :created, location: @admin }
       else
         format.html { render :new }
         format.json { render json: @admin.errors, status: :unprocessable_entity }
