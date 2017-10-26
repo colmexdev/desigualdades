@@ -10,7 +10,7 @@ class PanelController < ApplicationController
     @parse.xpath("//div[@class='g']").each do |g|
       @head = g.xpath(".//h3")
       @src = g.xpath(".//div[@class='slp']/span").text.split(" - ")
-      @news << {header: @head.text, link: @head.xpath("./a").attribute("href").text.gsub(/\/url\?q=/,""), src: @src[0], date: @src[1], abst: g.xpath(".//div[@class='st']").text}
+      @news << {header: @head.text, liga: @head.xpath("./a").attribute("href").text.gsub(/\/url\?q=/,""), src: @src[0], date: @src[1], abst: g.xpath(".//div[@class='st']").text}
     end
 		#grupos = @sets.map {|k,v| v[:model]}
     #@groups = []
