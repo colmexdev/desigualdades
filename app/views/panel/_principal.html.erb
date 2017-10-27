@@ -54,7 +54,7 @@
 </div>
 <% end %>
 
-<%= form_tag(panel_princ_path, method: "get") do %>
+<%= form_tag(panel_princ_path, method: "get", remote: true) do %>
 	<%= text_field_tag :clave, (params[:clave].present? ? params[:clave] : ""), placeholder: "Palabra(s) clave" %>
 	<%= submit_tag "Buscar" %>
 <% end %>
