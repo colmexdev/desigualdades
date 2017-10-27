@@ -55,10 +55,9 @@
 <% end %>
 
 <%= form_tag(panel_princ_path) do %>
-	<%= text_field_tag :clave, value: (params[:clave].present? ? params[:clave] : "") %>
+	<%= text_field_tag :clave, (params[:clave].present? ? params[:clave] : ""), placeholder: "Palabra(s) clave" %>
 	<%= submit_tag "Buscar" %>
 <% end %>
-<input type="text"
 <div id="query-output">
 <% @news.each do |n| %>
 	<div class="g">
