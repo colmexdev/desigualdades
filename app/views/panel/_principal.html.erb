@@ -54,9 +54,9 @@
 </div>
 <% end %>
 
-<%= form_tag(panel_princ_path) do |f| %>
-	<%= f.text_field :clave, value: (params[:clave].present? ? params[:clave] : "") %>
-	<%= f.submit "Buscar" %>
+<%= form_tag(panel_princ_path) do %>
+	<%= text_field_tag :clave, value: (params[:clave].present? ? params[:clave] : "") %>
+	<%= submit_tag "Buscar" %>
 <% end %>
 <input type="text"
 <div id="query-output">
