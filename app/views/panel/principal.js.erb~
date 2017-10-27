@@ -4,5 +4,3 @@ $("#glyph-back").css({"display": "none"}).unbind();
 $("#glyph-home").css({"display": "none"}).unbind();
 $("#glyph-edit").css({"display": "none"}).unbind();
 $("#graphs-gest").html("<%= j render 'panel/principal' %>");
-
-console.log("Algo");
