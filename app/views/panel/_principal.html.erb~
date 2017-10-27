@@ -54,6 +54,11 @@
 </div>
 <% end %>
 
+<%= form_tag(panel_princ_path) do |f| %>
+	<%= f.text_field :clave, value: (params[:clave].present? params[:clave] : "") %>
+	<%= f.submit "Buscar" %>
+<% end %>
+<input type="text"
 <div id="query-output">
 <% @news.each do |n| %>
 	<div class="g">
