@@ -43,10 +43,10 @@
           <div class="titulo-desigualdades">
             <h3>Información sobre colaboradoras y colaboradores</h3>
             <div class="single-photo">
-              <div class="single-photo-inner"> <a href="https://agenda.colmex.mx/Actividad/874/lanzamiento-del-informe-desigualdades-en-mexico-2018/20180605" target="_blank"> <%= image_tag("evento.jpg", class: "img-responsive") %> </a> </div>
+              <div class="single-photo-inner"> <a href="https://agenda.colmex.mx/Actividad/874/lanzamiento-del-informe-desigualdades-en-mexico-2018/20180605" target="_blank"> <%= image_tag("evento.jpg", class: "img-responsive") %> </a> 
+							</div>
             </div>
           </div>
-
 
         </div>
         <div class="col-md-4">
