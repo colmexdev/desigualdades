@@ -1,0 +1,310 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Medios Informe Desigualdades 2018</title>
+  <meta name="description" content="En El Colegio de México, el estudio de los distintos tipos de desigualdad es una tradición. Se han explorado las desigualdades económicas, educativas, sociales y de género; así mismo se han preparado numerosas investigaciones sobre desigualdades regionales, de capacidades gubernamentales, de organización social o culturales con perspectivas tanto históricas como contemporáneas. La agenda de investigación de El Colegio incluye estudios sobre su origen y evolución, las interacciones entre los diversos ámbitos donde se producen, así como sobre los procesos políticos, económicos e institucionales que les dan forma.">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootsrarp Css -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Font Awesome Css -->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <!-- Reset Css -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <!-- Flaticon css  -->
+  <link rel="stylesheet" href="assets/font/flaticon.css">
+  <!-- Swiper Css -->
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <!-- LightCase css -->
+  <link rel="stylesheet" href="assets/css/lightcase.css">
+  <!-- flexSlider css -->
+  <link rel="stylesheet" href="assets/css/flexslider.css">
+  <!-- nstSlider css -->
+  <link rel="stylesheet" href="assets/css/jquery.nstSlider.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- ESTILOS INFORME 2018 -->
+  <link rel="stylesheet" href="assets/css/informe2018.css">
+  <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-93856341-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+<body>
+  <!--[if lt IE 8]>
+            <p class="browserupgrade">Está usando un navegador <strong>obsoleto</strong>. Le sugerimos <a href="http://browsehappy.com/">actualizar su navegador</a> para mejorar su navegación.</p>
+        <![endif]-->
+  <!-- Sección del encabezado -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="Desigualdades" class="img-responsive"></a> </div>
+          <div class="header-top-right">
+            <ul>
+              <li>
+                <div class="social-icon">
+                  <ul>
+                    <li><a href="https://twitter.com/des_igualdades" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mainmenu-area" id="menu-fixed">
+      <div class="container">
+        <div class="row"> <a href="http://desigualdades.colmex.mx/" class="logo-menu"><img src="images/fixed-logo.png" alt="TRADES" /></a>
+          <div class="nav-menu">
+            <nav class="navbar navbar-default">
+              <!-- Marca y hamburguesa para dispositivos pequeños -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <!-- Este menú sólo se mostrará en dispositivos de lectura -->
+              <span class="sr-only">Menú de navegación</span> <span class="icon-bar-one bar-stick"></span> <span class="icon-bar-two bar-stick"></span> <span class="icon-bar-three bar-stick"></span> </button>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="http://desigualdades.colmex.mx/"><span>Inicio</span></a></li>
+                  <li><a href="http://desigualdades.colmex.mx/red">Sobre la Red</a></li>
+                  <li><a href="http://desigualdades.colmex.mx/seminarios"><span>Seminarios</span></a></li>
+                  <li><a href="http://desigualdades.colmex.mx/publicaciones"><span>Publicaciones</span></a></li>
+                  <li><a href="http://desigualdades.colmex.mx/videos"><span>Multimedia</span></a></li>
+                  <li><a href="http://desalc.colmex.mx/" target="_blank"><span>DESALC</span></a></li>
+                  <li><a href="#" target="_blank"><span>Informe 2018</span></a></li>
+                </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Fin de sección de encabezado -->
+  <!-- Banner superior -->
+  <section class="breadcrumb-section fondo-desigualdades">
+    <div class="container">
+      <div class="bloque"> <img src="images/logo-desigualdades-2018.png" class="img-responsive" alt="Informe Desigualdades 2018"> </div>
+    </div>
+  </section>
+  <!-- Fin de banner superior -->
+  <!-- Sección superior -->
+  <section class="section helping-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <!-- Sección documentos -->
+          <div class="titulo-desigualdades">
+            <h3>Documentos</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <img src="images/portada-informe.jpg" alt="Portada Informe Desigual 2018" class="img-responsive">
+            </div>
+            <div class="col-md-7">
+              <h4>Desigualdades 2018</h4>
+              <br>
+              <p>Este informe analiza la manera en que se acumulan e interactúan las desigualdades en el curso de vida de las personas en México. Se presenta un análisis actual y retrospectivo, a partir de 2000, con la intención de enriquecer el debate
+                público y las plataformas de los candidatos en las elecciones presidenciales de 2018 en México.</p>
+              <p><a href="images/documento-muestra.pdf" target="_blank" class="enlace"><span class="flaticon-open-book"> Informe Desigualdades 2018</span> </a></p>
+              <p><a href="images/documento-muestra.pdf" target="_blank" class="enlace"><span class="flaticon-open-book"> Resumen Ejecutivo</span> </a></p>
+            </div>
+          </div>
+          <!-- Fin de sección documentos -->
+          <!-- Sección video -->
+          <div class="titulo-desigualdades">
+            <h3>Video</h3>
+          </div>
+          <div class="gallery-img">
+            <div class="sinlge-photo">
+              <div class="single-photo-inner"> <a href="https://www.youtube-nocookie.com/embed/e_yNzfmduAw?autoplay=1" data-rel="lightcase:grupoUnoVideos"> <img src="images/thumb-video-ejemplo.png" alt="Video Informe Desigualdades 2018" class="img-responsive"> </a> </div>
+            </div>
+          </div>
+          <!-- Fin de sección video -->
+        </div>
+        <div class="col-md-4">
+          <div class="titulo-desigualdades">
+            <h3>Participa con el #<span style="text-transform: lowercase;">desigualdad</span>ES</h3>
+          </div>
+          <a href="https://twitter.com/intent/tweet?button_hashtag=desigualdadES&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #desigualdadES</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <br>
+          <a class="twitter-timeline" data-lang="es" data-width="400" data-height="880" data-dnt="true" data-theme="light" data-link-color="#6d959d" href="https://twitter.com/des_igualdades?ref_src=twsrc%5Etfw">Tweets by des_igualdades</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fin de sección superior -->
+  <!-- Sección de los medios -->
+  <div class="container ">
+    <div class="row ">
+      <div class="titulo-desigualdades ">
+        <h3>Medios</h3>
+      </div>
+      <div class="col-md-4 col-md-offset-1 "> <a href="https://www.animalpolitico.com/ " target="_blank "><img src="images/animal-politico.jpg " alt="Animal Político " class="img-responsive "></a> </div>
+      <div class="col-md-4 col-md-offset-2 "> <a href="http://wradio.com.mx/ " target="_blank "><img src="images/wradio.jpg " alt="WRadio " class="img-responsive "></a> </div>
+    </div>
+  </div>
+  <!-- Inicia Medios -->
+  <section class="section gallery-section-two ">
+    <div class="container ">
+      <div class="row ">
+        <div class="gallery-menu ">
+          <ul>
+            <li class="is_selected " data-filter="* ">Todos</li>
+            <li data-filter=".tv ">Televisión</li>
+            <li data-filter=".radio ">Radio</li>
+            <li data-filter=".periodico ">Periódico</li>
+            <li data-filter=".linea ">En línea</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="gallery ">
+          <div class="all-gallery-items margen-superior ">
+            <div class="single-item col-md-3 col-sm-6 tv ">
+              <div class="gallery-img ">
+                <div class="customer-pic "><img src="images/tv-unam.jpg " alt="Medio de comunicación "></div>
+                <div class="review-description ">
+                  <div class="review-heading ">
+                    <h4>Entrevista</h4></div>
+                  <p class="review-date izquierda ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="https://www.youtube.com/embed/e_yNzfmduAw?autoplay=1 " data-rel="lightcase:grupoUnoVideos " class="btn-two ">Ver entrevista</a>
+                </div>
+              </div>
+            </div>
+            <div class="single-item col-md-3 col-sm-6 linea ">
+              <div class="gallery-img ">
+                <div class="customer-pic "><img src="images/animal-politico-thumb.jpg " alt="Medio de comunicación "></div>
+                <div class="review-description ">
+                  <div class="review-heading ">
+                    <h4>Reportaje</h4></div>
+                  <p class="review-date izquierda ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="http://www.eluniversal.com.mx/ " class="btn-two " target="_blank ">Ver nota</a>
+                </div>
+              </div>
+            </div>
+            <div class="single-item col-md-3 col-sm-6 periodico ">
+              <div class="gallery-img ">
+                <div class="customer-pic "><img src="images/el-universal.jpg " alt="Medio de comunicación "></div>
+                <div class="review-description ">
+                  <div class="review-heading ">
+                    <h4>Nota</h4></div>
+                  <p class="review-date izquierda ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="http://www.eluniversal.com.mx/elecciones-2018/santiago-creel-presenta-10-estrategias-sobre-seguridad-de-ricardo-anaya " class="btn-two " target="_blank ">Ver nota</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="single-item col-md-3 col-sm-6 radio ">
+              <div class="gallery-img ">
+                <div class="customer-pic "><img src="images/wradio-thumb.jpg " alt="Medio de comunicación "></div>
+                <div class="review-description ">
+                  <div class="review-heading ">
+                    <h4>Reportaje</h4></div>
+                  <p class="review-date izquierda ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="http://wradio.com.mx/ " class="btn-two " target="_blank ">Ver nota</a>
+                </div>
+              </div>
+            </div>
+            <div class="single-item col-md-3 col-sm-6 radio ">
+              <div class="gallery-img ">
+                <div class="customer-pic "><img src="images/aristegui.jpg " alt="Medio de comunicación "></div>
+                <div class="review-description ">
+                  <div class="review-heading ">
+                    <h4>Entrevista</h4></div>
+                  <p class="review-date izquierda ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="https://aristeguinoticias.com/ " class="btn-two " target="_blank ">Ver nota</a>
+                </div>
+              </div>
+            </div>
+            <div class="single-item col-md-3 col-sm-6 periodico ">
+              <div class="gallery-img ">
+                <div class="customer-pic "><img src="images/reforma.jpg " alt="Medio de comunicación "></div>
+                <div class="review-description ">
+                  <div class="review-heading ">
+                    <h4>Opinión</h4></div>
+                  <p class="review-date izquierda ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <a href="https://www.reforma.com/ " class="btn-two " target="_blank ">Ver nota</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fin de medios -->
+  <!-- Pie de página -->
+  <footer class="footer-section ">
+    <div class="footer-bottom ">
+      <div class="container ">
+        <div class="row ">
+          <div class="col-xs-10 col-xs-offset-2 col-sm-5 col-sm-offset-0 ">
+            <div class="copyright-text ">
+              <p>&copy; 2018 <a href="https://www.colmex.mx ">El Colegio de México, A.C.</a></p>
+            </div>
+          </div>
+          <div class="col-sm-5 col-sm-offset-2 col-xs-6 col-xs-offset-3 "> </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js "></script>
+  <script>
+    window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.12.0.min.js "><\/script>')
+  </script>
+  <!-- Bootstarp js -->
+  <script src="assets/js/bootstrap.min.js "></script>
+  <!-- Google Map -->
+  <script type="text/javascript " src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAQlXnmyNPAeN3c3HNyWoUMqDk6bDF31Cg "></script>
+  <script src="assets/js/gmap.script.js "></script>
+  <!-- Progressbar Js -->
+  <script src="assets/js/circle.progress.js "></script>
+  <!-- Count Down -->
+  <script src="assets/js/TimeCircles.js "></script>
+  <!-- Custom ScrollBar  -->
+  <script src="assets/js/enscroll-0.6.2.min.js "></script>
+  <!-- LightCase  -->
+  <script src="assets/js/lightcase.js "></script>
+  <!-- Isotop -->
+  <script src="assets/js/isotope.pkgd.min.js "></script>
+  <script src="assets/js/custom.isotop.js "></script>
+  <!-- Masonry -->
+  <script src="assets/js/masonry.js "></script>
+  <!-- Swipper -->
+  <script src="assets/js/swiper.min.js "></script>
+  <!-- Flex Slider -->
+  <script src="assets/js/jquery.flexslider.js "></script>
+  <!-- NST slider -->
+  <script src="assets/js/jquery.nstSlider.min.js "></script>
+  <!-- Main Js -->
+  <script src="assets/js/functions.js "></script>
+</body>
+
+</html>

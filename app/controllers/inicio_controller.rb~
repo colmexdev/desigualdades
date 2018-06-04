@@ -27,4 +27,7 @@ class InicioController < ApplicationController
 
   def seminarios
   end
+
+  def videos
+  end
 end
