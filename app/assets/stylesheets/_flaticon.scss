@@ -1,0 +1,69 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 15/01/2017 13:01
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-donation:before { content: "\f100"; }
+.flaticon-letter:before { content: "\f101"; }
+.flaticon-like:before { content: "\f102"; }
+.flaticon-magnifying-glass:before { content: "\f103"; }
+.flaticon-open-book:before { content: "\f104"; }
+.flaticon-people:before { content: "\f105"; }
+.flaticon-people-1:before { content: "\f106"; }
+.flaticon-phone:before { content: "\f107"; }
+.flaticon-placeholder:before { content: "\f108"; }
+.flaticon-sack:before { content: "\f109"; }
+.flaticon-search:before { content: "\f10a"; }
+.flaticon-shirt:before { content: "\f10b"; }
+.flaticon-shopping-cart:before { content: "\f10c"; }
+.flaticon-solidarity:before { content: "\f10d"; }
+.flaticon-tool:before { content: "\f10e"; }
+    
+    $font-Flaticon-donation: "\f100";
+    $font-Flaticon-letter: "\f101";
+    $font-Flaticon-like: "\f102";
+    $font-Flaticon-magnifying-glass: "\f103";
+    $font-Flaticon-open-book: "\f104";
+    $font-Flaticon-people: "\f105";
+    $font-Flaticon-people-1: "\f106";
+    $font-Flaticon-phone: "\f107";
+    $font-Flaticon-placeholder: "\f108";
+    $font-Flaticon-sack: "\f109";
+    $font-Flaticon-search: "\f10a";
+    $font-Flaticon-shirt: "\f10b";
+    $font-Flaticon-shopping-cart: "\f10c";
+    $font-Flaticon-solidarity: "\f10d";
+    $font-Flaticon-tool: "\f10e";
