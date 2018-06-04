@@ -209,3 +209,15 @@
 		}
 	}
 }
+
+//Clases pertinentes a la sección principal
+.dropdown-menu li a:focus, .dropdown-menu li a:hover {
+  background: #592C5F;
+  color: #fff;
+  padding-left: 23px;
+}
+
+.gallery-menu ul li {
+  font-size: 21px;
+  font-weight: bold;
+}
