@@ -59,8 +59,9 @@
             </div>
           </div>
           <!-- Fin de sección video -->
+      </div>
 
-   <!-- Sección Twitter Escritorio -->
+      <!-- Sección Twitter Escritorio -->
         <div class="col-md-4 hidden-sm hidden-xs">
           <div class="titulo-desigualdades">
             <h3>Participa con el #<span style="text-transform: lowercase;">desigualdad</span>ES</h3>
@@ -77,6 +78,7 @@
         </div>
         <!-- Fin Sección Twitter Escritorio -->
       </div>
+
     </div>
   </section>
   <!-- Fin de sección superior -->
