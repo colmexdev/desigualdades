@@ -87,7 +87,3 @@
   font-size: 21px;
   font-weight: bold;
 }
-
-.tv, .linea, .radio, .periodico, .boletin {
-	margin-bottom: 26px;
-}
