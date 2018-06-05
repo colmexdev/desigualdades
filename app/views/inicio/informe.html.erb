@@ -35,7 +35,7 @@
           </div>
           <div class="gallery-img">
             <div class="single-photo">
-              <div class="single-photo-inner"> <a href="https://www.youtube.com/embed/4Lc9eNzcopw?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"> <%= image_tag("thumb-video-ejemplo.png", class: "img-responsive", alt: "Video Informe Desigualdades 2018") %> </a> </div>
+              <div class="single-photo-inner"> <a href="https://www.youtube.com/embed/4Lc9eNzcopw?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"> <%= image_tag("thumb-video.jpg", class: "img-responsive", alt: "Video Informe Desigualdades 2018") %> </a> </div>
             </div>
           </div>
           <!-- Fin de sección video -->
@@ -85,12 +85,12 @@
       <div class="row ">
         <div class="gallery-menu ">
           <ul>
-            <li class="is_selected filtro" data-filter="*">Todos</li>
+            <li class="is_selected filtro" data-filter="* ">Todos</li>
 <%if false %>
             <li class="filtro" data-filter=".tv">Televisión</li>
             <li class="filtro" data-filter=".radio">Radio</li>
-            <li class="filtro" data-filter=".periodico">Periódico</li>
 <% end %>
+            <li class="filtro" data-filter=".periodico">Periódico</li>
             <li class="filtro" data-filter=".linea">En línea</li>
 						<li class="filtro" data-filter=".boletin">Boletines</li>
           </ul>
@@ -100,7 +100,7 @@
         <div class="gallery ">
           <div class="all-gallery-items margen-superior ">
 
-            <div class="col-md-4 col-sm-12 boletin">
+            <div class="single-item col-md-3 col-sm-12 boletin">
               <div class="gallery-img">
                 <div class="customer-pic"><%= image_tag("thumb-colmex.jpg") %></div>
                 <div class="review-description">
@@ -112,7 +112,7 @@
               </div>
             </div>
 
-            <div class="col-md-4 col-sm-12 boletin">
+            <div class="single-item col-md-3 col-sm-12 boletin">
               <div class="gallery-img">
                 <div class="customer-pic"><%= image_tag("thumb-colmex.jpg") %></div>
                 <div class="review-description">
@@ -124,45 +124,56 @@
               </div>
             </div>
 
-            <div class="col-md-4 col-sm-12 linea">
+            <div class="single-item col-md-3 col-sm-12 linea">
               <div class="gallery-img ">
                 <div class="customer-pic "><%= image_tag("animal-politico-thumb.jpg") %></div>
                 <div class="review-description ">
                   <div class="review-heading ">
-                    <h4>Reportaje</h4></div>
+                    <h4>Artículo</h4></div>
                   <p class="review-date izquierda ">Partidos hablan de desigualdad, pero no la entienden ni la atienden.<br><i>5 de junio 2018</i></p>
                   <a href=" https://www.animalpolitico.com/2018/06/partidos-hablan-de-desigualdad-pero-no-la-entienden-ni-la-atienden/" class="btn-two " target="_blank ">Ver nota</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-4 col-sm-12 linea">
+            <div class="single-item col-md-3 col-sm-12 periodico">
               <div class="gallery-img ">
                 <div class="customer-pic "><%= image_tag("la-jornada-thumb.jpg") %></div>
                 <div class="review-description ">
                   <div class="review-heading ">
-                    <h4>Reportaje</h4></div>
+                    <h4>Artículo</h4></div>
                   <p class="review-date izquierda ">Caen opciones de educación y salario digno: informe del COLMEX.<br><i>5 de junio 2018</i></p>
                   <a href="http://www.jornada.com.mx/ultimas/2018/06/05/caen-oportunidades-de-eduacion-y-salario-digno-informe-del-colmex-1243.html" class="btn-two " target="_blank ">Ver nota</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-4 col-sm-12 linea">
+            <div class="single-item col-md-3 col-sm-12 linea">
               <div class="gallery-img ">
                 <div class="customer-pic "><%= image_tag("animal-politico-thumb.jpg") %></div>
                 <div class="review-description ">
                   <div class="review-heading ">
-                    <h4>Reportaje</h4></div>
+                    <h4>Artículo</h4></div>
                   <p class="review-date izquierda ">El sueño mexicano: solo 2% de los pobres pueden llegar a ser ricos.<br><i>5 de junio 2018</i></p>
                   <a href="https://www.animalpolitico.com/2018/06/el-sueno-mexicano-solo-2-de-los-pobres-pueden-llegar-a-ser-ricos/" class="btn-two " target="_blank ">Ver nota</a>
                 </div>
               </div>
             </div>
 
+            <div class="single-item col-md-3 col-sm-12 periodico">
+              <div class="gallery-img ">
+                <div class="customer-pic "><%= image_tag("reforma.jpg") %></div>
+                <div class="review-description ">
+                  <div class="review-heading ">
+                    <h4>Artículo</h4></div>
+                  <p class="review-date izquierda ">Tachan de vagos planes contra inequidad.<br><i>5 de junio 2018</i></p>
+                  <a href="https://www.reforma.com/aplicaciones/articulo/default.aspx?id=1411830" class="btn-two " target="_blank ">Ver nota</a>
+                </div>
+              </div>
+            </div>
 
 <% if false %>
-            <div class="col-md-3 col-sm-12 tv">
+            <div class="single-item col-md-3 col-sm-12 tv">
               <div class="gallery-img ">
                 <div class="customer-pic "><%= image_tag("tv-unam.jpg") %></div>
                 <div class="review-description ">
