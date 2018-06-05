@@ -100,37 +100,37 @@
         <div class="gallery ">
           <div class="all-gallery-items margen-superior ">
 
-            <div class="single-item col-md-3 col-sm-6 boletin">
+            <div class="single-item col-md-3 col-sm-12 boletin">
               <div class="gallery-img">
                 <div class="customer-pic"><%= image_tag("thumb-colmex.jpg") %></div>
                 <div class="review-description">
                   <div class="review-heading">
                     <h4>Boletín</h4></div>
-                  <p class="review-date izquierda">Presentan Desigualdades en México 2018.</p>
+                  <p class="review-date izquierda">Presentan Desigualdades en México 2018.<br><i>31 de mayo 2018</i></p>
                   <a href="http://desigualdades.colmex.mx/boletines/1-boletin-prensa-31-mayo.pdf" class="btn-two" target="_blank">Ver boletín</a>
                 </div>
               </div>
             </div>
 
-            <div class="single-item col-md-3 col-sm-6 boletin">
+            <div class="single-item col-md-3 col-sm-12 boletin">
               <div class="gallery-img">
                 <div class="customer-pic"><%= image_tag("thumb-colmex.jpg") %></div>
                 <div class="review-description">
                   <div class="review-heading">
                     <h4>Boletín</h4></div>
-                  <p class="review-date izquierda">El COLMEX presentó el informe Desigualdades en México 2018.</p>
+                  <p class="review-date izquierda">El COLMEX presentó el informe Desigualdades en México 2018.<br><i>5 de junio 2018</i></p>
                   <a href="http://desigualdades.colmex.mx/boletines/2-boletin-prensa-5-junio.pdf" class="btn-two" target="_blank">Ver boletín</a>
                 </div>
               </div>
             </div>
 
-            <div class="single-item col-md-3 col-sm-6 linea">
+            <div class="single-item col-md-3 col-sm-12 linea">
               <div class="gallery-img ">
                 <div class="customer-pic "><%= image_tag("animal-politico-thumb.jpg") %></div>
                 <div class="review-description ">
                   <div class="review-heading ">
                     <h4>Reportaje</h4></div>
-                  <p class="review-date izquierda ">Partidos hablan de desigualdad, pero no la entienden ni la atienden.</p>
+                  <p class="review-date izquierda ">Partidos hablan de desigualdad, pero no la entienden ni la atienden.<br><i>5 de junio 2018</i></p>
                   <a href=" https://www.animalpolitico.com/2018/06/partidos-hablan-de-desigualdad-pero-no-la-entienden-ni-la-atienden/" class="btn-two " target="_blank ">Ver nota</a>
                 </div>
               </div>
@@ -138,7 +138,7 @@
 
 
 <% if false %>
-            <div class="single-item col-md-3 col-sm-6 tv ">
+            <div class="single-item col-md-3 col-sm-12 tv">
               <div class="gallery-img ">
                 <div class="customer-pic "><%= image_tag("tv-unam.jpg") %></div>
                 <div class="review-description ">
