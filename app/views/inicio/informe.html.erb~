@@ -170,18 +170,6 @@
               </div>
             </div>
 
-            <div class="single-item col-md-3 col-sm-12 linea">
-              <div class="gallery-img ">
-                <div class="customer-pic "><%= image_tag("animal-politico-thumb.jpg") %></div>
-                <div class="review-description ">
-                  <div class="review-heading ">
-                    <h4>Artículo</h4></div>
-                  <p class="review-date izquierda ">El sueño mexicano: solo 2% de los pobres pueden llegar a ser ricos.<br><i>5 de junio 2018</i></p>
-                  <a href="https://www.animalpolitico.com/2018/06/el-sueno-mexicano-solo-2-de-los-pobres-pueden-llegar-a-ser-ricos/" class="btn-two " target="_blank ">Ver nota</a>
-                </div>
-              </div>
-            </div>
-
             <div class="single-item col-md-3 col-sm-12 periodico">
               <div class="gallery-img ">
                 <div class="customer-pic "><%= image_tag("reforma.jpg") %></div>
@@ -193,6 +181,7 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
