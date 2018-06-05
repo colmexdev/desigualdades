@@ -84,21 +84,25 @@
   <!-- Fin de sección superior -->
 
   <!-- Sección de los medios -->
-  <section class="section gallery-section-two ">
   <div class="container ">
-    <div class="row ">
+    <div class="row">
       <div class="titulo-desigualdades ">
         <h3>Medios</h3>
       </div>
-
-<% if false %>
-      <div class="col-md-4 col-md-offset-1 "> <a href="https://www.animalpolitico.com/ " target="_blank "><%= image_tag("animal-politico.jpg", class: "img-responsive") %></a> </div>
-      <div class="col-md-4 col-md-offset-2 "> <a href="http://wradio.com.mx/ " target="_blank "><%= image_tag("wradio.jpg", class: "img-responsive") %></a> </div>
+      <div class="col-md-10 col-md-offset-1 col-sm-12">
+        <div class="row">
+          <div class="col-md-3 col-md-offset-0 col-sm-2 col-sm-offset-0 col-xs-6 col-xs-offset-3"><img src="images/animal-politico.jpg" alt="Medio de comunicación" class="img-responsive"><br></div>
+          <div class="col-md-9 col-sm-10 col-xs-12">
+            <h4>Reportaje especial</h4>
+            <br>
+            <h1><a href="https://www.animalpolitico.com/2018/06/el-sueno-mexicano-solo-2-de-los-pobres-pueden-llegar-a-ser-ricos/" target="_blank">El sueño mexicano: solo 2% de los pobres pueden llegar a ser ricos</a></h1><br>
+            <a href="https://www.animalpolitico.com/2018/06/el-sueno-mexicano-solo-2-de-los-pobres-pueden-llegar-a-ser-ricos/" target="_blank" class="btn-two">Ver reportaje</a></div>
+        </div>
+      </div>
     </div>
-<% end %>
-
   </div>
   <!-- Inicia Medios -->
+  <section class="section gallery-section-two ">
     <div class="container ">
       <div class="row ">
         <div class="gallery-menu ">
@@ -166,18 +170,6 @@
               </div>
             </div>
 
-            <div class="single-item col-md-3 col-sm-12 linea">
-              <div class="gallery-img ">
-                <div class="customer-pic "><%= image_tag("animal-politico-thumb.jpg") %></div>
-                <div class="review-description ">
-                  <div class="review-heading ">
-                    <h4>Artículo</h4></div>
-                  <p class="review-date izquierda ">El sueño mexicano: solo 2% de los pobres pueden llegar a ser ricos.<br><i>5 de junio 2018</i></p>
-                  <a href="https://www.animalpolitico.com/2018/06/el-sueno-mexicano-solo-2-de-los-pobres-pueden-llegar-a-ser-ricos/" class="btn-two " target="_blank ">Ver nota</a>
-                </div>
-              </div>
-            </div>
-
             <div class="single-item col-md-3 col-sm-12 periodico">
               <div class="gallery-img ">
                 <div class="customer-pic "><%= image_tag("reforma.jpg") %></div>
@@ -190,83 +182,12 @@
               </div>
             </div>
 
-<% if false %>
-            <div class="single-item col-md-3 col-sm-12 tv">
-              <div class="gallery-img ">
-                <div class="customer-pic "><%= image_tag("tv-unam.jpg") %></div>
-                <div class="review-description ">
-                  <div class="review-heading ">
-                    <h4>Entrevista</h4></div>
-                  <p class="review-date izquierda ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <a href="https://www.youtube.com/embed/e_yNzfmduAw?autoplay=1 " data-rel="lightcase:grupoUnoVideos " class="btn-two ">Ver entrevista</a>
-                </div>
-              </div>
-            </div>
-            <div class="single-item col-md-3 col-sm-6 linea ">
-              <div class="gallery-img ">
-                <div class="customer-pic "><%= image_tag("animal-politico-thumb.jpg") %></div>
-                <div class="review-description ">
-                  <div class="review-heading ">
-                    <h4>Reportaje</h4></div>
-                  <p class="review-date izquierda ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <a href="http://www.eluniversal.com.mx/ " class="btn-two " target="_blank ">Ver nota</a>
-                </div>
-              </div>
-            </div>
-            <div class="single-item col-md-3 col-sm-6 periodico ">
-              <div class="gallery-img ">
-                <div class="customer-pic "><%= image_tag("el-universal.jpg") %></div>
-                <div class="review-description ">
-                  <div class="review-heading ">
-                    <h4>Nota</h4></div>
-                  <p class="review-date izquierda ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <a href="http://www.eluniversal.com.mx/elecciones-2018/santiago-creel-presenta-10-estrategias-sobre-seguridad-de-ricardo-anaya " class="btn-two " target="_blank ">Ver nota</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="single-item col-md-3 col-sm-6 radio ">
-              <div class="gallery-img ">
-                <div class="customer-pic "><%= image_tag("wradio-thumb.jpg") %></div>
-                <div class="review-description ">
-                  <div class="review-heading ">
-                    <h4>Reportaje</h4></div>
-                  <p class="review-date izquierda ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <a href="http://wradio.com.mx/ " class="btn-two " target="_blank ">Ver nota</a>
-                </div>
-              </div>
-            </div>
-            <div class="single-item col-md-3 col-sm-6 radio ">
-              <div class="gallery-img ">
-                <div class="customer-pic "><%= image_tag("aristegui.jpg") %></div>
-                <div class="review-description ">
-                  <div class="review-heading ">
-                    <h4>Entrevista</h4></div>
-                  <p class="review-date izquierda ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <a href="https://aristeguinoticias.com/ " class="btn-two " target="_blank ">Ver nota</a>
-                </div>
-              </div>
-            </div>
-            <div class="single-item col-md-3 col-sm-6 periodico ">
-              <div class="gallery-img ">
-                <div class="customer-pic "><%= image_tag("reforma.jpg") %></div>
-                <div class="review-description ">
-                  <div class="review-heading ">
-                    <h4>Opinión</h4>
-									</div>
-                  <p class="review-date izquierda ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <a href="https://www.reforma.com/ " class="btn-two " target="_blank ">Ver nota</a>
-                </div>
-              </div>
-            </div>
-<% end %>
-
-
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- Fin de medios -->
 
 <!-- Inicio Colaboradorxs -->
   <section class="section helping-section">
