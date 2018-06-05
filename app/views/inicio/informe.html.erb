@@ -64,16 +64,20 @@
   </section>
   <!-- Fin de sección superior -->
 
-<% if false %>
+
   <!-- Sección de los medios -->
   <div class="container ">
     <div class="row ">
       <div class="titulo-desigualdades ">
         <h3>Medios</h3>
       </div>
+
+<% if false %>
       <div class="col-md-4 col-md-offset-1 "> <a href="https://www.animalpolitico.com/ " target="_blank "><%= image_tag("animal-politico.jpg", class: "img-responsive") %></a> </div>
       <div class="col-md-4 col-md-offset-2 "> <a href="http://wradio.com.mx/ " target="_blank "><%= image_tag("wradio.jpg", class: "img-responsive") %></a> </div>
     </div>
+<% end %>
+
   </div>
   <!-- Inicia Medios -->
   <section class="section gallery-section-two ">
@@ -82,16 +86,58 @@
         <div class="gallery-menu ">
           <ul>
             <li class="is_selected " data-filter="* ">Todos</li>
+<%if false %>
             <li data-filter=".tv ">Televisión</li>
             <li data-filter=".radio ">Radio</li>
             <li data-filter=".periodico ">Periódico</li>
+<% end %>
             <li data-filter=".linea ">En línea</li>
+						<li data-filter=".boletin">Boletines</li>
           </ul>
         </div>
       </div>
       <div class="row ">
         <div class="gallery ">
           <div class="all-gallery-items margen-superior ">
+
+            <div class="single-item col-md-3 col-sm-6 boletin">
+              <div class="gallery-img">
+                <div class="customer-pic"><%= image_tag("thumb-colmex.jpg") %></div>
+                <div class="review-description">
+                  <div class="review-heading">
+                    <h4>Boletín</h4></div>
+                  <p class="review-date izquierda">Presentan Desigualdades en México 2018.</p>
+                  <a href="<%= root_path +'/boletines/1-boletin-prensa-31-mayo.pdf' %>" class="btn-two" target="_blank">Ver boletín</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="single-item col-md-3 col-sm-6 boletin">
+              <div class="gallery-img">
+                <div class="customer-pic"><%= image_tag("thumb-colmex.jpg") %></div>
+                <div class="review-description">
+                  <div class="review-heading">
+                    <h4>Boletín</h4></div>
+                  <p class="review-date izquierda">El COLMEX presentó el informe Desigualdades en México 2018.</p>
+                  <a href="<%= root_path +'/boletines/2-boletin-prensa-5-junio.pdf' %>" class="btn-two" target="_blank">Ver boletín</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="single-item col-md-3 col-sm-6 linea">
+              <div class="gallery-img ">
+                <div class="customer-pic "><%= image_tag("animal-politico-thumb.jpg") %></div>
+                <div class="review-description ">
+                  <div class="review-heading ">
+                    <h4>Reportaje</h4></div>
+                  <p class="review-date izquierda ">Partidos hablan de desigualdad, pero no la entienden ni la atienden.</p>
+                  <a href=" https://www.animalpolitico.com/2018/06/partidos-hablan-de-desigualdad-pero-no-la-entienden-ni-la-atienden/" class="btn-two " target="_blank ">Ver nota</a>
+                </div>
+              </div>
+            </div>
+
+
+<% if false %>
             <div class="single-item col-md-3 col-sm-6 tv ">
               <div class="gallery-img ">
                 <div class="customer-pic "><%= image_tag("tv-unam.jpg") %></div>
@@ -153,18 +199,21 @@
                 <div class="customer-pic "><%= image_tag("reforma.jpg") %></div>
                 <div class="review-description ">
                   <div class="review-heading ">
-                    <h4>Opinión</h4></div>
+                    <h4>Opinión</h4>
+									</div>
                   <p class="review-date izquierda ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   <a href="https://www.reforma.com/ " class="btn-two " target="_blank ">Ver nota</a>
                 </div>
               </div>
             </div>
+<% end %>
+
+
           </div>
         </div>
       </div>
     </div>
   </section>
-<% end %>
 
   <!-- Fin de medios -->
 <%= render 'inicio/footer' %>
