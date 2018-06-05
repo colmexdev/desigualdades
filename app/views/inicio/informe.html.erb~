@@ -2,7 +2,7 @@
   <!-- Banner superior -->
   <section class="fondo-desigualdades">
     <div class="container">
-      <div class="bloque"> <%= image_tag("logo-desigualdades-2018.png", class: "img-responsive") %> </div>
+      <div class="bloque"> <%= image_tag("logo-desigualdades-2018.png", class: "img-responsive", alt: "Informe Desigualdades 2018") %> </div>
     </div>
   </section>
   <!-- Fin de banner superior -->
@@ -16,7 +16,7 @@
             <h3>Descarga los documentos</h3>
           </div>
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
               <%= image_tag("portada-informe.jpg", class: "img-responsive") %>
             </div>
             <div class="col-md-7">
@@ -29,13 +29,29 @@
             </div>
           </div>
           <!-- Fin de sección documentos -->
+
+     <!-- Sección video Transmisión en Vivo -->
+          <div class="titulo-desigualdades">
+            <h3>Transmisión en vivo</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+              <div class="gallery-img">
+                <div class="sinlge-photo">
+                  <div class="single-photo-inner"> <a href="https://www.youtube-nocookie.com/embed/xnD5aerHzH4?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"> <%= image_tag("thumb-transmision-en-vivo.jpg", alt: "Video Informe Desigualdades 2018", class: "img-responsive") %> </a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fin de sección video Transmisión en Vivo -->
+
           <!-- Sección video -->
           <div class="titulo-desigualdades">
             <h3>Video: Dos historias de vida</h3>
           </div>
           <div class="gallery-img">
             <div class="single-photo">
-              <div class="single-photo-inner"> <a href="https://www.youtube.com/embed/4Lc9eNzcopw?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"> <%= image_tag("thumb-video-ejemplo.png", class: "img-responsive", alt: "Video Informe Desigualdades 2018") %> </a> </div>
+              <div class="single-photo-inner"> <a href="https://www.youtube.com/embed/4Lc9eNzcopw?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"> <%= image_tag("thumb-video.jpg", class: "img-responsive", alt: "Video Informe Desigualdades 2018") %> </a> </div>
             </div>
           </div>
           <!-- Fin de sección video -->
@@ -252,3 +268,83 @@
 
   <!-- Fin de medios -->
 <%= render 'inicio/footer' %>
+
+<script>
+	$(window).on("resize",function(){
+			// init Isotope
+					var $gellary_img = $('.all-gallery-items').isotope({
+					  itemSelector: '.single-item',
+					  percentPosition: true,
+					  transitionDuration: '0.8s',
+					  masonry: {
+						// use outer width of grid-sizer for columnWidth
+						columnWidth: '.single-item',
+						gutter: 15
+					  },
+					  getSortData: {
+						name: '.name',
+						symbol: '.symbol',
+						number: '.number parseInt',
+						category: '[data-category]',
+						weight: function( itemElem ) {
+						  var weight = $( itemElem ).find('.weight').text();
+						  return parseFloat( weight.replace( /[\(\)]/g, '') );
+						}
+					  }
+					});       
+						
+					// filter functions
+					var filterFns = {
+					  // show if number is greater than 50
+					  numberGreaterThan50: function() {
+						var number = $(this).find('.number').text();
+						return parseInt( number, 10 ) > 50;
+					  },
+					  // show if name ends with -ium
+					  ium: function() {
+						var name = $(this).find('.name').text();
+						return name.match( /ium$/ );
+					  }
+					};
+						
+					// bind filter button click
+					$('.gallery-menu ul').on( 'click', 'li', function() {
+					  var filterValue = $( this ).attr('data-filter');
+					  // use filterFn if matches value
+					  filterValue = filterFns[ filterValue ] || filterValue;
+					  $gellary_img.isotope({ filter: filterValue });
+					});            
+
+					// Isotop for four grid     
+					var $gellary_img_4 = $('.gallery-grid-4').isotope({
+					  itemSelector: '.single-item-4',
+					  transitionDuration: '0.8s',
+					  getSortData: {
+						name: '.name',
+						symbol: '.symbol',
+						number: '.number parseInt',
+						category: '[data-category]',
+						weight: function( itemElem ) {
+						  var weight = $( itemElem ).find('.weight').text();
+						  return parseFloat( weight.replace( /[\(\)]/g, '') );
+						}
+					  }
+					}); 
+					// bind filter button click
+					$('.gallery-menu ul').on( 'click', 'li', function() {
+					  var filterValue = $( this ).attr('data-filter');
+					  // use filterFn if matches value
+					  filterValue = filterFns[ filterValue ] || filterValue;
+					  $gellary_img_4.isotope({ filter: filterValue });
+					});
+					
+					// change is-checked class on buttons
+					$('.gallery-menu ul').each( function( i, liList ) {
+					  var $liList = $( liList );
+					  $liList.on( 'click', 'li', function() {
+						$liList.find('.is_selected').removeClass('is_selected');
+						$( this ).addClass('is_selected');
+					  });
+					});
+	});
+</script>

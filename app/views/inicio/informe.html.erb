@@ -2,7 +2,7 @@
   <!-- Banner superior -->
   <section class="fondo-desigualdades">
     <div class="container">
-      <div class="bloque"> <%= image_tag("logo-desigualdades-2018.png", class: "img-responsive") %> </div>
+      <div class="bloque"> <%= image_tag("logo-desigualdades-2018.png", class: "img-responsive", alt: "Informe Desigualdades 2018") %> </div>
     </div>
   </section>
   <!-- Fin de banner superior -->
@@ -16,7 +16,7 @@
             <h3>Descarga los documentos</h3>
           </div>
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
               <%= image_tag("portada-informe.jpg", class: "img-responsive") %>
             </div>
             <div class="col-md-7">
@@ -29,41 +29,57 @@
             </div>
           </div>
           <!-- Fin de sección documentos -->
-          <!-- Sección video -->
+
+     <!-- Sección video Transmisión en Vivo -->
           <div class="titulo-desigualdades">
+            <h3>Transmisión en vivo</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+              <div class="gallery-img">
+                <div class="sinlge-photo">
+                  <div class="single-photo-inner"> <a href="https://www.youtube-nocookie.com/embed/xnD5aerHzH4?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"> <%= image_tag("thumb-transmision-en-vivo.jpg", alt: "Video Informe Desigualdades 2018", class: "img-responsive") %> </a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fin de sección video Transmisión en Vivo -->
+
+          <!-- Sección video -->
+      <div class="titulo-desigualdades">
             <h3>Video: Dos historias de vida</h3>
           </div>
-          <div class="gallery-img">
-            <div class="single-photo">
-              <div class="single-photo-inner"> <a href="https://www.youtube.com/embed/4Lc9eNzcopw?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"> <%= image_tag("thumb-video.jpg", class: "img-responsive", alt: "Video Informe Desigualdades 2018") %> </a> </div>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+              <div class="gallery-img">
+                <div class="sinlge-photo">
+                  <div class="single-photo-inner"> <a href="https://www.youtube-nocookie.com/embed/4Lc9eNzcopw?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"> <%= image_tag("thumb-video.jpg", alt: "Video Informe Desigualdades 2018", class: "img-responsive") %> </a> </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Fin de sección video -->
 
-          <div class="titulo-desigualdades">
-            <h3>Información sobre colaboradoras y colaboradores</h3>
-					</div>
-          <div class="single-photo">
-            <div class="single-photo-inner"> <a href="https://agenda.colmex.mx/Actividad/874/lanzamiento-del-informe-desigualdades-en-mexico-2018/20180605" target="_blank"> <%= image_tag("evento.jpg", class: "img-responsive") %> </a> 
-						</div>
-           </div>
-
-        </div>
-        <div class="col-md-4">
+   <!-- Sección Twitter Escritorio -->
+        <div class="col-md-4 hidden-sm hidden-xs">
           <div class="titulo-desigualdades">
             <h3>Participa con el #<span style="text-transform: lowercase;">desigualdad</span>ES</h3>
           </div>
-          <a href="https://twitter.com/intent/tweet?button_hashtag=desigualdadES&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #desigualdadES</a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          <br>
-          <a class="twitter-timeline" data-lang="es" data-width="400" data-height="880" data-dnt="true" data-theme="light" data-link-color="#6d959d" href="https://twitter.com/des_igualdades?ref_src=twsrc%5Etfw">Tweets by des_igualdades</a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <div class="row">
+            <div class="col-md-12 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+              <a href="https://twitter.com/intent/tweet?button_hashtag=desigualdadES&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #desigualdadES</a>
+              <script async src="https://platform.twitter.com/widgets.js"></script>
+              <br>
+              <a class="twitter-timeline" data-lang="es" data-width="400" data-height="880" data-dnt="true" data-theme="light" data-link-color="#6d959d" href="https://twitter.com/des_igualdades?ref_src=twsrc%5Etfw">Tweets by des_igualdades</a>
+              <script async src="https://platform.twitter.com/widgets.js"></script>
+            </div>
+          </div>
         </div>
+        <!-- Fin Sección Twitter Escritorio -->
       </div>
     </div>
   </section>
   <!-- Fin de sección superior -->
-
 
   <!-- Sección de los medios -->
   <section class="section gallery-section-two ">
@@ -250,5 +266,120 @@
     </div>
   </section>
 
+<!-- Inicio Colaboradorxs -->
+  <section class="section helping-section">
+    <div class="container ">
+      <div class="row ">
+        <div class="titulo-desigualdades ">
+          <h3>INFORMACIÓN SOBRE COLABORADORAS Y COLABORADORES</h3>
+        </div>
+        <div class="row ">
+          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1"> <img src="images/colaboradorxs.jpg " alt="Colaboradorxs" class="img-responsive"> </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fin Colaboradorxs -->
+  <!-- Sección Twitter Móviles -->
+  <section class="section helping-section visible-sm-block visible-xs-block">
+    <div class="container ">
+      <div class="col-sm-12">
+        <div class="titulo-desigualdades">
+          <h3>Participa con el #<span style="text-transform: lowercase;">desigualdad</span>ES</h3>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+            <a href="https://twitter.com/intent/tweet?button_hashtag=desigualdadES&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #desigualdadES</a>
+            <script async src="https://platform.twitter.com/widgets.js"></script>
+            <br>
+            <a class="twitter-timeline" data-lang="es" data-width="400" data-height="880" data-dnt="true" data-theme="light" data-link-color="#6d959d" href="https://twitter.com/des_igualdades?ref_src=twsrc%5Etfw">Tweets by des_igualdades</a>
+            <script async src="https://platform.twitter.com/widgets.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fin Sección Twitter Móviles -->
+
   <!-- Fin de medios -->
 <%= render 'inicio/footer' %>
+
+<script>
+	$(window).on("resize",function(){
+			// init Isotope
+					var $gellary_img = $('.all-gallery-items').isotope({
+					  itemSelector: '.single-item',
+					  percentPosition: true,
+					  transitionDuration: '0.8s',
+					  masonry: {
+						// use outer width of grid-sizer for columnWidth
+						columnWidth: '.single-item',
+						gutter: 15
+					  },
+					  getSortData: {
+						name: '.name',
+						symbol: '.symbol',
+						number: '.number parseInt',
+						category: '[data-category]',
+						weight: function( itemElem ) {
+						  var weight = $( itemElem ).find('.weight').text();
+						  return parseFloat( weight.replace( /[\(\)]/g, '') );
+						}
+					  }
+					});       
+						
+					// filter functions
+					var filterFns = {
+					  // show if number is greater than 50
+					  numberGreaterThan50: function() {
+						var number = $(this).find('.number').text();
+						return parseInt( number, 10 ) > 50;
+					  },
+					  // show if name ends with -ium
+					  ium: function() {
+						var name = $(this).find('.name').text();
+						return name.match( /ium$/ );
+					  }
+					};
+						
+					// bind filter button click
+					$('.gallery-menu ul').on( 'click', 'li', function() {
+					  var filterValue = $( this ).attr('data-filter');
+					  // use filterFn if matches value
+					  filterValue = filterFns[ filterValue ] || filterValue;
+					  $gellary_img.isotope({ filter: filterValue });
+					});            
+
+					// Isotop for four grid     
+					var $gellary_img_4 = $('.gallery-grid-4').isotope({
+					  itemSelector: '.single-item-4',
+					  transitionDuration: '0.8s',
+					  getSortData: {
+						name: '.name',
+						symbol: '.symbol',
+						number: '.number parseInt',
+						category: '[data-category]',
+						weight: function( itemElem ) {
+						  var weight = $( itemElem ).find('.weight').text();
+						  return parseFloat( weight.replace( /[\(\)]/g, '') );
+						}
+					  }
+					}); 
+					// bind filter button click
+					$('.gallery-menu ul').on( 'click', 'li', function() {
+					  var filterValue = $( this ).attr('data-filter');
+					  // use filterFn if matches value
+					  filterValue = filterFns[ filterValue ] || filterValue;
+					  $gellary_img_4.isotope({ filter: filterValue });
+					});
+					
+					// change is-checked class on buttons
+					$('.gallery-menu ul').each( function( i, liList ) {
+					  var $liList = $( liList );
+					  $liList.on( 'click', 'li', function() {
+						$liList.find('.is_selected').removeClass('is_selected');
+						$( this ).addClass('is_selected');
+					  });
+					});
+	});
+</script>
