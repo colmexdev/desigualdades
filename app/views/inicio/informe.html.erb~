@@ -85,14 +85,14 @@
       <div class="row ">
         <div class="gallery-menu ">
           <ul>
-            <li class="is_selected " data-filter="* ">Todos</li>
+            <li class="is_selected filtro" data-filter="* ">Todos</li>
 <%if false %>
-            <li data-filter=".tv ">Televisión</li>
-            <li data-filter=".radio ">Radio</li>
-            <li data-filter=".periodico ">Periódico</li>
+            <li class="filtro" data-filter=".tv">Televisión</li>
+            <li class="filtro" data-filter=".radio">Radio</li>
+            <li class="filtro" data-filter=".periodico">Periódico</li>
 <% end %>
-            <li data-filter=".linea ">En línea</li>
-						<li data-filter=".boletin">Boletines</li>
+            <li class="filtro" data-filter=".linea">En línea</li>
+						<li class="filtro" data-filter=".boletin">Boletines</li>
           </ul>
         </div>
       </div>
