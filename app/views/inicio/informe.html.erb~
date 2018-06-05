@@ -35,7 +35,7 @@
           </div>
           <div class="gallery-img">
             <div class="single-photo">
-              <div class="single-photo-inner"> <a href="https://www.youtube.com/embed/4Lc9eNzcopw?autoplay=1" data-rel="lightcase:grupoUnoVideos"> <%= image_tag("thumb-video-ejemplo.png", class: "img-responsive", alt: "Video Informe Desigualdades 2018") %> </a> </div>
+              <div class="single-photo-inner"> <a href="https://www.youtube.com/embed/4Lc9eNzcopw" data-rel="lightcase:grupoUnoVideos"> <%= image_tag("thumb-video-ejemplo.png", class: "img-responsive", alt: "Video Informe Desigualdades 2018") %> </a> </div>
             </div>
           </div>
           <!-- Fin de sección video -->
