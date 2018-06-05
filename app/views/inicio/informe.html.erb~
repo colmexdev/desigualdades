@@ -86,9 +86,11 @@
         <div class="gallery-menu ">
           <ul>
             <li class="is_selected " data-filter="* ">Todos</li>
+<%if false %>
             <li data-filter=".tv ">Televisión</li>
             <li data-filter=".radio ">Radio</li>
             <li data-filter=".periodico ">Periódico</li>
+<% end %>
             <li data-filter=".linea ">En línea</li>
 						<li data-filter=".boletin">Boletines</li>
           </ul>
@@ -122,7 +124,7 @@
               </div>
             </div>
 
-            <div class="single-item col-md-3 col-sm-6 linea ">
+            <div class="single-item col-md-3 col-sm-6 linea">
               <div class="gallery-img ">
                 <div class="customer-pic "><%= image_tag("animal-politico-thumb.jpg") %></div>
                 <div class="review-description ">
