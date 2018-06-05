@@ -90,8 +90,7 @@
 				iframe: {
 					width: 800,
 					height: 500,
-					frameborder: 0,
-					allow: 'autoplay'
+					frameborder: 0
 				},
 				flash: {
 					width: 400,
