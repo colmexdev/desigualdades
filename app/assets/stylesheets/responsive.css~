@@ -71,9 +71,7 @@
         position: static;
         margin-bottom: 15px;
     }
-    .single-item {
-    width: 33.3%;
-    }
+
     .event-pic, .event-info {
         width: 100%;
         float: none;
@@ -259,9 +257,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .single-item {
-        width: 50%;
-    }
+
     .single-donator {
         margin-bottom: 30px;
     }
@@ -716,9 +712,7 @@
     .causes-content .progressbar {
         bottom: 15px;
     } 
-    .single-item {
-    width: 100%;
-    }
+
     .gallery-menu ul li {
     padding: 0 24px;
     }
@@ -1154,11 +1148,24 @@
 #contact_map {
     height: 320px;
 }
-.single-item {
-    width: 100%;
-    margin-left: 7px;
-    margin-right: auto;
+
 }
 
+@media screen and (min-width: 1200px){
+	.single-item{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1200px) and (min-width: 666px){
+	.single-item{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 666px){
+	.single-item{
+		width: 99%;
+	}
 }
 
