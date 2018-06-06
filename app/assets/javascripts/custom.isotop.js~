@@ -20,8 +20,7 @@
 					  }
 					});
 
-					$(".single-item").width($(".all-gallery-items").width()/(ancho >= 1200 ? 3 : (ancho >= 680 ? 2 : 1)));       
-						
+					$(".single-item").width($(".all-gallery-items").width()/(ancho >= 1200 ? 3 : (ancho >= 680 ? 2 : 1))).css({"margin-top":"20px"});	
 					// filter functions
 					var filterFns = {
 					  // show if number is greater than 50
