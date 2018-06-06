@@ -234,6 +234,7 @@
 }
 
 .op-gest{
+	cursor: pointer;
 	display: table;
 	width: 100%;
 	height: 40px;
