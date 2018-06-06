@@ -14,7 +14,7 @@
 			<% val = f[1] %>
 			<% if val == "Foto" %>
 				<td class="ind-cell left-align"><%= image_tag(@obj.foto.url) %></td>
-			<% elsif val == "Imagen" %>
+			<% elsif val == "Imagen" || val == "Logo" %>
 				<td class="ind-cell left-align"><%= image_tag(@obj.imagen.url) %></td>
 			<% elsif val == "Ícono" %>
 				<td class="ind-cell left-align"><%= image_tag(@obj.icono.url) %></td>	
