@@ -1,4 +1,4 @@
-<%= form_for(@obj, :remote => true, :url => {:controller => "panel", :action => (action_name == "editar" ? "editar" : "crear"), :params => {:set => params[:set], :id => (@obj.id if action_name == "editar")}}, :html => { :multipart => true }) do |f| %>
+<%= form_for(@obj, :remote => true, :data => { :type => :js }, :url => {:controller => "panel", :action => (action_name == "editar" ? "editar" : "crear"), :params => {:set => params[:set], :id => (@obj.id if action_name == "editar")}}, :html => { :multipart => true }) do |f| %>
   <% if @obj.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@obj.errors.count, "error") %> impidieron generar este objeto:</h2>
