@@ -178,7 +178,7 @@
 
                     e.stopPropagation();
                     e.preventDefault();
-		
+
                     var ele = UI.$(this);
 
                     if (ele.hasClass('uk-datepicker-date-disabled')) return false;
@@ -199,10 +199,6 @@
                 });
 
                 dropdown.appendTo("body");
-            }
-
-            if ($('body').find('.uk-datepicker').length === 0) {
-              dropdown.appendTo("body");
             }
         },
 
