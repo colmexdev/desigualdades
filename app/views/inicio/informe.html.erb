@@ -231,10 +231,9 @@
 	$(window).on("resize",function(){
 			// init Isotope
 					var $gellary_img = $('.all-gallery-items').isotope({
-						layoutMode: 'cellsByColumn',
-						cellsByColumn: {
-							columnWidth: 380,
-							rowHeight: 182
+						masonry: {
+							columnWidth: 390,
+							gutter: 20
 						},
 					  itemSelector: '.single-item',
 					  percentPosition: true,

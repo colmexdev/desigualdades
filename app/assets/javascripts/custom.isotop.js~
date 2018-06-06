@@ -5,7 +5,7 @@
 						cellsByColumn: {
 							columnWidth: 380,
 							rowHeight: 182
-						}
+						},
 					  itemSelector: '.single-item',
 					  percentPosition: true,
 					  transitionDuration: '0.8s',
