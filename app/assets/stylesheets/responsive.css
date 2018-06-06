@@ -1151,4 +1151,4 @@
 
 }
 
-.navbar{ float: inherit; }
+.navbar{ float: inherit !important; }
