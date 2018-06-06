@@ -1,5 +1,6 @@
 			jQuery(window).load(function(){
 			// init Isotope
+					$(".single-item").width($(".all-gallery-items").width()/(ancho >= 1200 ? 3 : (ancho >= 680 ? 2 : 1)));
 					var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
 					var $gellary_img = $('.all-gallery-items').isotope({
 						masonry: {
