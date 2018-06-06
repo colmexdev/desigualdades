@@ -1,0 +1,3 @@
+class Medio < ActiveRecord::Base
+  self.table_name = "sources"
+end

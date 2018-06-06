@@ -36,7 +36,7 @@ gem 'tiny_tds'
 gem 'activerecord-sqlserver-adapter'
 
 # Paperclip para manejar la subida de imágenes
-gem 'paperclip'
+gem 'paperclip', "~> 6.0.0"
 
 #crossfilter para el filtrado de datsets
 gem 'crossfilter-rails'

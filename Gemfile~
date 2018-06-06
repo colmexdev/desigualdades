@@ -55,7 +55,6 @@ gem 'd3-rails'
 
 #HTTParty para hacer requests a otros sitios (web scraping)
 gem 'httparty'
-gem 'nokogiri'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

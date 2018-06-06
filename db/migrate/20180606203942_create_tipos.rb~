@@ -1,0 +1,7 @@
+class CreateTipos < ActiveRecord::Migration
+  def change
+    create_table :tipos do |t|
+      t.text :tipo
+    end
+  end
+end
