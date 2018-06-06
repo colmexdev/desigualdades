@@ -81,7 +81,7 @@ test:
 production:
   <<: *default
   database: desigualdades_pred
-  username: postgres
-  password: postgres
+  username: desigualdades
+  password: D3s1g#@
   host: localhost
   port: 5432
