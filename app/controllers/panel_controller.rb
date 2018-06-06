@@ -268,6 +268,27 @@ class PanelController < ApplicationController
 
   def select_set
     @sets = {
+      "Tipos": {
+        model: Tipo,
+        fields: {tipo: "Tipo de noticia"},
+        imgs: {},
+        trix: []
+      }, "Medios": {
+        model: Medio,
+        fields: {fuente: "Medio que publica"},
+        imgs: {imagen: "Logo"},
+        trix: []
+      }, "Filtros": {
+        model: Filtro,
+        fields: {filtro: "Categoría de filtrado"},
+        imgs: {},
+        trix: []
+      }, "Noticias": {
+        model: Noticia,
+        fields: {tipo: "Tipo de noticia", fuente: "Medio que publica", titulo: "Título", fecha: "Fecha de publicación", link: "Liga", filtro: "Categoría de filtrado"},
+        imgs: {},
+        trix: []
+      }
       #"Catálogo de sitios": {
       #  model: Sitio,
       #  fields: {ref: "Página", partial: "URL", num_parrafos: "Párrafos", num_fotos: "Fotos", num_listing: "Listados"},
