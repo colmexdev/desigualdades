@@ -1,10 +1,14 @@
 			jQuery(window).load(function(){
 			// init Isotope
 					var $gellary_img = $('.all-gallery-items').isotope({
-						layoutMode: 'fitRows',
 					  itemSelector: '.single-item',
 					  percentPosition: true,
 					  transitionDuration: '0.8s',
+					  masonry: {
+						// use outer width of grid-sizer for columnWidth
+						columnWidth: '.single-item',
+						gutter: 15
+					  },
 					  getSortData: {
 						name: '.name',
 						symbol: '.symbol',
