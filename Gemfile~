@@ -37,7 +37,7 @@ gem 'tiny_tds'
 gem 'activerecord-sqlserver-adapter'
 
 # Paperclip para manejar la subida de imágenes
-gem 'paperclip', "~> 6.0.0"
+gem 'paperclip'
 
 #crossfilter para el filtrado de datsets
 gem 'crossfilter-rails'
@@ -72,8 +72,6 @@ gem 'capistrano-rbenv', '~> 2.0'
 
 # figaro para variables globales
 gem 'figaro'
-
-gem 'font-awesome-sass'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
