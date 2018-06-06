@@ -227,7 +227,7 @@ DEPENDENCIES
   d3-rails
   devise
   figaro
-  font-awesome-sass
+  font-awesome-sass (~> 4.7.0)
   httparty
   jbuilder (~> 2.0)
   jquery-rails
