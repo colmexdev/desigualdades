@@ -8,6 +8,7 @@ gem 'pg'
 gem 'active_record_union'
 # Use bootstrap compiled from SASS
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'font-awesome-sass', '~> 4.7.0'
 # UIkit para estilos diversos
 #gem "uikit-sass-rails"
 # Use SCSS for stylesheets
