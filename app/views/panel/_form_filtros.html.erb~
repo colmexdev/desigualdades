@@ -13,8 +13,8 @@
 
 <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
   <div class="field">
-    <%= f.label :tipo, "Tipo de noticia" %><br>
-    <%= f.text_field :tipo %>
+    <%= f.label :filtro, "Categoría de filtrado" %><br>
+    <%= f.text_field :filtro %>
   </div>
 
   <div class="actions">

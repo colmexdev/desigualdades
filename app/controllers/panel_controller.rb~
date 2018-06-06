@@ -47,46 +47,46 @@ class PanelController < ApplicationController
   end
 
   def index
-  #  if params[:keyword].present?
-  #    query
-  #    @query = @query + (params[:complement].present? ? (" and " + params[:complement]) : "")
-  #  else
-  #    @query = (params[:complement].present? ? params[:complement] : "")
-  #  end
-  #  @rpp = 10
-	#	@m = @sets[params[:set].to_sym][:model]
-  #  @mod = (@m.class.to_s != "Array" ? @m : @m[0])
-  #  @count = @mod.where(@query.present? ? @query : "").count
-  #  @set = @mod.where(@query.present? ? @query : "").order(updated_at: :desc).limit(@rpp).offset(params[:offset].to_i*@rpp)
+    if params[:keyword].present?
+      query
+      @query = @query + (params[:complement].present? ? (" and " + params[:complement]) : "")
+    else
+      @query = (params[:complement].present? ? params[:complement] : "")
+    end
+    @rpp = 10
+		@m = @sets[params[:set].to_sym][:model]
+    @mod = (@m.class.to_s != "Array" ? @m : @m[0])
+    @count = @mod.where(@query.present? ? @query : "").count
+    @set = @mod.where(@query.present? ? @query : "").order(updated_at: :desc).limit(@rpp).offset(params[:offset].to_i*@rpp)
 
-  #  @pags = (@count == 0 ? 0 : ((@count / @rpp) + (@count % @rpp == 0 ? 0 : 1) ))
-  #  respond_to do |format|
-  #    format.js
-      #format.json {render json: {filas: @set} }
-  #  end
+    @pags = (@count == 0 ? 0 : ((@count / @rpp) + (@count % @rpp == 0 ? 0 : 1) ))
+    respond_to do |format|
+      format.js
+      format.json {render json: {filas: @set} }
+    end
   end
 
   def mostrar
-	#	@obj = @sets[params[:set].to_sym][:model].find(params[:id].to_i)
-  #  respond_to do |format|
-  #    format.js
-  #  end
+		@obj = @sets[params[:set].to_sym][:model].find(params[:id].to_i)
+    respond_to do |format|
+      format.js
+    end
   end
 
   def generar
-  #  @obj = @sets[params[:set].to_sym][:model].new
-  #  respond_to do |format|
-  #    format.js
-  #  end
+    @obj = @sets[params[:set].to_sym][:model].new
+    respond_to do |format|
+      format.js
+    end
   end
 
   def crear
-  #  @obj = @sets[params[:set].to_sym][:model].new(obj_params)
-	#  @sets[params[:set].to_sym][:trix].each do |t|
-  #    @obj[t] = (@obj[t].nil? ? "" : @obj[t].gsub(/<br><\/div>/,"</div>").gsub(/<br>(<br>)+/,"<br>").gsub(/<br>/,"</p><p>").gsub(/<div>/,"<p>").gsub(/<\/div>/,"</p>"))
-  #  end
-  #  respond_to do |format|
-  #    if @obj.save
+    @obj = @sets[params[:set].to_sym][:model].new(obj_params)
+	  @sets[params[:set].to_sym][:trix].each do |t|
+      @obj[t] = (@obj[t].nil? ? "" : @obj[t].gsub(/<br><\/div>/,"</div>").gsub(/<br>(<br>)+/,"<br>").gsub(/<br>/,"</p><p>").gsub(/<div>/,"<p>").gsub(/<\/div>/,"</p>"))
+    end
+    respond_to do |format|
+      if @obj.save
   #      if @sets[params[:set].to_sym][:model] == Sitio
   #        i = 0
   #        while i < obj_params[:num_parrafos].to_i
@@ -107,20 +107,20 @@ class PanelController < ApplicationController
   #          i = i + 1
   #        end
   #      end
-  #      format.js { render :mostrar, params: {set: params[:set], id: @obj.id}, notice: 'Objeto generado exitosamente.' }
-  #    else
-  #      format.js { render :generar }
-  #      format.json { render json: @obj.errors, status: :unprocessable_entity }
-  #    end
-  #  end
+        format.js { render :mostrar, params: {set: params[:set], id: @obj.id}, notice: 'Objeto generado exitosamente.' }
+      else
+        format.js { render :generar }
+        format.json { render json: @obj.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def editar
-  #  if @sets[params[:set].to_sym][:model].class.to_s != "Array"
-  #    @obj = @sets[params[:set].to_sym][:model].find(params[:id])
-	#		@sets[params[:set].to_sym][:trix].each do |t|
-  #      @obj[t] = (@obj[t].nil? ? "" : @obj[t].gsub(/<p>/,"<div>").gsub(/<\/p>/,"</div>").gsub(/<\/div><div>/,"<br>"))
-  #    end
+    if @sets[params[:set].to_sym][:model].class.to_s != "Array"
+      @obj = @sets[params[:set].to_sym][:model].find(params[:id])
+			@sets[params[:set].to_sym][:trix].each do |t|
+        @obj[t] = (@obj[t].nil? ? "" : @obj[t].gsub(/<p>/,"<div>").gsub(/<\/p>/,"</div>").gsub(/<\/div><div>/,"<br>"))
+      end
   #  elsif params[:set] == "Contenido de sitios"
   #    @obj = Sitio.find(params[:id])
   #    @pars = Parrafo.where("sitio_id = ?",params[:id].to_i)
@@ -133,17 +133,17 @@ class PanelController < ApplicationController
   #      p.caption = (p.caption.nil? ? "" : p.caption.gsub(/<p>/,"<div>").gsub(/<\/p>/,"</div>").gsub(/<\/div><div>/,"<br>"))
   #      p.caption_ingles = (p.caption_ingles.nil? ? "" : p.caption_ingles.gsub(/<p>/,"<div>").gsub(/<\/p>/,"</div>").gsub(/<\/div><div>/,"<br>"))
   #    end
-  #  end
+    end
   end
 
   def actualizar
-  #  @obj = @sets[params[:set].to_sym][:model].find(params[:id])
+    @obj = @sets[params[:set].to_sym][:model].find(params[:id])
   #  if params[:set] != "Contenido de sitios"
   #    @sets[params[:set].to_sym][:trix].each do |t|
   #      obj_params[t] = obj_params[t].gsub(/<br><\/div>/,"</div>").gsub(/<br>(<br>)+/,"<br>").gsub(/<br>/,"</p><p>").gsub(/<div>/,"<p>").gsub(/<\/div>/,"</p>")
   #    end
   #  end
-  #  respond_to do |format|
+    respond_to do |format|
   #    if params[:set] == "Contenido de sitios"
   #      if params[:pars].present?
   #        @llaves_pars = params[:pars].keys
@@ -175,7 +175,7 @@ class PanelController < ApplicationController
   #      else
   #        format.js { render :mostrar, params: {set: params[:set], id: params[:id]}, notice: 'Objeto generado exitosamente.' }
   #      end
-  #    elsif @obj.update(obj_params)
+      if @obj.update(obj_params)
   #      if @sets[params[:set].to_sym][:model] == Sitio
   #        @num_pars = Parrafo.where("sitio_id = ?", params[:id].to_i)
   #        @num_fotos = Foto.where("sitio_id = ?", params[:id].to_i)
@@ -226,29 +226,29 @@ class PanelController < ApplicationController
   #        end
 
   #      end
-  #      format.js { render :mostrar, params: {set: params[:set], id: @obj.id}, notice: 'Objeto generado exitosamente.' }
-  #    else
-  #      format.js { render :editar }
-  #      format.json { render json: @obj.errors, status: :unprocessable_entity }
-  #    end
-  #  end
+        format.js { render :mostrar, params: {set: params[:set], id: @obj.id}, notice: 'Objeto generado exitosamente.' }
+      else
+        format.js { render :editar }
+        format.json { render json: @obj.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def eliminar
-	#	@sets[params[:set].to_sym][:model].find(params[:id]).destroy
+		@sets[params[:set].to_sym][:model].find(params[:id]).destroy
   #  if params[:set] == "Catálogo de sitios"
   #    Parrafo.where("sitio_id = ?", params[:id].to_i).destroy_all
   #    Foto.where("sitio_id = ?", params[:id].to_i).destroy_all
   #    Listing.where("sitio_id= ?",params[:id].to_i).destroy_all
   #  end
-  #  @set = @sets[params[:set].to_sym][:model].order(updated_at: :desc).limit(@rpp).offset(0)
-  #  @rpp = 10
-  #  @count = @sets[params[:set].to_sym][:model].count
-  #  @pags = (@count == 0 ? 0 : ((@count / @rpp) + (@count % @rpp == 0 ? 0 : 1) ))
-	#	respond_to do |format|
-  #    format.js { render :index, params: {set: params[:set]}, notice: 'Se ha eliminado el objeto exitosamente'}
-	#	  format.json { head :no_content }
-	#	end
+    @set = @sets[params[:set].to_sym][:model].order(updated_at: :desc).limit(@rpp).offset(0)
+    @rpp = 10
+    @count = @sets[params[:set].to_sym][:model].count
+    @pags = (@count == 0 ? 0 : ((@count / @rpp) + (@count % @rpp == 0 ? 0 : 1) ))
+		respond_to do |format|
+      format.js { render :index, params: {set: params[:set]}, notice: 'Se ha eliminado el objeto exitosamente'}
+		  format.json { head :no_content }
+		end
   end
 
   private
