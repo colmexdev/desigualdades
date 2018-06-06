@@ -107,6 +107,7 @@ class PanelController < ApplicationController
   #          i = i + 1
   #        end
   #      end
+        format.html { redirect_to panel_path }
         format.js { render :mostrar, params: {set: params[:set], id: @obj.id}, notice: 'Objeto generado exitosamente.' }
       else
         format.js { render :generar }
@@ -226,6 +227,7 @@ class PanelController < ApplicationController
   #        end
 
   #      end
+        format.html { redirect_to panel_path }
         format.js { render :mostrar, params: {set: params[:set], id: @obj.id}, notice: 'Objeto generado exitosamente.' }
       else
         format.js { render :editar }
