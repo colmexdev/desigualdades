@@ -1,7 +1,11 @@
 			jQuery(window).load(function(){
 			// init Isotope
 					var $gellary_img = $('.all-gallery-items').isotope({
-						layoutMode: 'fitColumns',
+						layoutMode: 'cellsByColumn',
+						cellsByColumn: {
+							columnWidth: 380,
+							rowHeight: 182
+						}
 					  itemSelector: '.single-item',
 					  percentPosition: true,
 					  transitionDuration: '0.8s',
