@@ -13,24 +13,8 @@
 
 <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
   <div class="field">
-    <%= f.label :nombre, "Nombre" %><br>
-    <%= f.trix_editor :nombre %>
-  </div>
-  <div class="field">
-    <%= f.label :fecha_anexion, "Fecha de anexión" %><br>
-    <%= f.text_field :fecha_anexion, {"data-uk-datepicker" => "{format: 'YYYY-MM-DD'}"} %>
-  </div>
-  <div class="field">
-    <%= f.label :centro, "Centro de Estudios" %><br>
-    <%= f.select(:centro, [['CEAA','CEAA'],['CEDUA','CEDUA'],['CEE','CEE'],['CEH','CEH'],['CEI','CEI'],['CELL','CELL'],['CES','CES']], :selected => (@obj.centro || 'CEAA')) %>
-  </div>
-  <div class="field">
-    <%= f.label :semblanza, "Semblanza" %><br>
-    <%= f.trix_editor :semblanza %>
-  </div>
-  <div class="field">
-    <%= f.label :semblanza_eng, "Semblanza (inglés)" %><br>
-    <%= f.trix_editor :semblanza_eng %>
+    <%= f.label :fuente, "Nombre del medio" %><br>
+    <%= f.text_field :fuente %>
   </div>
   <div class="field" style="height:250px;">
 		<div class="photo-upload">

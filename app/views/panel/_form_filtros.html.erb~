@@ -16,7 +16,10 @@
     <%= f.label :filtro, "Categoría de filtrado" %><br>
     <%= f.text_field :filtro %>
   </div>
-
+  <div class="field">
+    <%= f.label :clase, "Classe asociada al filtro" %><br>
+    <%= f.text_field :clase %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
