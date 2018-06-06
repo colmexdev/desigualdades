@@ -1151,21 +1151,7 @@
 
 }
 
-@media screen and (min-width: 1200px){
-	.single-item{
-		width: 100%;
-	}
-}
-
-@media screen and (max-width: 1200px) and (min-width: 666px){
-	.single-item{
-		width: 50%;
-	}
-}
-
-@media screen and (max-width: 666px){
-	.single-item{
-		width: 99%;
-	}
+.single-item{
+	margin-bottom: 25px;
 }
 

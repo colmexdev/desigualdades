@@ -1,7 +1,6 @@
 			jQuery(window).load(function(){
 			// init Isotope
 					var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
-					$(".single-item").width($(".all-gallery-items").width()/(ancho >= 1200 ? 3 : (ancho >= 680 ? 2 : 1)));
 					var $gellary_img = $('.all-gallery-items').isotope({
 						masonry: {
 							columnWidth: $(".all-gallery-items").width()/(ancho >= 1200 ? 3 : (ancho >= 680 ? 2 : 1))
@@ -19,7 +18,9 @@
 						  return parseFloat( weight.replace( /[\(\)]/g, '') );
 						}
 					  }
-					});       
+					});
+
+					$(".single-item").width($(".all-gallery-items").width()/(ancho >= 1200 ? 3 : (ancho >= 680 ? 2 : 1)));       
 						
 					// filter functions
 					var filterFns = {
