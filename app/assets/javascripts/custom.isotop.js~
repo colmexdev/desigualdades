@@ -1,10 +1,9 @@
 			jQuery(window).load(function(){
 			// init Isotope
 					var $gellary_img = $('.all-gallery-items').isotope({
-						layoutMode: 'cellsByColumn',
-						cellsByColumn: {
+						masonry: {
 							columnWidth: 380,
-							rowHeight: 182
+							gutter: 20
 						},
 					  itemSelector: '.single-item',
 					  percentPosition: true,
