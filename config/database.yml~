@@ -81,7 +81,7 @@ test:
 production:
   <<: *default
   database: desigualdades_pred
-  username: Rails.application.secrets.desig_usr
-  password: Rails.application.secrets.desig_pwd
+  username: <%= ENV['DESIG_USR'] %>
+  password: <%= ENV['DESIG_PWD'] %>
   host: localhost
   port: 5432

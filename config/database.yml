@@ -81,7 +81,6 @@ test:
 production:
   <<: *default
   database: desigualdades_pred
-  username: <%= ENV["DESIG_USR"] %>
-  password: <%= ENV["DESIG_PWD"] %>
-  host: localhost
-  port: 5432
+  username: <%= ENV['DESIG_USR'] %>
+  password: <%= ENV['DESIG_PWD'] %>
+
