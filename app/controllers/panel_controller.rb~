@@ -280,7 +280,7 @@ class PanelController < ApplicationController
         trix: []
       }, "Filtros": {
         model: Filtro,
-        fields: {filtro: "Categoría de filtrado"},
+        fields: {filtro: "Categoría de filtrado", clase: "Clase asociada al filtrado"},
         imgs: {},
         trix: []
       }, "Noticias": {
@@ -324,7 +324,7 @@ class PanelController < ApplicationController
     if params[:set] == "Tipos"
       params.require(:tipo).permit(:tipo)
     elsif params[:set] == "Filtros"
-      params.require(:filtro).permit(:filtro)
+      params.require(:filtro).permit(:filtro, :clase)
     elsif params[:set] == "Medios"
       params.require(:source).permit(:fuente, :imagen)
     elsif params[:set] == "Noticias"
