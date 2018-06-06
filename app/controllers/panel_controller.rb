@@ -326,9 +326,9 @@ class PanelController < ApplicationController
     elsif params[:set] == "Filtros"
       params.require(:filtro).permit(:filtro, :clase)
     elsif params[:set] == "Medios"
-      params.require(:sources).permit(:fuente, :imagen)
+      params.require(:medio).permit(:fuente, :imagen)
     elsif params[:set] == "Noticias"
-      params.require(:new).permit(:tipo, :filtro, :titulo, :fecha, :link, :fuente)
+      params.require(:noticia).permit(:tipo, :filtro, :titulo, :fecha, :link, :fuente)
     elsif params[:set] == "Usuarios gestores"
       params.require(:admin).permit(:usuario, :password, :password_confirmation, :admin)
     elsif params[:set] == "Catálogo de sitios"
