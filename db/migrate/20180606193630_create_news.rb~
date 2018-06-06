@@ -1,0 +1,12 @@
+class CreateNews < ActiveRecord::Migration
+  def change
+    create_table :news do |t|
+      t.text :tipo
+      t.text :filtro
+      t.text :titulo
+      t.date :fecha
+      t.text :link
+      t.text :fuente
+    end
+  end
+end
