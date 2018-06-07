@@ -43,6 +43,7 @@ es:
       short: "%b %d"
       normal: "%d de %B de %Y"
       mes_anio: "%B de %Y"
+      customshort: "%e de %B %Y"
     month_names:
     -
     - enero
@@ -212,5 +213,4 @@ es:
       default: "%A, %d de %B de %Y %H:%M:%S %z"
       long: "%d de %B de %Y %H:%M"
       short: "%d de %b %H:%M"
-      customshort: "%e de %B %Y"
     pm: "pm"
