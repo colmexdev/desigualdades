@@ -54,8 +54,8 @@ function scaleEvents(big,med,small){
 		var html = '<div class="vid-cont" style="text-align:center;" id="' + cl + '-'+ind+'"><div class="' + 'slide-vid' + '" id="' + id + "-" + ind + '">';
 		//html += '<iframe src="' + link + '" allowfullscreen></iframe></div></div>';
 		//html += '<div class="gallery-image"><div class="sinlge-photo"><div class="single-photo-inner">'
-		html += '<a href="https://www.youtube-nocookie.com/embed/' + vid.v_id + '?rel=0&amp;autoplay=1" data-rel="lightcase:' + group + 'Vids">'
-		html += '<img src="' + vid.thumbnail.replace("default.jpg","hqdefault.jpg") + '" class="img-responsive">'
+		html += '<a href="https://www.youtube-nocookie.com/embed/' + vid.v_id + '?rel=0&amp;autoplay=1" data-rel="lightcase:' + group + 'Videos">'
+		html += '<img src="' + vid.thumbnail.replace("default.jpg","hqdefault.jpg") + '" class="img-responsive" alt="' + vid.titulo.replace('"',"'") + '">'
 		html += "</a>"
 		//html += "</div></div></div>"
 		return html;
