@@ -1,8 +1,9 @@
 GIT
-  remote: https://github.com/nicbet/rails-uikit.git
-  revision: 395e860901d67ffd832945a4edb6a60edc2d0304
+  remote: https://github.com/Nerian/bootstrap-datepicker-rails.git
+  revision: 981ad1d67e5725494e8a569136f0fd730baaedc5
   specs:
-    rails-uikit (3.0.0.beta.40)
+    bootstrap-datepicker-rails (1.8.0.1)
+      railties (>= 3.0)
 
 GEM
   remote: https://rubygems.org/
@@ -222,6 +223,7 @@ DEPENDENCIES
   active_directory
   active_record_union
   activerecord-sqlserver-adapter
+  bootstrap-datepicker-rails!
   bootstrap-sass (~> 3.3.6)
   byebug
   capistrano (~> 3.4.0)
@@ -240,7 +242,6 @@ DEPENDENCIES
   paperclip (~> 6.0.0)
   pg
   rails (= 4.2.6)
-  rails-uikit!
   remotipart (~> 1.2)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

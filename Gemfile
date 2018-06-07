@@ -10,7 +10,7 @@ gem 'active_record_union'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-sass', '~> 4.7.0'
 # UIkit para estilos diversos
-gem "rails-uikit", git: 'https://github.com/nicbet/rails-uikit.git'
+gem 'bootstrap-datepicker-rails', :require => 'bootstrap-datepicker-rails', :git => 'https://github.com/Nerian/bootstrap-datepicker-rails.git'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
