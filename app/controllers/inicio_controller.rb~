@@ -30,4 +30,8 @@ class InicioController < ApplicationController
 
   def videos
   end
+
+  def informe
+
+  end
 end

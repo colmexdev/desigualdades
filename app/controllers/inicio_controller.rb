@@ -32,6 +32,9 @@ class InicioController < ApplicationController
   end
 
   def informe
-
+    @noticias = Noticia.all
+    @tipos = Tipo.all
+    @medios = Medio.all
+    @filtros = Filtro.all
   end
 end
