@@ -121,19 +121,21 @@
       <div class="row ">
         <div class="gallery ">
           <div class="all-gallery-items margen-superior ">
-
-            <div class="single-item col-md-3 col-sm-12 boletin">
+						<% @noticias.each do |n| %>
+            <div class="single-item col-md-3 col-sm-12 <%= Filtro.where(filtro: n.filtro).first.clase %>">
               <div class="gallery-img">
-                <div class="customer-pic"><%= image_tag("thumb-colmex.jpg") %></div>
+                <div class="customer-pic"><%= image_tag(Medio.where(fuente: n.fuente).first.imagen.url) %></div>
                 <div class="review-description">
                   <div class="review-heading">
-                    <h4>Boletín</h4></div>
-                  <p class="review-date izquierda">Presentan Desigualdades en México 2018.<br><i>31 de mayo 2018</i></p>
-                  <a href="http://desigualdades.colmex.mx/boletines/1-boletin-prensa-31-mayo.pdf" class="btn-two" target="_blank">Ver boletín</a>
+                    <h4><%= n.tipo %></h4></div>
+                  <p class="review-date izquierda"><%= n.titulo %><br><i><%= n.fecha %></i></p>
+                  <a href="<%= n.liga %>" class="btn-two" target="_blank">Ver <%= n.tipo %></a>
                 </div>
               </div>
             </div>
+						<% end %>
 
+<% if false %>
             <div class="single-item col-md-3 col-sm-12 boletin">
               <div class="gallery-img">
                 <div class="customer-pic"><%= image_tag("thumb-colmex.jpg") %></div>
@@ -181,6 +183,7 @@
                 </div>
               </div>
             </div>
+<% end %>
 
           </div>
         </div>
