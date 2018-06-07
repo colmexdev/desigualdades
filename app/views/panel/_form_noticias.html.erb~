@@ -14,11 +14,11 @@
 <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
   <div class="field">
     <%= f.label :tipo, "Tipo de noticia" %><br>
-    <%= f.select(:tipo,Tipo.all.each{|ty| [ty.tipo,ty.tipo]}, selected: (@obj.tipo || Tipo.first.tipo)) %>
+    <%= f.select(:tipo,Tipo.all.collect{|ty| [ty.tipo,ty.tipo]}, selected: (@obj.tipo || Tipo.first.tipo)) %>
   </div>
   <div class="field">
     <%= f.label :fuente, "Medio que publica" %><br>
-    <%= f.select(:fuente,Medio.all.each{|m| [m.fuente,m.fuente]}, selected: (@obj.fuente || Medio.first.fuente)) %>
+    <%= f.select(:fuente,Medio.all.collect{|m| [m.fuente,m.fuente]}, selected: (@obj.fuente || Medio.first.fuente)) %>
   </div>
   <div class="field">
     <%= f.label :titulo, "Título" %><br>
@@ -35,7 +35,7 @@
   </div>
   <div class="field">
     <%= f.label :filtro, "Categoría de filtrado" %><br>
-    <%= f.select(:filtro,Filtro.all{ |fi| [fi.filtro, fi.filtro]}, selected: (@obj.filtro || Filtro.first.filtro)) %>
+    <%= f.select(:filtro,Filtro.all.collect{ |fi| [fi.filtro, fi.filtro]}, selected: (@obj.filtro || Filtro.first.filtro)) %>
   </div>
   <div class="actions">
     <%= f.submit "Generar noticia" %>
