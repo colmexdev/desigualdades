@@ -14,10 +14,6 @@ function scaleEvents(big,med,small){
 	}
 }
 
-$(document).on("ready page:load", function(){
-	UIKit.init();
-});
-
 	function supportedProp(proparray){
 		var root=document.documentElement //reference root element of document
 		for (var i=0; i<proparray.length; i++){ //loop through possible properties
