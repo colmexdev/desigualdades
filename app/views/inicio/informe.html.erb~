@@ -129,7 +129,7 @@
                   <div class="review-heading">
                     <h4><%= n.tipo %></h4></div>
                   <p class="review-date izquierda"><%= n.titulo %><br><i><%= n.fecha %></i></p>
-                  <a href="<%= n.liga %>" class="btn-two" target="_blank">Ver <%= n.tipo %></a>
+                  <a href="<%= n.link %>" class="btn-two" target="_blank">Ver <%= n.tipo %></a>
                 </div>
               </div>
             </div>
