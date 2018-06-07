@@ -50,13 +50,16 @@ function scaleEvents(big,med,small){
 		}
 	}
 
-	function trace(cl,id,ind,link){
+	function trace(cl,id,ind,vid,group){
 		var html = '<div class="vid-cont" style="text-align:center;" id="' + cl + '-'+ind+'"><div class="' + 'slide-vid' + '" id="' + id + "-" + ind + '">';
-		html += '<iframe src="' + link + '" allowfullscreen></iframe></div></div>';
+		//html += '<iframe src="' + link + '" allowfullscreen></iframe></div></div>';
+		html += '<a href="https://www.youtube-nocookie.com/embed/' + vid.v_id + '?rel=0&amp;autoplay=1" data-rel="lightcase:' + group + 'Vids">'
+		html += '<img src="' + vid.thumbnail + '" class="img-responsive">'
+		html += "</a>"
 		return html;
 	}
 
-	function renderSlider(sect,parent,wrapper,container,links,cl,id,vpv,prop,resize){
+	function renderSlider(sect,parent,wrapper,container,links,cl,id,vpv,prop,resize,group){
 		if(!resize) container.html("");
 		else{
 			$("#"+sect+"-left").css("visibility",(links.length <= vpv ? 'hidden' : ''));
@@ -65,7 +68,7 @@ function scaleEvents(big,med,small){
 		$("#"+sect+"-left")[0].dataset.vpv=vpv;
 		$("#"+sect+"-right")[0].dataset.vpv=vpv;
 		for(var i = 0; i < links.length; i++){
-			if(!resize) container.html(container.html() + trace(cl,id,i,links[i]));
+			if(!resize) container.html(container.html() + trace(cl,id,i,links[i],group));
 			$("#"+cl+"-"+i).css({'width': wrapper.width()/vpv});
 			$("#"+id+"-"+i).css('width',wrapper.width()*prop);
 			//Contenido de los sliders
@@ -82,7 +85,7 @@ function scaleEvents(big,med,small){
 		var html = "";
 		html += '<div class="contain" id="'+id+'-container">';
 		
-			html += '<div class="left" id="'+id+'-left"' + (links.length <= vpv ? ' style="visibility:hidden;"' : '') + '>';
+			html += '<div class="left" id="'+id+'-left"' + (links <= vpv ? ' style="visibility:hidden;"' : '') + '>';
 			html += '<div class="link-l" id="'+id+'-link-l" style="display:table;">';
 			html += '<i class="fa fa-chevron-left" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;font-size:26px;"' + ' onclick="slide('+"'prev','"+id+"',this"+');"' + '></i>';
 			html += '</div>';
@@ -93,7 +96,7 @@ function scaleEvents(big,med,small){
 		html += '</div>';
 		html += '</div>';
 		
-			html += '<div class="right" id="'+id+'-right"' + (links.length <= vpv ? ' style="visibility:hidden;"' : '') + '>';
+			html += '<div class="right" id="'+id+'-right"' + (links <= vpv ? ' style="visibility:hidden;"' : '') + '>';
 			html += '<div class="link-r" id="'+id+'-link-r" style="display:table;">';
 			html += '<i class="fa fa-chevron-right" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;font-size:26px;"' + ' onclick="slide('+"'next','"+id+"',this"+ ');"' + '></i>';
 			html += '</div>';

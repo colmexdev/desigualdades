@@ -14,10 +14,6 @@ function scaleEvents(big,med,small){
 	}
 }
 
-$(document).on("ready page:load", function(){
-	UIKit.init();
-});
-
 	function supportedProp(proparray){
 		var root=document.documentElement //reference root element of document
 		for (var i=0; i<proparray.length; i++){ //loop through possible properties
@@ -86,7 +82,7 @@ $(document).on("ready page:load", function(){
 		var html = "";
 		html += '<div class="contain" id="'+id+'-container">';
 		
-			html += '<div class="left" id="'+id+'-left"' + (links.length <= vpv ? ' style="visibility:hidden;"' : '') + '>';
+			html += '<div class="left" id="'+id+'-left"' + (links <= vpv ? ' style="visibility:hidden;"' : '') + '>';
 			html += '<div class="link-l" id="'+id+'-link-l" style="display:table;">';
 			html += '<i class="fa fa-chevron-left" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;font-size:26px;"' + ' onclick="slide('+"'prev','"+id+"',this"+');"' + '></i>';
 			html += '</div>';
@@ -97,7 +93,7 @@ $(document).on("ready page:load", function(){
 		html += '</div>';
 		html += '</div>';
 		
-			html += '<div class="right" id="'+id+'-right"' + (links.length <= vpv ? ' style="visibility:hidden;"' : '') + '>';
+			html += '<div class="right" id="'+id+'-right"' + (links <= vpv ? ' style="visibility:hidden;"' : '') + '>';
 			html += '<div class="link-r" id="'+id+'-link-r" style="display:table;">';
 			html += '<i class="fa fa-chevron-right" aria-hidden="true" style="display:table-cell;color:#993366;text-shadow:none;vertical-align:middle;font-size:26px;"' + ' onclick="slide('+"'next','"+id+"',this"+ ');"' + '></i>';
 			html += '</div>';

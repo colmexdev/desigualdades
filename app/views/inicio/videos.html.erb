@@ -52,91 +52,50 @@
 
 <%= render 'inicio/footer' %>
 
-<style>
-.contain{
-	margin: 0 auto;
-	overflow: hidden;
-	width: 100%;
-	height: 130px;
-}
-
-.left, .right{
-	width: 25px;
-	height: 100%;
-	display: inline-block;
-	/*background-color: rgba(131,131,131,0.3);*/
-	color: #993366;
-}
-
-.right, .cont, .left{
-	float: left;
-}
-
-.cont{
-	width: -webkit-calc(100% - 50px);
-	width: -moz-calc(100% - 50px);
-	width: calc(100% - 50px);
-	height: 100%;
-	overflow:	hidden;
-}
-
-.vids{
-	height: 100%;
-	position: relative;
-}
-
-.link-r, .link-l{
-	display: table;
-	text-align: center;
-	cursor: pointer;
-	width: 100%;
-	height: 100%;
-}
-
-.vid-cont, .slide-vid{
-	float: left;
-	display: inline-block;
-	height: 100%;
-	position: relative;
-	overflow: hidden;
-}
-
-.slide-vid{
-	top:50%;
-	left:50%;
-	-webkit-transform: translate(-50%,-50%);
-	-moz-transform: translate(-50%,-50%);
-	-o-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
-}
-</style>
 <script type="text/javascript">
-	var trades_links = ["https://www.youtube.com/embed/Oq7zZw0K8d0","https://www.youtube.com/embed/Luuor-m6NXs","https://www.youtube.com/embed/nzHEWXq45zE","https://www.youtube.com/embed/9I7umaU2pXk","https://www.youtube.com/embed/ORK0TvRf42A","https://www.youtube.com/embed/9YIWsVoP7VI","https://www.youtube.com/embed/e36dF_sqiVo","https://www.youtube.com/embed/D4vYNpgj_x4","https://www.youtube.com/embed/kpJbClR10Aw","https://www.youtube.com/embed/8SnQVVPNw6w","https://www.youtube.com/embed/ZYZCmFunfbU","https://www.youtube.com/embed/eWb2M4Poqro","https://www.youtube.com/embed/BykjexAPL3Y","https://www.youtube.com/embed/CEC06t_6qqs","https://www.youtube.com/embed/H2ANspIXN00","https://www.youtube.com/embed/DorfXrf7aUI","https://www.youtube.com/embed/_dPQFCn_IA8","https://www.youtube.com/embed/mbq0U3PjLY4","https://www.youtube.com/embed/999kFh_ZWkw","https://www.youtube.com/embed/azJ1E3Oo9Do","https://www.youtube.com/embed/BVUqbXythNY","https://www.youtube.com/embed/-NmnkuDAS_0","https://www.youtube.com/embed/0IY88aic3Bw"];
-
-	var migdep_links = ["https://www.youtube.mx/embed/3H96QZBECXM","https://www.youtube.com/embed/bzO2fm-ZPTM","https://www.youtube.com/embed/RnOA3jm2R84","https://www.youtube.com/embed/qsI7JlqkU8o","https://www.youtube.com/embed/DBIk-OjYh-I","https://www.youtube.com/embed/jOAkqA2Rm4s","https://www.youtube.com/embed/ReADN3MfeR0","https://www.youtube.com/embed/L-cOP0EM0IY","https://www.youtube.com/embed/sHJThfz8J7k","https://www.youtube.com/embed/Jir9R_hCBNE","https://www.youtube.com/embed/JqrY314L4Rg","https://www.youtube.com/embed/T9AQvWdjxHM","https://www.youtube.com/embed/rq2L2Mv_0aw","https://www.youtube.com/embed/92smZORlyJc","https://www.youtube.com/embed/MT2_ty2Yxs4", "https://www.youtube.com/embed/Ze8Oh-JNGMg","https://www.youtube.com/embed/UmSaOBb0IGQ","https://www.youtube.com/embed/PVom1FpCo7k","https://www.youtube.com/embed/dIx02i1YMO0","https://www.youtube.com/embed/cBNJuUN9VDs", "https://www.youtube.com/embed/PRxYDPmu6vg","https://www.youtube.com/embed/nbnCVh4mYjs","https://www.youtube.com/embed/zXtA9Ovw6pE","https://www.youtube.com/embed/8OfAEtrRPkU","https://www.youtube.com/embed/Y65R-gVjssU","https://www.youtube.com/embed/IC9dvyPw1Tw","https://www.youtube.com/embed/J47gczx5KCM", "https://www.youtube.com/embed/GEJGloH3EfA","https://www.youtube.com/embed/NEcTi96eZc0","https://www.youtube.com/embed/L2PBpXSyfPs","https://www.youtube.com/embed/FFp6xJy7BJo","https://www.youtube.com/embed/RKmGaENEPTg","https://www.youtube.com/embed/Q5JO4BNTdgo","https://www.youtube.com/embed/xYgWAjJqbgs","https://www.youtube.com/embed/eJh2oXbG3gU","https://www.youtube.com/embed/Ru8Kg0wMoNg"];
 
 	var sedes_links = ["https://www.youtube.com/embed/Hc1WbGcl7DE"];
 
 	$.ajax({
 		method: 'get',
 		dataType: 'JSON',
-		url: '<%= root_path %>',
+		url: 'http://pred1.colmex.mx/catalogo_videos.json?lista=Seminario%20sobre%20Trabajo%20y%20Desigualdades&all=true',
 		success: function(result){
 			var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
-			scaleEvents(result["ev_big"],result["ev_med"],result["ev_small"]);
-			drawSlider($("#trades-slider"),trades_links,"trades",3)
-			renderSlider("trades",$("#trades-container"),$("#trades-cont"),$("#trades-vids"),trades_links,"trades-vid-cont","trades-slide-vid",(ancho < 792 ? 2 : 3),(ancho < 792 ? 0.4 : 0.3),false);
-			drawSlider($("#migdep-slider"),migdep_links,"migdep",3)
-			renderSlider("migdep",$("#migdep-container"),$("#migdep-cont"),$("#migdep-vids"),migdep_links,"migdep-vid-cont","migdep-slide-vid",(ancho < 792 ? 2 : 3),(ancho < 792 ? 0.4 : 0.3),false);
-			drawSlider($("#sedes-slider"),sedes_links,"sedes",3)
-			renderSlider("sedes",$("#sedes-container"),$("#sedes-cont"),$("#sedes-vids"),sedes_links,"sedes-vid-cont","sedes-slide-vid",(ancho < 792 ? 2 : 3),(ancho < 792 ? 0.4 : 0.3),false);
+			window.trades_vids = result;
+			drawSlider($("#trades-slider"),result["vids"].length,"trades",3)
+			renderSlider("trades",$("#trades-container"),$("#trades-cont"),$("#trades-vids"),result["vids"],"trades-vid-cont","trades-slide-vid",(ancho < 792 ? 2 : 3),(ancho < 792 ? 0.4 : 0.3),false,"trades");
+		}
+	});
+
+	$.ajax({
+		method: 'get',
+		dataType: 'JSON',
+		url: 'http://pred1.colmex.mx/catalogo_videos.json?lista=Seminario%20Migraci%C3%B3n,%20Desigualdad%20y%20Pol%C3%ADticas%20P%C3%BAblicas&all=true',
+		success: function(result){
+			var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
+			window.migdep_vids = result;
+			drawSlider($("#migdep-slider"),result["vids"],"migdep",3)
+			renderSlider("migdep",$("#migdep-container"),$("#migdep-cont"),$("#migdep-vids"),result["vids"],"migdep-vid-cont","migdep-slide-vid",(ancho < 792 ? 2 : 3),(ancho < 792 ? 0.4 : 0.3),false,"migdep");
+		}
+	});
+
+	$.ajax({
+		method: 'get',
+		dataType: 'JSON',
+		url: 'http://pred1.colmex.mx/catalogo_videos.json?lista=Seminario%20Migraci%C3%B3n,%20Desigualdad%20y%20Pol%C3%ADticas%20P%C3%BAblicas&all=true',
+		success: function(result){
+			var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
+			window.sedes_vids = result;
+			drawSlider($("#sedes-slider"),result["vids"],"sedes",3)
+			renderSlider("sedes",$("#sedes-container"),$("#sedes-cont"),$("#sedes-vids"),result["vids"],"sedes-vid-cont","sedes-slide-vid",(ancho < 792 ? 2 : 3),(ancho < 792 ? 0.4 : 0.3),false,"sedes");
 		}
 	});
 
 $(window).on("resize",function(){
 			var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
-			renderSlider("trades",$("#trades-container"),$("#trades-cont"),$("#trades-vids"),trades_links,"trades-vid-cont","trades-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true);
-			renderSlider("migdep",$("#migdep-container"),$("#migdep-cont"),$("#migdep-vids"),migdep_links,"migdep-vid-cont","migdep-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true);
-			renderSlider("sedes",$("#sedes-container"),$("#sedes-cont"),$("#sedes-vids"),sedes_links,"sedes-vid-cont","sedes-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true);
+			renderSlider("trades",$("#trades-container"),$("#trades-cont"),$("#trades-vids"),window.trades_vids,"trades-vid-cont","trades-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"trades");
+			renderSlider("migdep",$("#migdep-container"),$("#migdep-cont"),$("#migdep-vids"),window.migdep_vids,"migdep-vid-cont","migdep-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"migdep");
+			renderSlider("sedes",$("#sedes-container"),$("#sedes-cont"),$("#sedes-vids"),window.sedes_vids,"sedes-vid-cont","sedes-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"sedes");
 });
 </script>
