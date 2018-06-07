@@ -18,7 +18,7 @@
   </div>
   <div class="field">
     <%= f.label :fuente, "Medio que publica" %><br>
-    <%= f.select(:fuente,Medio.all{|m| [m.fuente,m.fuente]}, selected: (@obj.fuente || Fuente.first.fuente)) %>
+    <%= f.select(:fuente,Medio.all{|m| [m.fuente,m.fuente]}, selected: (@obj.fuente || Medio.first.fuente)) %>
   </div>
   <div class="field">
     <%= f.label :titulo, "Título" %><br>
