@@ -53,9 +53,11 @@ function scaleEvents(big,med,small){
 	function trace(cl,id,ind,vid,group){
 		var html = '<div class="vid-cont" style="text-align:center;" id="' + cl + '-'+ind+'"><div class="' + 'slide-vid' + '" id="' + id + "-" + ind + '">';
 		//html += '<iframe src="' + link + '" allowfullscreen></iframe></div></div>';
+		html += '<div class="gallery-img"><div class="sinlge-photo"><div class="single-photo-inner">'
 		html += '<a href="https://www.youtube-nocookie.com/embed/' + vid.v_id + '?rel=0&amp;autoplay=1" data-rel="lightcase:' + group + 'Vids">'
 		html += '<img src="' + vid.thumbnail + '" class="img-responsive">'
 		html += "</a>"
+		html += "</div></div></div>"
 		return html;
 	}
 

@@ -54,8 +54,6 @@
 
 <script type="text/javascript">
 
-	var sedes_links = ["https://www.youtube.com/embed/Hc1WbGcl7DE"];
-
 	$.ajax({
 		method: 'get',
 		dataType: 'JSON',
@@ -83,7 +81,7 @@
 	$.ajax({
 		method: 'get',
 		dataType: 'JSON',
-		url: 'http://pred1.colmex.mx/catalogo_videos.json?lista=Seminario%20Migraci%C3%B3n,%20Desigualdad%20y%20Pol%C3%ADticas%20P%C3%BAblicas&all=true',
+		url: 'http://pred1.colmex.mx/catalogo_videos.json?lista=Seminario%20sobre%20Desigualdad%20Socioecon%C3%B3mica%20y%20Educativa&all=true',
 		success: function(result){
 			var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
 			window.sedes_vids = result;
