@@ -53,7 +53,7 @@ function scaleEvents(big,med,small){
 	function trace(cl,id,ind,vid,group){
 		var html = '<div class="vid-cont" style="text-align:center;" id="' + cl + '-'+ind+'"><div class="' + 'slide-vid' + '" id="' + id + "-" + ind + '">';
 		//html += '<iframe src="' + link + '" allowfullscreen></iframe></div></div>';
-		html += '<div class="gallery-img"><div class="sinlge-photo"><div class="single-photo-inner">'
+		html += '<div class="gallery-image"><div class="sinlge-photo"><div class="single-photo-inner">'
 		html += '<a href="https://www.youtube-nocookie.com/embed/' + vid.v_id + '?rel=0&amp;autoplay=1" data-rel="lightcase:' + group + 'Vids">'
 		html += '<img src="' + vid.thumbnail.replace("default.jpg","hqdefault.jpg") + '" class="img-responsive">'
 		html += "</a>"
@@ -74,7 +74,7 @@ function scaleEvents(big,med,small){
 			$("#"+cl+"-"+i).css({'width': wrapper.width()/vpv});
 			$("#"+id+"-"+i).css('width',wrapper.width()*prop);
 			//Contenido de los sliders
-			$("#"+id+"-"+i+" .gallery-img").attr("width",wrapper.width()*prop).attr("height",wrapper.width()*prop*5/7);
+			$("#"+id+"-"+i+" .gallery-image").attr("width",wrapper.width()*prop).attr("height",wrapper.width()*prop*5/7);
 			if(!resize && i>vpv && i==links.length-1){
 				container[0].insertBefore(container[0].childNodes[links.length-1],container[0].childNodes[0]);
 			}
