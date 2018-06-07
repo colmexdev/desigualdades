@@ -74,7 +74,7 @@ function scaleEvents(big,med,small){
 			$("#"+cl+"-"+i).css({'width': wrapper.width()/vpv});
 			$("#"+id+"-"+i).css('width',wrapper.width()*prop);
 			//Contenido de los sliders
-			$("#"+id+"-"+i+" .gallery-image").css("width",wrapper.width()*prop).attr("height",wrapper.width()*prop*5/7);
+			$("#"+id+"-"+i+" .gallery-image").css("width",wrapper.width()*prop).css("height",wrapper.width()*prop*5/7);
 			if(!resize && i>vpv && i==links.length-1){
 				container[0].insertBefore(container[0].childNodes[links.length-1],container[0].childNodes[0]);
 			}
