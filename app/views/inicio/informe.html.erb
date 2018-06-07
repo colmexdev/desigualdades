@@ -130,7 +130,7 @@
                 <div class="review-description">
                   <div class="review-heading">
                     <h4><%= n.tipo %></h4></div>
-                  <p class="review-date izquierda"><%= n.titulo %><br><i><%= n.fecha %></i></p>
+                  <p class="review-date izquierda"><%= n.titulo %><br><i><%= l n.fecha, format: :customshort %></i></p>
                   <a href="<%= n.link %>" class="btn-two" target="_blank">Ver <%= n.tipo %></a>
                 </div>
               </div>

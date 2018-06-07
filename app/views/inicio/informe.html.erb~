@@ -115,7 +115,7 @@
 						<li class="filtro" data-filter=".boletin">Boletines</li>
 <% end %>
 						<% @filtros.each do |f| %>
-            <li class="filtro" data-filter="<%= '.' + f.clase' %>"><%= f.filtro %></li>
+            <li class="filtro" data-filter="<%= '.' + f.clase %>"><%= f.filtro %></li>
 						<% end %>
           </ul>
         </div>
@@ -130,7 +130,7 @@
                 <div class="review-description">
                   <div class="review-heading">
                     <h4><%= n.tipo %></h4></div>
-                  <p class="review-date izquierda"><%= n.titulo %><br><i><%= n.fecha %></i></p>
+                  <p class="review-date izquierda"><%= n.titulo %><br><i><%= n.fecha.strftime("%e de %B %Y") %></i></p>
                   <a href="<%= n.link %>" class="btn-two" target="_blank">Ver <%= n.tipo %></a>
                 </div>
               </div>
