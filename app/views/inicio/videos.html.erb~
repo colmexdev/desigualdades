@@ -54,8 +54,6 @@
 
 <script type="text/javascript">
 
-	var sedes_links = ["https://www.youtube.com/embed/Hc1WbGcl7DE"];
-
 	$.ajax({
 		method: 'get',
 		dataType: 'JSON',
