@@ -10,7 +10,7 @@ gem 'active_record_union'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-sass', '~> 4.7.0'
 # UIkit para estilos diversos
-gem "uikit-sass-rails"
+gem "rails-uikit", git: 'https://github.com/nicbet/rails-uikit.git'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

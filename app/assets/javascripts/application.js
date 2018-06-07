@@ -16,5 +16,4 @@
 //= require jquery.remotipart
 //= require bootstrap-sprockets
 //= require uikit
-//= require uikit-components
 //= require_tree .
