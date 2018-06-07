@@ -111,10 +111,12 @@
 <%if false %>
             <li class="filtro" data-filter=".tv">Televisión</li>
             <li class="filtro" data-filter=".radio">Radio</li>
-<% end %>
-            <li class="filtro" data-filter=".periodico">Periódico</li>
             <li class="filtro" data-filter=".linea">En línea</li>
 						<li class="filtro" data-filter=".boletin">Boletines</li>
+<% end %>
+						<% @filtros.each do |f| %>
+            <li class="filtro" data-filter="<%= '.' + f.clase' %>"><%= f.filtro %></li>
+						<% end %>
           </ul>
         </div>
       </div>
