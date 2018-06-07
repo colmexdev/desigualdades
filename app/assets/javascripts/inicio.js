@@ -55,7 +55,7 @@ function scaleEvents(big,med,small){
 		//html += '<iframe src="' + link + '" allowfullscreen></iframe></div></div>';
 		html += '<div class="gallery-img"><div class="sinlge-photo"><div class="single-photo-inner">'
 		html += '<a href="https://www.youtube-nocookie.com/embed/' + vid.v_id + '?rel=0&amp;autoplay=1" data-rel="lightcase:' + group + 'Vids">'
-		html += '<img src="' + vid.thumbnail + '" class="img-responsive">'
+		html += '<img src="' + vid.thumbnail.replace("default.jpg","hqdefault.jpg") + '" class="img-responsive">'
 		html += "</a>"
 		html += "</div></div></div>"
 		return html;
