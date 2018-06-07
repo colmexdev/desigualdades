@@ -32,9 +32,7 @@ class InicioController < ApplicationController
   end
 
   def informe
-    @noticias = Noticia.all
-    @tipos = Tipo.all
-    @medios = Medio.all
+    @noticias = Noticia.all.order(created_at: :desc)
     @filtros = Filtro.all
   end
 end
