@@ -1,3 +1,7 @@
+<script type="text/javascript" src="/js/uikit.js"></script>
+<script type="text/javascript" src="/js/form-select.js"></script>
+<script type="text/javascript" src="/js/datepicker.js"></script>
+
 <%= form_for(@obj, :remote => true, :url => {:controller => "panel", :action => (action_name == "editar" ? "editar" : "crear"), :params => {:set => params[:set], :id => (@obj.id if action_name == "editar")}}, :html => { :multipart => true }) do |f| %>
   <% if @obj.errors.any? %>
     <div id="error_explanation">
@@ -41,3 +45,4 @@
     <%= f.submit "Generar noticia" %>
   </div>
 <% end %>
+
