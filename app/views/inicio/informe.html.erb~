@@ -51,7 +51,7 @@
 							dataType: "JSON",
 							success: function(result){
 								var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] '" class="img-responsive"></a>'
-								$("#vid-talk").html(html)
+								$("#vid-talk").html(html);
 							}
 						});
 					</script>
@@ -66,15 +66,24 @@
             <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
               <div class="gallery-img">
                 <div class="sinlge-photo">
-                  <div class="single-photo-inner" id="vid-historias"> 
-										<a href="https://www.youtube-nocookie.com/embed/4Lc9eNzcopw?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"> 
-											<%= image_tag("thumb-video.jpg", alt: "Video Informe Desigualdades 2018", class: "img-responsive") %> 
-										</a> 
+                  <div class="single-photo-inner" id="vid-historias">  
 									</div>
                 </div>
               </div>
             </div>
           </div>
+
+					<script async>
+						$.ajax({
+							url: "http://pred1.colmex.mx/catalogo_videos.json?titulo=Informe%20Desigualdades%20en%20M%C3%A9xico%202018.%20Dos%20historias%20de%20vida.",
+							method: "get",
+							dataType: "JSON",
+							success: function(result){
+								var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] '" class="img-responsive"></a>'
+								$("#vid-historias").html(html);
+							}
+						});
+					</script>
           <!-- Fin de sección video -->
 
      			<!-- Sección transmisión -->
@@ -91,6 +100,17 @@
             </div>
           </div>
 
+					<script async>
+						$.ajax({
+							url: "http://pred1.colmex.mx/catalogo_videos.json?titulo=Lanzamiento%20del%20informe%20Desigualdades%20en%20M%C3%A9xico%202018",
+							method: "get",
+							dataType: "JSON",
+							success: function(result){
+								var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] '" class="img-responsive"></a>'
+								$("#vid-stream").html(html);
+							}
+						});
+					</script>
           <!-- Fin de sección transmisión -->
 
       </div>
