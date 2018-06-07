@@ -28,7 +28,6 @@
     <%= f.label :fecha, "Fecha de publicación" %><br>
     <%= f.text_field :fecha, {"data-uk-datepicker" => "{format: 'YYYY-MM-DD'}"} %>
   </div>
-<% if false %>
 
   <div class="field">
     <%= f.label :link, "Liga a la noticia" %><br>
