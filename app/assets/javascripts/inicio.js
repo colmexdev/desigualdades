@@ -111,7 +111,7 @@ function scaleEvents(big,med,small){
 
 
 function listo(){
-	if(window.location.pathname == "/informe2018"){
+	/*if(window.location.pathname == "/informe2018")*/try{
 		$(window).on("resize",function(){
 				// init Isotope
 						var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
@@ -230,7 +230,8 @@ function listo(){
 			}
 		});
 
-	} else if(window.location.pathname == "/videos"){
+	}catch(err){} 
+	/*else if(window.location.pathname == "/videos")*/try{
 		$.ajax({
 			method: 'get',
 			dataType: 'JSON',
@@ -297,7 +298,7 @@ function listo(){
 			}
 		});
 
-	}
+	}catch(err){}
 
 }
 
