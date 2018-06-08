@@ -1,3 +1,4 @@
+<script async src="https://platform.twitter.com/widgets.js"></script>
 <%= render 'inicio/header' %>
   <!-- Banner superior -->
   <section class="fondo-desigualdades">
@@ -179,7 +180,7 @@
 
   <!-- Fin de medios -->
 <%= render 'inicio/footer' %>
-
+<% if false %>
 <script async>
 		$(window).on("resize",function(){
 				// init Isotope
@@ -299,4 +300,5 @@
 			}
 		});
 </script>
-<script async src="https://platform.twitter.com/widgets.js"></script>
+<% end %>
+
