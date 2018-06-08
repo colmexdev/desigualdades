@@ -52,12 +52,9 @@ function scaleEvents(big,med,small){
 
 	function trace(cl,id,ind,vid,group){
 		var html = '<div class="vid-cont" style="text-align:center;" id="' + cl + '-'+ind+'"><div class="' + 'slide-vid' + '" id="' + id + "-" + ind + '">';
-		//html += '<iframe src="' + link + '" allowfullscreen></iframe></div></div>';
-		//html += '<div class="gallery-image"><div class="sinlge-photo"><div class="single-photo-inner">'
 		html += '<a href="https://www.youtube-nocookie.com/embed/' + vid.v_id + '?rel=0&amp;autoplay=1" data-rel="lightcase:' + group + 'Videos">'
 		html += '<img src="' + vid.thumbnail.replace("default.jpg","hqdefault.jpg") + '" class="img-responsive" alt="' + vid.titulo.replace('"',"'") + '">'
 		html += "</a>"
-		//html += "</div></div></div>"
 		return html;
 	}
 
@@ -145,9 +142,10 @@ function listo(){
 						success: function(result){
 							var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:informeVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive"></a>'
 							$("#vid-stream").html(html);
-							$('a[data-rel^=lightcase]').lightcase();
 						}
 					});
+		}).done(function(){
+					$('a[data-rel^=lightcase]').lightcase();
 		});
 
 	} else if(window.location.pathname == "/videos"){
