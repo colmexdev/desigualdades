@@ -81,6 +81,7 @@ function scaleEvents(big,med,small){
 		}
 		parent.css("height",wrapper.width()*prop*5/7);
 		container.width(links.length * wrapper.width()/vpv).css("left",(links.length <= vpv ? (wrapper.width()*0.5*(1-(links.length/vpv))) : (wrapper.width()/vpv*(-1))));
+		$('a[data-rel^=lightcase]').lightcase();
 	}
 
 	function drawSlider(parent,links,id,vpv){
@@ -206,6 +207,9 @@ function listo(){
 }
 
 $(window).on("resize",function(){
+		setTimeout(function(){
+			lightcase.resize();
+		},300);
 		if(window.location.pathname == "/informe2018"){
 			isotopeMedios();
 		}

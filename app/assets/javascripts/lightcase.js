@@ -123,13 +123,13 @@
 					return '<p class="' + _self.settings.classPrefix + 'error">' + _self.settings.labels['errorMessage'] + '</p>';
 				},
 				labels: {
-					'errorMessage': 'Source could not be found...',
-					'sequenceInfo.of': ' of ',
-					'close': 'Close',
-					'navigator.prev': 'Prev',
-					'navigator.next': 'Next',
- 					'navigator.play': 'Play',
-					'navigator.pause': 'Pause'
+					'errorMessage': 'No se pudo encontrar...',
+					'sequenceInfo.of': ' de ',
+					'close': 'Cerrar',
+					'navigator.prev': 'Anterior',
+					'navigator.next': 'Siguiente',
+ 					'navigator.play': 'Reproducir',
+					'navigator.pause': 'Pausar'
 				},
 				markup: function () {
 					$('body').append(

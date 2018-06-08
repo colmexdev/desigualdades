@@ -1,8 +1,10 @@
 (function($){
     'use strict';
 		$(document).on("ready turbolinks:load",function() {
-			listo();
-			reinicio();
+			try{
+				listo();
+				reinicio();
+			} catch(err) {console.log(err);}
 		});
 })(jQuery);
 
