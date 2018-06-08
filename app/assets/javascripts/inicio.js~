@@ -220,7 +220,7 @@ $(document).on("ready page:load", function(){
 			}
 		});
 
-	} else if(window.location.pathname == "/videos"{
+	} else if(window.location.pathname == "/videos"){
 
 		$.ajax({
 			method: 'get',

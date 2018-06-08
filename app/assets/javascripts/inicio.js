@@ -220,6 +220,10 @@ $(document).on("ready page:load", function(){
 			}
 		});
 
+				$(document).ready(function($) {
+					$('a[data-rel^=lightcase]').lightcase();
+				});
+
 	} else if(window.location.pathname == "/videos"){
 
 		$.ajax({
@@ -264,26 +268,26 @@ $(document).on("ready page:load", function(){
 					}
 				});
 
+					$(window).on("resize",function(){
+								var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
+								renderSlider("migdep",$("#migdep-container"),$("#migdep-cont"),$("#migdep-vids"),result["vids"],"migdep-vid-cont","migdep-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"migdep");
+					});
+
+					$(document).ready(function($) {
+						$('a[data-rel^=lightcase]').lightcase();
+					});
+
+				}
+			});
+
 				$(window).on("resize",function(){
 							var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
-							renderSlider("migdep",$("#migdep-container"),$("#migdep-cont"),$("#migdep-vids"),result["vids"],"migdep-vid-cont","migdep-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"migdep");
+							renderSlider("trades",$("#trades-container"),$("#trades-cont"),$("#trades-vids"),result["vids"],"trades-vid-cont","trades-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"trades");
 				});
 
 				$(document).ready(function($) {
 					$('a[data-rel^=lightcase]').lightcase();
 				});
-
-				}
-			});
-
-			$(window).on("resize",function(){
-						var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
-						renderSlider("trades",$("#trades-container"),$("#trades-cont"),$("#trades-vids"),result["vids"],"trades-vid-cont","trades-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"trades");
-			});
-
-			$(document).ready(function($) {
-				$('a[data-rel^=lightcase]').lightcase();
-			});
 
 			}
 		});
