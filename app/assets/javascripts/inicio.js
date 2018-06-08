@@ -299,7 +299,6 @@ function ready(){
 
 	}
 
-	return true;
 }
 
 $(document).ready(ready);
