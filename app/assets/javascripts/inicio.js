@@ -181,12 +181,30 @@ function listo(){
 						drawSlider($("#sedes-slider"),result["vids"],"sedes",3)
 						renderSlider("sedes",$("#sedes-container"),$("#sedes-cont"),$("#sedes-vids"),result["vids"],"sedes-vid-cont","sedes-slide-vid",(ancho < 792 ? 2 : 3),(ancho < 792 ? 0.4 : 0.3),false,"sedes");
 
+						$(window).on("resize",function(){
+							if(window.location.pathname == "/videos"){
+								var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
+								renderSlider("sedes",$("#sedes-container"),$("#sedes-cont"),$("#sedes-vids"),result["vids"],"sedes-vid-cont","sedes-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"sedes");
+							}
+						});
 					}
 				});
 
+					$(window).on("resize",function(){
+						if(window.location.pathname == "/videos"){
+							var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
+							renderSlider("migdep",$("#migdep-container"),$("#migdep-cont"),$("#migdep-vids"),result["vids"],"migdep-vid-cont","migdep-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"migdep");
+						}
+					});
 				}
 			});
 
+				$(window).on("resize",function(){
+					if(window.location.pathname == "/videos"){
+						var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
+						renderSlider("trades",$("#trades-container"),$("#trades-cont"),$("#trades-vids"),result["vids"],"trades-vid-cont","trades-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"trades");
+					}
+				});
 			}
 		});
 
@@ -199,10 +217,5 @@ $(window).on("resize",function(){
 		},300);
 		if(window.location.pathname == "/informe2018"){
 			isotopeMedios();
-		} else if(window.location.pathname == "/videos"){
-			var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
-			renderSlider("sedes",$("#sedes-container"),$("#sedes-cont"),$("#sedes-vids"),window.sedes_vids,"sedes-vid-cont","sedes-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"sedes");
-			renderSlider("migdep",$("#migdep-container"),$("#migdep-cont"),$("#migdep-vids"),window.migdep_vids,"migdep-vid-cont","migdep-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"migdep");
-			renderSlider("trades",$("#trades-container"),$("#trades-cont"),$("#trades-vids"),window.trades_vids,"trades-vid-cont","trades-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"trades");
 		}
 });
