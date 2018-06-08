@@ -298,7 +298,8 @@ function listo(){
 		});
 
 	}
-
+	$("#script-twitter").remove();
+	$("head").append('<script id="script-twitter" async type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>');
 }
 
 $(document).on("ready turbolinks:load",listo);
