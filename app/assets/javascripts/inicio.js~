@@ -220,10 +220,6 @@ $(document).on("ready page:load", function(){
 			}
 		});
 
-				$(document).ready(function($) {
-					$('a[data-rel^=lightcase]').lightcase();
-				});
-
 	} else if(window.location.pathname == "/videos"){
 
 		$.ajax({
@@ -293,4 +289,8 @@ $(document).on("ready page:load", function(){
 		});
 
 	}
+
+				$(document).ready(function($) {
+					$('a[data-rel^=lightcase]').lightcase();
+				});
 });

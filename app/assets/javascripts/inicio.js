@@ -290,7 +290,5 @@ $(document).on("ready page:load", function(){
 
 	}
 
-				$(document).ready(function($) {
-					$('a[data-rel^=lightcase]').lightcase();
-				});
+	$('a[data-rel^=lightcase]').lightcase();
 });
