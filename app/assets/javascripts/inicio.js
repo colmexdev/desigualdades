@@ -196,6 +196,9 @@ var ready = function(){
 			success: function(result){
 				var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive"></a>'
 				$("#vid-historias").html(html);
+				$(document).ready(function($) {
+					$('a[data-rel^=lightcase]').lightcase();
+				});
 			}
 		});
 
@@ -206,6 +209,9 @@ var ready = function(){
 			success: function(result){
 				var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive"></a>'
 				$("#vid-talk").html(html);
+				$(document).ready(function($) {
+					$('a[data-rel^=lightcase]').lightcase();
+				});
 			}
 		});
 
@@ -216,6 +222,9 @@ var ready = function(){
 			success: function(result){
 				var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive"></a>'
 				$("#vid-stream").html(html);
+				$(document).ready(function($) {
+					$('a[data-rel^=lightcase]').lightcase();
+				});
 			}
 		});
 
@@ -289,7 +298,7 @@ var ready = function(){
 
 	}
 
-	$('a[data-rel^=lightcase]').lightcase();
+	return true;
 }
 
 $(document).ready(ready);
