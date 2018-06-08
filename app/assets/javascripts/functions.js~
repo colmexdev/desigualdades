@@ -309,9 +309,3 @@ function isotopeMedios(){
 						});
 }
 
-		$(window).on("resize",function(){
-				if(window.location.pathname == "/informe2018"){
-					isotopeMedios();
-				}
-		});
-
