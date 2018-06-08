@@ -301,4 +301,4 @@ function listo(){
 
 }
 
-$(document).on("ready turbolinks:load",listo);
+//$(document).on("ready turbolinks:load",listo);
