@@ -110,7 +110,7 @@ function scaleEvents(big,med,small){
 
 
 
-function ready(){
+function listo(){
 	if(window.location.pathname == "/informe2018"){
 		$(window).on("resize",function(){
 				// init Isotope
@@ -301,5 +301,4 @@ function ready(){
 
 }
 
-$(document).ready(ready);
-$(document).on("turbolinks:load",ready);
+$(document).on("ready turbolinks:load",listo);
