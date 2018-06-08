@@ -108,8 +108,12 @@ function scaleEvents(big,med,small){
 		parent.html(html);
 	}
 
-var ready = function(){
+
+
+function ready(){
+	console.log("Entrando");
 	if(window.location.pathname == "/informe2018"){
+		console.log("Entrando informe");
 		$(window).on("resize",function(){
 				// init Isotope
 						var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
@@ -229,7 +233,7 @@ var ready = function(){
 		});
 
 	} else if(window.location.pathname == "/videos"){
-
+		console.log("Entrando videos");
 		$.ajax({
 			method: 'get',
 			dataType: 'JSON',

@@ -111,9 +111,7 @@ function scaleEvents(big,med,small){
 
 
 function ready(){
-	console.log("Entrando");
 	if(window.location.pathname == "/informe2018"){
-		console.log("Entrando informe");
 		$(window).on("resize",function(){
 				// init Isotope
 						var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
@@ -233,7 +231,6 @@ function ready(){
 		});
 
 	} else if(window.location.pathname == "/videos"){
-		console.log("Entrando videos");
 		$.ajax({
 			method: 'get',
 			dataType: 'JSON',
@@ -306,5 +303,4 @@ function ready(){
 }
 
 $(document).ready(ready);
-$(document).on("page:load",ready);
-$(document).on("page:change",ready);
+$(document).on("turbolinks:load",ready);
