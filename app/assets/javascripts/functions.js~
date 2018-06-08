@@ -47,7 +47,7 @@
 			}
 
 			//Js code for search box
-			$(".first_click").click(function(){
+/*			$(".first_click").click(function(){
 				$(".first_click").hide();
 				$(".second_click").css('display','block');
 				$(".mainmenu-area").addClass("search_box");
@@ -72,7 +72,7 @@
                     $(".fixed-ammount label").removeClass("select-ammount-buttton");
                 }
             });
-
+*/
 
             // Progress Bar
             function animateElements() {
