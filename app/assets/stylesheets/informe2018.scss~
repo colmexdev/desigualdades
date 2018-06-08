@@ -94,3 +94,10 @@
 .review-description a:visited, .review-decription a:active {
 	color: #eb6852;
 }
+
+
+.mainmenu-area.clone .navbar-default .navbar-nav>li>a{
+	font-size: 10px !important;
+}
+
+}
