@@ -113,7 +113,7 @@ function scaleEvents(big,med,small){
 function listo(){
 	if(window.location.pathname == "/informe2018"){
 		isotopeMedios();
-
+		$('a[data-rel^=lightcase]').lightcase();
 		$.ajax({
 			url: "http://pred1.colmex.mx/catalogo_videos.json?titulo=Informe%20Desigualdades%20en%20M%C3%A9xico%202018.%20Dos%20historias%20de%20vida.",
 			method: "get",
@@ -121,7 +121,7 @@ function listo(){
 			success: function(result){
 				var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive"></a>'
 				$("#vid-historias").html(html);
-				$(document).on("ready page:load",function(){
+				$(document).on("ready",function(){
 					$('a[data-rel^=lightcase]').lightcase();
 				});
 			}
@@ -134,7 +134,7 @@ function listo(){
 			success: function(result){
 				var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive"></a>'
 				$("#vid-talk").html(html);
-				$(document).on("ready page:load",function(){
+				$(document).on("ready",function(){
 					$('a[data-rel^=lightcase]').lightcase();
 				});
 			}
@@ -147,7 +147,7 @@ function listo(){
 			success: function(result){
 				var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive"></a>'
 				$("#vid-stream").html(html);
-				$(document).on("ready turbolinks:load",function(){
+				$(document).on("ready",function(){
 					$('a[data-rel^=lightcase]').lightcase();
 				});
 
