@@ -127,7 +127,8 @@ function listo(){
 				var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:informeVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive"></a>'
 				$("#vid-historias").html(html);
 			}
-		}).done($.ajax({
+		}).done(function(){
+			$.ajax({
 				url: "http://pred1.colmex.mx/catalogo_videos.json?titulo=Desigualdades%20en%20M%C3%A9xico%202018.%20Entrecruzamiento%20y%20acumulaci%C3%B3n%20de%20desventajas",
 				method: "get",
 				dataType: "JSON",
@@ -135,7 +136,9 @@ function listo(){
 					var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:informeVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive"></a>'
 					$("#vid-talk").html(html);
 				}
-			}).done($.ajax({
+			});
+		}).done(function(){
+					$.ajax({
 						url: "http://pred1.colmex.mx/catalogo_videos.json?titulo=Lanzamiento%20del%20informe%20Desigualdades%20en%20M%C3%A9xico%202018",
 						method: "get",
 						dataType: "JSON",
@@ -143,10 +146,9 @@ function listo(){
 							var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:informeVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive"></a>'
 							$("#vid-stream").html(html);
 							$('a[data-rel^=lightcase]').lightcase();
-					})
-				)
-			)
-	)
+						}
+					});
+		});
 
 	} else if(window.location.pathname == "/videos"){
 		$.ajax({
