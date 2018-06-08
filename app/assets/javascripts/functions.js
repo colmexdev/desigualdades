@@ -1,7 +1,4 @@
-(function($){
-    'use strict';
-		$(document).on("ready page:load",function() {
-
+function reinicio(){
 			//Js code for Header Top
 			var $menu_fixed = $("#menu-fixed"),
 			$clone = $menu_fixed.after($menu_fixed.clone().addClass("clone"));
@@ -224,8 +221,7 @@
                   send_mail();
                 }
               });
-		});
-})(jQuery);
+}
 function send_mail(){
   $("form").submit();
   $("#email").val('');

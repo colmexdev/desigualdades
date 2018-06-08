@@ -111,50 +111,7 @@ function scaleEvents(big,med,small){
 
 
 function listo(){
-			//Js code for Header Top
-			var $menu_fixed = $("#menu-fixed"),
-			$clone = $menu_fixed.after($menu_fixed.clone().addClass("clone"));
-			$(window).on("scroll", function() {
-				var fromTop = $(window).scrollTop();
-				$("body").toggleClass("down", (fromTop > 185));
-			});
-
-
-			//Js code for Responsive multiple Munu
-			$('.dropdown>.dropdown-menu>.dropdown a.dropdown-toggle').on('click', function(e) {
-				var $el = $(this);
-				var $parent = $(this).offsetParent(".dropdown-menu");
-				$(this).parent("li").toggleClass('open');
-
-				$('.nav li.open').not($(this).parents("li")).removeClass("open");
-
-				return false;
-			});
-
-			//js for Light Menu Style
-			if($("header").attr("id") == "header-style-two")
-			{
-						function sticky_relocate() {
-							var window_top = $(window).scrollTop();
-							var div_top = $('#sticky-anchor').offset().top;
-							if (window_top > div_top) {
-								$('.mainmenu-area').removeClass('light-menu');
-								//This is for when div in top
-
-
-
-							} else {
-								$('.mainmenu-area').addClass('light-menu');
-								//This is for when div in not top
-							}
-						}
-
-						$(function () {
-							$(window).scroll(sticky_relocate);
-							sticky_relocate();
-						});
-			}
-
+	reinicio();
 	if(window.location.pathname == "/informe2018"){
 		$(window).on("resize",function(){
 				// init Isotope
