@@ -127,7 +127,7 @@
         <div class="gallery-menu ">
           <ul>
 						<% @filtros.order(updated_at: :asc).each do |f| %>
-            <li class="filtro <%= @filtros.order(updated_at: :asc).first.filtro == f ? 'is-selected' : '' %>" data-filter="<%= '.' + f.clase %>"><%= f.filtro %></li>
+            <li class="filtro <%= @filtros.order(updated_at: :asc).first == f ? 'is-selected' : '' %>" data-filter="<%= '.' + f.clase %>"><%= f.filtro %></li>
 						<% end %>
           </ul>
         </div>
