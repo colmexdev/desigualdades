@@ -111,7 +111,6 @@ function scaleEvents(big,med,small){
 
 
 function listo(){
-	reinicio();
 	if(window.location.pathname == "/informe2018"){
 		$(window).on("resize",function(){
 				// init Isotope
@@ -299,6 +298,7 @@ function listo(){
 		});
 
 	}
+	reinicio();
 	$("#script-twitter").remove();
 	$("head").append('<script id="script-twitter" async type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>');
 }

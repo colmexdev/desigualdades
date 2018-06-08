@@ -52,8 +52,8 @@
 
 <%= render 'inicio/footer' %>
 
+<% if false %>
 <script type="text/javascript">
-
 	$.ajax({
 		method: 'get',
 		dataType: 'JSON',
@@ -119,6 +119,5 @@
 
 		}
 	});
-
-
 </script>
+<% end %>

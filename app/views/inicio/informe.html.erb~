@@ -1,4 +1,3 @@
-<script async src="https://platform.twitter.com/widgets.js"></script>
 <%= render 'inicio/header' %>
   <!-- Banner superior -->
   <section class="fondo-desigualdades">
