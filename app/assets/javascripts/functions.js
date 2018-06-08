@@ -176,7 +176,7 @@ function reinicio(){
             // LightCase Active
 						setTimeout(function(){
 							$('a[data-rel^=lightcase]').lightcase();
-						}, 300);
+						}, 100);
 
             //ScrollBar Customization
             $('.scrollbox').enscroll();
