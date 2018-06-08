@@ -121,7 +121,9 @@ function listo(){
 			success: function(result){
 				var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive"></a>'
 				$("#vid-historias").html(html);
-				//$('a[data-rel^=lightcase]').lightcase();
+				$(document).on("ready page:load",function(){
+					$('a[data-rel^=lightcase]').lightcase();
+				});
 			}
 		});
 
@@ -132,7 +134,9 @@ function listo(){
 			success: function(result){
 				var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive"></a>'
 				$("#vid-talk").html(html);
-				//$('a[data-rel^=lightcase]').lightcase();
+				$(document).on("ready page:load",function(){
+					$('a[data-rel^=lightcase]').lightcase();
+				});
 			}
 		});
 
@@ -143,7 +147,10 @@ function listo(){
 			success: function(result){
 				var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive"></a>'
 				$("#vid-stream").html(html);
-				//$('a[data-rel^=lightcase]').lightcase();
+				$(document).on("ready turbolinks:load",function(){
+					$('a[data-rel^=lightcase]').lightcase();
+				});
+
 			}
 		});
 
@@ -182,7 +189,7 @@ function listo(){
 							var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
 							renderSlider("sedes",$("#sedes-container"),$("#sedes-cont"),$("#sedes-vids"),result["vids"],"sedes-vid-cont","sedes-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"sedes");
 						});
-						$(document).on("ready page:load",function(){
+						$(document).on("ready turbolinks:load",function(){
 							$('a[data-rel^=lightcase]').lightcase();
 						});
 					}
@@ -192,7 +199,7 @@ function listo(){
 								var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
 								renderSlider("migdep",$("#migdep-container"),$("#migdep-cont"),$("#migdep-vids"),result["vids"],"migdep-vid-cont","migdep-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"migdep");
 					});
-					$(document).on("ready page:load",function(){
+					$(document).on("ready turbolinks:load",function(){
 						$('a[data-rel^=lightcase]').lightcase();
 					});
 				}
@@ -202,7 +209,7 @@ function listo(){
 							var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
 							renderSlider("trades",$("#trades-container"),$("#trades-cont"),$("#trades-vids"),result["vids"],"trades-vid-cont","trades-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"trades");
 				});
-				$(document).on("ready page:load",function(){
+				$(document).on("ready turbolinks:load",function(){
 					$('a[data-rel^=lightcase]').lightcase();
 				});
 			}
