@@ -108,7 +108,7 @@ function scaleEvents(big,med,small){
 		parent.html(html);
 	}
 
-$(document).on("ready", function(){
+var ready = function(){
 	if(window.location.pathname == "/informe2018"){
 		$(window).on("resize",function(){
 				// init Isotope
@@ -290,6 +290,7 @@ $(document).on("ready", function(){
 	}
 
 	$('a[data-rel^=lightcase]').lightcase();
-});
+}
 
-$(document).on("page:load",$(document).trigger("ready"));
+$(document).ready(ready);
+$(document).on("page:load",ready);
