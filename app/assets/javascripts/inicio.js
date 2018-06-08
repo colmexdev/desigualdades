@@ -111,9 +111,13 @@ function scaleEvents(big,med,small){
 
 
 function listo(){
-	if(window.location.pathname == "/informe2018"){
+	if(window.location.pathname == "/"){
+		$("#script-twitter").remove();
+		$("head").append('<script id="script-twitter" async type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>');		
+	} else if(window.location.pathname == "/informe2018"){
 		isotopeMedios();
-		$('a[data-rel^=lightcase]').lightcase();
+		$("#script-twitter").remove();
+		$("head").append('<script id="script-twitter" async type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>');
 		$.ajax({
 			url: "http://pred1.colmex.mx/catalogo_videos.json?titulo=Informe%20Desigualdades%20en%20M%C3%A9xico%202018.%20Dos%20historias%20de%20vida.",
 			method: "get",
@@ -121,9 +125,6 @@ function listo(){
 			success: function(result){
 				var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive"></a>'
 				$("#vid-historias").html(html);
-				$(document).on("ready",function(){
-					$('a[data-rel^=lightcase]').lightcase();
-				});
 			}
 		});
 
@@ -134,9 +135,6 @@ function listo(){
 			success: function(result){
 				var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive"></a>'
 				$("#vid-talk").html(html);
-				$(document).on("ready",function(){
-					$('a[data-rel^=lightcase]').lightcase();
-				});
 			}
 		});
 
@@ -147,10 +145,6 @@ function listo(){
 			success: function(result){
 				var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:grupoUnoVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive"></a>'
 				$("#vid-stream").html(html);
-				$(document).on("ready",function(){
-					$('a[data-rel^=lightcase]').lightcase();
-				});
-
 			}
 		});
 
@@ -189,18 +183,12 @@ function listo(){
 							var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
 							renderSlider("sedes",$("#sedes-container"),$("#sedes-cont"),$("#sedes-vids"),result["vids"],"sedes-vid-cont","sedes-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"sedes");
 						});
-						$(document).on("ready",function(){
-							$('a[data-rel^=lightcase]').lightcase();
-						});
 					}
 				});
 
 					$(window).on("resize",function(){
 								var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
 								renderSlider("migdep",$("#migdep-container"),$("#migdep-cont"),$("#migdep-vids"),result["vids"],"migdep-vid-cont","migdep-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"migdep");
-					});
-					$(document).on("ready",function(){
-						$('a[data-rel^=lightcase]').lightcase();
 					});
 				}
 			});
@@ -209,19 +197,11 @@ function listo(){
 							var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
 							renderSlider("trades",$("#trades-container"),$("#trades-cont"),$("#trades-vids"),result["vids"],"trades-vid-cont","trades-slide-vid",(ancho >= 792 ? 3 : (ancho >= 545 ? 2 : 1)),(ancho >= 792 ? 0.3 : (ancho >= 545 ? 0.4 : 0.47)),true,"trades");
 				});
-				$(document).on("ready",function(){
-					$('a[data-rel^=lightcase]').lightcase();
-				});
 			}
 		});
 
 	}
-	reinicio();
-	$("#script-twitter").remove();
-	$("head").append('<script id="script-twitter" async type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>');
 }
-
-$(document).on("ready turbolinks:load",listo);
 
 $(window).on("resize",function(){
 		if(window.location.pathname == "/informe2018"){

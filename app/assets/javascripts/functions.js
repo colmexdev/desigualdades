@@ -172,7 +172,9 @@ function reinicio(){
             });
 
             // LightCase Active
-            $('a[data-rel^=lightcase]').lightcase();
+						setTimeout(function(){
+							$('a[data-rel^=lightcase]').lightcase();
+						}, 350);
 
             //ScrollBar Customization
             $('.scrollbox').enscroll();
