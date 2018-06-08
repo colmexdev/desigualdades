@@ -40,7 +40,6 @@
   border-bottom: 4px solid #F0F0F0;
   padding-bottom: 12px;
   position: relative;
-  text-transform: uppercase;
 }
 
 .titulo-desigualdades h3:after {
@@ -90,4 +89,8 @@
 
 .tv, .linea, .radio, .periodico, .boletin {
 	margin-bottom: 26px;
+}
+
+.review-description a:visited, .review-decription a:active {
+	color: #eb6852;
 }

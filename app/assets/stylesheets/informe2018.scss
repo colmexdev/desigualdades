@@ -40,7 +40,6 @@
   border-bottom: 4px solid #F0F0F0;
   padding-bottom: 12px;
   position: relative;
-  text-transform: uppercase;
 }
 
 .titulo-desigualdades h3:after {
@@ -94,4 +93,11 @@
 
 .review-description a:visited, .review-decription a:active {
 	color: #eb6852;
+}
+
+
+.mainmenu-area.clone .navbar-default .navbar-nav>li>a{
+	font-size: 10px !important;
+}
+
 }
