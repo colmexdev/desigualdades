@@ -113,7 +113,7 @@ function scaleEvents(big,med,small){
 function listo(){
 	if(window.location.pathname == "/informe2018"){
 		isotopeMedios();
-
+		$('a[data-rel^=lightcase]').lightcase();
 		$.ajax({
 			url: "http://pred1.colmex.mx/catalogo_videos.json?titulo=Informe%20Desigualdades%20en%20M%C3%A9xico%202018.%20Dos%20historias%20de%20vida.",
 			method: "get",
