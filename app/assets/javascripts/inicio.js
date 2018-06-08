@@ -108,9 +108,8 @@ function scaleEvents(big,med,small){
 		parent.html(html);
 	}
 
-$(document).on("ready page:load", function(){
+$(document).on("ready", function(){
 	if(window.location.pathname == "/informe2018"){
-
 		$(window).on("resize",function(){
 				// init Isotope
 						var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
@@ -292,3 +291,5 @@ $(document).on("ready page:load", function(){
 
 	$('a[data-rel^=lightcase]').lightcase();
 });
+
+$(document).on("page:load",$(document).trigger("ready"));
