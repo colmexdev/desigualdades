@@ -126,7 +126,7 @@
       <div class="row ">
         <div class="gallery-menu ">
           <ul>
-						<% @filtros.each do |f| %>
+						<% @filtros.order(updated_at: :asc).each do |f| %>
             <li class="filtro" data-filter="<%= '.' + f.clase %>"><%= f.filtro %></li>
 						<% end %>
           </ul>
