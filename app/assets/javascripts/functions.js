@@ -1,9 +1,11 @@
 (function($){
     'use strict';
 		$(document).on("ready turbolinks:load",function() {
-			reinicio()
+			listo();
+			reinicio();
 		});
 })(jQuery);
+
 function send_mail(){
   $("form").submit();
   $("#email").val('');
