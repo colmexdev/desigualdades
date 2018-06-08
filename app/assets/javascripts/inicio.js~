@@ -207,6 +207,9 @@ function listo(){
 }
 
 $(window).on("resize",function(){
+		setTimeout(function(){
+			lightcase.resize();
+		},300);
 		if(window.location.pathname == "/informe2018"){
 			isotopeMedios();
 		}
