@@ -257,12 +257,15 @@ class PanelController < ApplicationController
     @query = "("
     keys = params[:keyword].split(/ +/).map {|k| " like '%" + k.downcase + "%'"}.compact
     @fields.keys.each do |f|
+      if f.to_s == "fecha"
+        next
+      end
       h = ""
       keys.each_with_index do |k,i|
         h =  h + f.to_s + k + (i == keys.size - 1 ? '' : ' AND ')
       end
 
-      @query = @query + h + (f == "fecha" ? "" : (f == @fields.keys[-1] ? ")" : " or "))
+      @query = @query + h +  (f == @fields.keys[-1] ? ")" : " or ")
     end
   end
 
