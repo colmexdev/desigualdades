@@ -263,7 +263,7 @@ function isotopeMedios(){
 							masonry: {
 								columnWidth: $(".all-gallery-items").width()/(ancho >= 1200 ? 3 : (ancho >= 680 ? 2 : 1))
 							},
-							filter: '.periodico',
+							filter: $('.is_selected').attr("data-filter")',
 							itemSelector: '.single-item',
 							percentPosition: true,
 							transitionDuration: '0.8s',
