@@ -255,7 +255,7 @@ class PanelController < ApplicationController
 
   def query
     @query = "("
-    keys = params[:keyword].split(/ +/).map {|k| " like '%" + k.downcase + "%'"}
+    keys = params[:keyword].split(/ +/).map {|k| k.downcase == " fecha" ? nil : " like '%" + k.downcase + "%'"}.compact
     @fields.keys.each do |f|
       h = ""
       keys.each_with_index do |k,i|

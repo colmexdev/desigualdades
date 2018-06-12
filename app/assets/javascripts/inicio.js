@@ -146,6 +146,20 @@ function listo(){
 				}
 			});
 		}).done(function(){
+			$.ajax({
+				url: 'http://pred1.colmex.mx/catalogo_videos.json?lista=Informe%20%22Desigualdades%20en%20M%C3%A9xico%202018%22',
+				method: 'get',
+				dataType: 'JSON',
+				success: function(result){
+					var html;
+					for(var i=0; i < result["vids"].length; i++){
+						html = '<div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">' + '<div class="gallery-img">' + '<div class="sinlge-photo">' + '<div class="single-photo-inner"> <a href="https://www.youtube-nocookie.com/embed/' + result['vids'][i]['v_id'] + '?rel=0&amp;autoplay=1" data-rel="lightcase:lanzamientoVideos"> <img src="' + result['vids'][i]['thumbnail'].replace('default.jpg','hqdefault.jpg') + '" alt="' + result['vids'][i]['titulo'] +'" class="img-responsive vid-clip"> </a> </div>' + '</div></div></div>'
+						$("#vids-pres").append(html);
+					}
+					$('a[data-rel^=lightcase]').lightcase();
+				}
+			});
+		}).done(function(){
 			isotopeMedios();
 			$("head").append('<script id="script-twitter" async type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>');
 		});
