@@ -101,6 +101,6 @@
 }
 
 img.vid-clip{
-	clip-path: inset(13% 0);
+	clip-path: inset(13.3% 0);
 }
 
