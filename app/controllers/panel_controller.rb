@@ -255,7 +255,7 @@ class PanelController < ApplicationController
 
   def query
     @query = "("
-    keys = params[:keyword].split(/ +/).map {|k| " like '%" + k.downcase + "%'"}.compact
+    keys = params[:keyword].split(/ +/).map {|k| " like '%" + k.downcase.gsub('%','\%') + "%'"}.compact
     @fields.keys.each do |f|
       if f.to_s == "fecha"
         next
