@@ -100,3 +100,7 @@
 	font-size: 9px !important;
 }
 
+img.vid-clip{
+	clip-path: inset(13% 0);
+}
+
