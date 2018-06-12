@@ -145,6 +145,7 @@ function listo(){
 		}).done(function(){
 			isotopeMedios();
 			$("head").append('<script id="script-twitter" async type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>');
+			$('a[data-rel^=lightcase]').lightcase();
 		});
 
 	} else if(window.location.pathname == "/videos"){
