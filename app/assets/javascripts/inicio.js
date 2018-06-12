@@ -147,7 +147,7 @@ function listo(){
 			});
 		}).done(function(){
 			$.ajax({
-				url: 'http://pred1.colmex.mx/catalogo_videos.json?lista=Informe%20%22Desigualdades%20en%20M%C3%A9xico%202018%22&amp;tags=Lanzamiento%20%Informe',
+				url: 'http://pred1.colmex.mx/catalogo_videos.json?lista=Informe%20%22Desigualdades%20en%20M%C3%A9xico%202018%22&tags=Lanzamiento%20Informe',
 				method: 'get',
 				dataType: 'JSON',
 				success: function(result){
