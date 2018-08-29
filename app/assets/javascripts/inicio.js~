@@ -115,7 +115,7 @@ function listo(){
 	} else if(window.location.pathname == "/informe2018"){
 
 		$.ajax({
-			url: "http://pred1.colmex.mx/catalogo_videos.json?titulo=Informe%20Desigualdades%20en%20M%C3%A9xico%202018.%20Dos%20historias%20de%20vida.",
+			url: "http://pred1.colmex.mx/catalogo_videos.json?titulo=Informe%20Desigualdades%20en%20M%C3%A9xico%202018.%20Dos%20historias%20de%20vida",
 			method: "get",
 			dataType: "JSON",
 			success: function(result){
