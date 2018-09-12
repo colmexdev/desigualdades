@@ -115,7 +115,7 @@ function listo(){
 	} else if(window.location.pathname == "/informe2018"){
 
 		$.ajax({
-			url: "http://pred1.colmex.mx/catalogo_videos.json?titulo=Informe%20Desigualdades%20en%20M%C3%A9xico%202018.%20Dos%20historias%20de%20vida",
+			url: "http://coed.colmex.mx/catalogo_videos.json?titulo=Informe%20Desigualdades%20en%20M%C3%A9xico%202018.%20Dos%20historias%20de%20vida",
 			method: "get",
 			dataType: "JSON",
 			success: function(result){
@@ -125,7 +125,7 @@ function listo(){
 			}
 		}).done(function(){
 			$.ajax({
-				url: "http://pred1.colmex.mx/catalogo_videos.json?titulo=Desigualdades%20en%20M%C3%A9xico%202018.%20Entrecruzamiento%20y%20acumulaci%C3%B3n%20de%20desventajas",
+				url: "http://coed.colmex.mx/catalogo_videos.json?titulo=Desigualdades%20en%20M%C3%A9xico%202018.%20Entrecruzamiento%20y%20acumulaci%C3%B3n%20de%20desventajas",
 				method: "get",
 				dataType: "JSON",
 				success: function(result){
@@ -136,7 +136,7 @@ function listo(){
 			});
 		}).done(function(){
 			$.ajax({
-				url: "http://pred1.colmex.mx/catalogo_videos.json?titulo=Lanzamiento%20del%20informe%20Desigualdades%20en%20M%C3%A9xico%202018",
+				url: "http://coed.colmex.mx/catalogo_videos.json?titulo=Lanzamiento%20del%20informe%20Desigualdades%20en%20M%C3%A9xico%202018",
 				method: "get",
 				dataType: "JSON",
 				success: function(result){
@@ -147,7 +147,7 @@ function listo(){
 			});
 		}).done(function(){
 			$.ajax({
-				url: 'http://pred1.colmex.mx/catalogo_videos.json?lista=Informe%20%22Desigualdades%20en%20M%C3%A9xico%202018%22&tags=Lanzamiento%20Informe',
+				url: 'http://coed.colmex.mx/catalogo_videos.json?lista=Informe%20%22Desigualdades%20en%20M%C3%A9xico%202018%22&tags=Lanzamiento%20Informe',
 				method: 'get',
 				dataType: 'JSON',
 				success: function(result){
@@ -168,7 +168,7 @@ function listo(){
 		$.ajax({
 			method: 'get',
 			dataType: 'JSON',
-			url: 'http://pred1.colmex.mx/catalogo_videos.json?lista=Seminario%20sobre%20Trabajo%20y%20Desigualdades&all=true&crono=desc',
+			url: 'http://coed.colmex.mx/catalogo_videos.json?lista=Seminario%20sobre%20Trabajo%20y%20Desigualdades&all=true&crono=desc',
 			success: function(result){
 				var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
 				window.trades_vids = result;
@@ -178,7 +178,7 @@ function listo(){
 		$.ajax({
 			method: 'get',
 			dataType: 'JSON',
-			url: 'http://pred1.colmex.mx/catalogo_videos.json?lista=Seminario%20Migraci%C3%B3n,%20Desigualdad%20y%20Pol%C3%ADticas%20P%C3%BAblicas&all=true&crono=desc',
+			url: 'http://coed.colmex.mx/catalogo_videos.json?lista=Seminario%20Migraci%C3%B3n,%20Desigualdad%20y%20Pol%C3%ADticas%20P%C3%BAblicas&all=true&crono=desc',
 			success: function(result){
 				var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
 				window.migdep_vids = result;
@@ -188,7 +188,7 @@ function listo(){
 				$.ajax({
 					method: 'get',
 					dataType: 'JSON',
-					url: 'http://pred1.colmex.mx/catalogo_videos.json?lista=Seminario%20sobre%20Desigualdad%20Socioecon%C3%B3mica%20y%20Educativa&all=true&crono=desc',
+					url: 'http://coed.colmex.mx/catalogo_videos.json?lista=Seminario%20sobre%20Desigualdad%20Socioecon%C3%B3mica%20y%20Educativa&all=true&crono=desc',
 					success: function(result){
 						var ancho = Math.max(document.documentElement.clientWidth, window.innerWidth || document.body.ClientWidth || 0);
 						window.sedes_vids = result;
