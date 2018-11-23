@@ -437,7 +437,7 @@ body.down #menu-fixed.clone .donation a {
 	font-weight: 600;
     letter-spacing: 0.05em;
 }
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:active, .navbar-default .navbar-nav>li>a:visited {
     color: #fff;
 }
 .navbar-nav>li>a {
