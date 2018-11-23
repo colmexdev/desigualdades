@@ -114,7 +114,7 @@ function listo(){
 		$("head").append('<script id="script-twitter" async type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>');		
 	} else if(window.location.pathname == "/informe2018"){
 		$.ajax({
-			url: "https://coed.colmex.mx/catalogo_videos.json?titulo=Desigualdades en México 2018: una mirada interdisciplinaria",
+			url: "https://coed.colmex.mx/catalogo_videos.json?id=HC7ikRzoDaM",
 			success: function(result){
 				var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:informeVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive vid-clip"></a>'
 				$("#vid-inf").html(html);
