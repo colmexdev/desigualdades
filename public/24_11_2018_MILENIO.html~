@@ -1,18 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html style="height:100%;">
 <head>
-<head>
-	<title>Red de estudios sobre desigualdades</title>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-
-	<meta property="og:image" content="<%= asset_url('imagen-enlaces.png') %>" />
-	<meta property="og:description" content="En El Colegio de México, el estudio de los distintos tipos de desigualdad es una tradición. Se han explorado las desigualdades económicas, educativas, sociales y de género; así mismo se han preparado numerosas investigaciones sobre desigualdades regionales, de capacidades gubernamentales, de organización social o culturales con perspectivas tanto históricas como contemporáneas. La agenda de investigación de El Colegio incluye estudios sobre su origen y evolución, las interacciones entre los diversos ámbitos donde se producen, así como sobre los procesos políticos, económicos e institucionales que les dan forma." />
-	<meta property="og:url"content="<%= informe_path %>" />
-	<meta property="og:title" content="Red de estudios sobre desigualdades" />
-
-	<meta name="description" content="En El Colegio de México, el estudio de los distintos tipos de desigualdad es una tradición. Se han explorado las desigualdades económicas, educativas, sociales y de género; así mismo se han preparado numerosas investigaciones sobre desigualdades regionales, de capacidades gubernamentales, de organización social o culturales con perspectivas tanto históricas como contemporáneas. La agenda de investigación de El Colegio incluye estudios sobre su origen y evolución, las interacciones entre los diversos ámbitos donde se producen, así como sobre los procesos políticos, económicos e institucionales que les dan forma.">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <link rel="stylesheet" media="all" href="/assets/application-5d37eb2480253cc4787a6fe03e54d7095b5cb25f6b733b306adf50c0eb45dfb5.css">
+  <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="/assets/application-cbcc8997768da32a17d712aad6dab62790d54ec9b483b374d19a8822b3ee4b34.js"></script>	
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -28,10 +19,10 @@
 		ga('send', 'pageview', window.location.pathname);
 	});
 	</script>
-</head>
-</head>
-<body>
-	<video controls autoplay name="media">
+<script charset="utf-8" src="https://platform.twitter.com/js/grid~moment~timeline~tweet.64ecbba9f1c21c2dac8fc5a9acb27286.js"></script><script charset="utf-8" src="https://platform.twitter.com/js/moment~timeline~tweet.50bff1a04f1f37b6a41fa15859518e07.js"></script><script charset="utf-8" src="https://platform.twitter.com/js/timeline.23dfc53785ad69e3911502c817da855a.js"></script><title>Red de estudios sobre desigualdades</title><meta name="csrf-param" content="authenticity_token"><meta name="csrf-token" content="lIvkcbJcE7RWqLw0On+2IRwULeR4ydXWGchlzLEHQiZaXQEpKt6rKoDu877qX/724LEqmyoiQCDOLe/ITyPsGg=="><meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta property="og:image" content="https://desigualdades.colmex.mx/assets/imagen-enlaces-be469736ee1fbefb60dda2874511e866eeb93392d83413c2f1a63d322cfe59e3.png"><meta property="og:description" content="En El Colegio de México, el estudio de los distintos tipos de desigualdad es una tradición. Se han explorado las desigualdades económicas, educativas, sociales y de género; así mismo se han preparado numerosas investigaciones sobre desigualdades regionales, de capacidades gubernamentales, de organización social o culturales con perspectivas tanto históricas como contemporáneas. La agenda de investigación de El Colegio incluye estudios sobre su origen y evolución, las interacciones entre los diversos ámbitos donde se producen, así como sobre los procesos políticos, económicos e institucionales que les dan forma."><meta property="og:url" content="/informe2018"><meta property="og:title" content="Red de estudios sobre desigualdades"><meta name="description" content="En El Colegio de México, el estudio de los distintos tipos de desigualdad es una tradición. Se han explorado las desigualdades económicas, educativas, sociales y de género; así mismo se han preparado numerosas investigaciones sobre desigualdades regionales, de capacidades gubernamentales, de organización social o culturales con perspectivas tanto históricas como contemporáneas. La agenda de investigación de El Colegio incluye estudios sobre su origen y evolución, las interacciones entre los diversos ámbitos donde se producen, así como sobre los procesos políticos, económicos e institucionales que les dan forma."><meta name="viewport" content="width=device-width, initial-scale=1"><script id="script-twitter" async="" type="text/javascript" src="https://platform.twitter.com/widgets.js"></script><script charset="utf-8" src="https://platform.twitter.com/js/button.e96bb6acc0f8bda511c0c46a84ee18e4.js"></script><script style="display: none;">var tvt = tvt || {}; tvt.captureVariables = function(a){for(var b=
+new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"undefined"!=typeof a[f])try{var g=[];c[f]=JSON.stringify(a[f],function(a,b){try{if("function"!==typeof b){if("object"===typeof b&&null!==b){if(b instanceof HTMLElement||b instanceof Node||-1!=g.indexOf(b))return;g.push(b)}return b}}catch(H){}})}catch(l){}a=document.createEvent("CustomEvent");a.initCustomEvent("TvtRetrievedVariablesEvent",!0,!0,{variables:c,date:b});window.dispatchEvent(a)};window.setTimeout(function() {tvt.captureVariables({'dataLayer.hide': (function(a){a=a.split(".");for(var b=window,c=0;c<a.length&&(b=b[a[c]],b);c++);return b})('dataLayer.hide'),'gaData': window['gaData'],'dataLayer': window['dataLayer']})}, 2000);</script></head>
+<body style="height:100%;background-color:#333333;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:transalte(-50%,-50%);">
+	<video style="display:block controls autoplay name="media">
 		<source src="https://desigualdades.colmex.mx/24_11_2018_MILENIO.mp4" type="video/mp4"></source>
 	</video>	
 </body>
