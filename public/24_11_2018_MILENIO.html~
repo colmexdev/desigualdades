@@ -32,7 +32,7 @@
 </head>
 <body>
 	<video controls autoplay name="media">
-		<source src="https://desigualdades.colmex.mx/24_11_2018_MILENIO.wmv" type="video/wmv"></source>
+		<source src="https://desigualdades.colmex.mx/24_11_2018_MILENIO.mp4" type="video/mp4"></source>
 	</video>	
 </body>
 </html>
