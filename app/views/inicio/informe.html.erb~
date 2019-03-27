@@ -34,7 +34,7 @@
 
      <!-- Sección video Informe -->
 				<div class="row">
-				<div class="col-xs-4">
+				<div class="col-xs-12 col-md-4">
           <div class="titulo-desigualdades vids-juntos">
             <h3>Desigualdades en México 2018: una mirada interdisciplinaria</h3>
           </div>
@@ -52,7 +52,7 @@
           <!-- Fin de sección video Informe -->
 
      <!-- Sección video Laura -->
-				<div class="col-xs-4">
+				<div class="col-xs-12 col-md-4">
           <div class="titulo-desigualdades vids-juntos">
             <h3>Desigualdades en México 2018. Entrecruzamiento y acumulación de desventajas</h3>
           </div>
@@ -69,7 +69,7 @@
           <!-- Fin de sección video Laura -->
 
           <!-- Sección video -->
-				<div class="col-xs-4">
+				<div class="col-xs-12 col-md-4">
       		<div class="titulo-desigualdades vids-juntos">
             <h3>Dos historias de vida. María y Matilde</h3>
           </div>
