@@ -218,9 +218,12 @@
 <% end %>
 <script>
 $(document).ready(function(){
-	$(".vids-juntos").height(Math.max.apply(Math, [...document.querySelectorAll(".titulo-desigualdades")].map(function(o) { return o.offsetHeight })));
-	$(".vids-juntos").css({"position": "relative"});
-	$(".vids-juntos h3").css({"position": "absolute", "bottom": "0"});
+	$(window).on("resize",function(){
+		$(".vids-juntos").height(Math.max.apply(Math, [...document.querySelectorAll(".titulo-desigualdades")].map(function(o) { return o.offsetHeight })));
+		$(".vids-juntos").css({"position": "relative"});
+		$(".vids-juntos h3").css({"position": "absolute", "bottom": "0"});
+	});
+	$(window).trigger("resize");
 });
 </script>
   <!-- Fin de medios -->
