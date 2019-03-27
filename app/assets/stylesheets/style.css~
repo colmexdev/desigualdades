@@ -508,7 +508,7 @@ body.down #menu-fixed.clone .donation a {
     line-height: 1;
 }
 .dropdown-menu li a:focus, .dropdown-menu li a:hover {
-	background: #e34132;
+	background: #88a5af;
 	color: #fff;
 	padding-left: 23px;
 }
