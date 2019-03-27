@@ -5187,7 +5187,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     margin-top: 4px
 }
 
-@media (min-width:1200px) {
+@media (min-width:768px) {
     .navbar-toggle {
         display: none
     }
