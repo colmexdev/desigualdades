@@ -481,7 +481,7 @@
 }
 /*=========max-width: 767px==========*/
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 1200px){
     .container>.row>.row {
         margin: 0;
     }
