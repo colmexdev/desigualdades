@@ -152,7 +152,7 @@
 }
 /*=========max-width: 991px==========*/
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 1200px){
     .section-heading p {
         width: 58%;
     }  
