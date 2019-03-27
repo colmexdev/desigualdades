@@ -218,7 +218,7 @@
 <% end %>
 <script>
 $(document).ready(function(){
-	$(".titulo-desigualdades")
+	$(".vids-juntos").height(Math.max.apply(Math, [...document.querySelectorAll(".titulo-desigualdades")].map(function(o) { return o.offsetHeight })));
 });
 </script>
   <!-- Fin de medios -->
