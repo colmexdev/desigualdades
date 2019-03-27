@@ -219,7 +219,7 @@
 <script>
 $(document).ready(function(){
 	$(window).on("resize",function(){
-		$(".vids-juntos h3").height(Math.max.apply(Math, [...document.querySelectorAll(".titulo-desigualdades")].map(function(o) { return o.offsetHeight })));
+		$(".vids-juntos").height(Math.max.apply(Math, [...document.querySelectorAll(".vids-juntos h3")].map(function(o) { return o.offsetHeight })));
 		$(".vids-juntos").css({"position": "relative"});
 		$(".vids-juntos h3").css({"position": "absolute", "bottom": "0"});
 	});
