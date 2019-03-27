@@ -10,7 +10,7 @@
   <section class="section helping-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
           <!-- Sección documentos -->
           <div class="titulo-desigualdades">
             <h3>Descarga los documentos</h3>
@@ -30,6 +30,22 @@
             </div>
           </div>
           <!-- Fin de sección documentos -->
+
+     <!-- Sección video Informe -->
+          <div class="titulo-desigualdades">
+            <h3>Desigualdades en México 2018: una mirada interdisciplinaria</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+              <div class="gallery-img">
+                <div class="sinlge-photo">
+                  <div class="single-photo-inner" id="vid-inf"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fin de sección video Informe -->
 
      <!-- Sección video Laura -->
           <div class="titulo-desigualdades">
@@ -66,6 +82,7 @@
 
       </div>
 
+<% if false %>
       <!-- Sección Twitter Escritorio -->
         <div class="col-md-4 hidden-sm hidden-xs">
           <div class="titulo-desigualdades">
@@ -80,6 +97,7 @@
           </div>
         </div>
         <!-- Fin Sección Twitter Escritorio -->
+<% end %>
       </div>
 
     </div>

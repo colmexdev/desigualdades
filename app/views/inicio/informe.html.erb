@@ -10,7 +10,7 @@
   <section class="section helping-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
           <!-- Sección documentos -->
           <div class="titulo-desigualdades">
             <h3>Descarga los documentos</h3>
@@ -25,6 +25,7 @@
               <p>Este informe analiza la manera en que se acumulan e interactúan las desigualdades en el curso de vida de las personas en México. Se presenta un análisis actual y retrospectivo, a partir de 2000, con la intención de enriquecer el debate
                 público y las plataformas de los candidatos en las elecciones presidenciales de 2018 en México.</p>
               <p style="text-align:left"><a href="/informe-desigualdades-2018.pdf" target="_blank" class="enlace"><span class="flaticon-open-book">Informe Desigualdades 2018</span> </a></p>
+              <p style="text-align:left"><a href="/inequalities-in-mexico-2018.pdf" target="_blank" class="enlace"><span class="flaticon-open-book">Inequialities in Mexico 2018</span> </a></p>
               <p style="text-align:left"><a href="/resumen-ejecutivo-2018.pdf" target="_blank" class="enlace"><span class="flaticon-open-book">Resumen Ejecutivo</span> </a></p>
               <p style="text-align:left"><a href="/informacion-colaboradores.jpg" target="_blank" class="enlace"><span class="flaticon-open-book">Información sobre colaboradoras y colaboradores</span> </a></p>
             </div>
@@ -32,6 +33,8 @@
           <!-- Fin de sección documentos -->
 
      <!-- Sección video Informe -->
+				<div class="row">
+				<div class="col-xs-4">
           <div class="titulo-desigualdades">
             <h3>Desigualdades en México 2018: una mirada interdisciplinaria</h3>
           </div>
@@ -44,10 +47,12 @@
               </div>
             </div>
           </div>
+				</div>
 
           <!-- Fin de sección video Informe -->
 
      <!-- Sección video Laura -->
+				<div class="col-xs-4">
           <div class="titulo-desigualdades">
             <h3>Desigualdades en México 2018. Entrecruzamiento y acumulación de desventajas</h3>
           </div>
@@ -60,10 +65,11 @@
               </div>
             </div>
           </div>
-
+				</div>
           <!-- Fin de sección video Laura -->
 
           <!-- Sección video -->
+				<div class="col-xs-4">
       		<div class="titulo-desigualdades">
             <h3>Dos historias de vida. María y Matilde</h3>
           </div>
@@ -77,11 +83,14 @@
               </div>
             </div>
           </div>
+				</div>
+				</div>
 
           <!-- Fin de sección video -->
 
       </div>
 
+<% if false %>
       <!-- Sección Twitter Escritorio -->
         <div class="col-md-4 hidden-sm hidden-xs">
           <div class="titulo-desigualdades">
@@ -96,6 +105,7 @@
           </div>
         </div>
         <!-- Fin Sección Twitter Escritorio -->
+<% end %>
       </div>
 
     </div>
@@ -185,6 +195,7 @@
   </section>
   <!-- Fin de medios -->
 
+<% if false %>
   <!-- Sección Twitter Móviles -->
   <section class="section helping-section visible-sm-block visible-xs-block">
     <div class="container ">
@@ -204,6 +215,7 @@
     </div>
   </section>
   <!-- Fin Sección Twitter Móviles -->
+<% end %>
 
   <!-- Fin de medios -->
 <%= render 'inicio/footer' %>
