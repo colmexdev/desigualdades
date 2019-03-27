@@ -25,6 +25,7 @@
               <p>Este informe analiza la manera en que se acumulan e interactúan las desigualdades en el curso de vida de las personas en México. Se presenta un análisis actual y retrospectivo, a partir de 2000, con la intención de enriquecer el debate
                 público y las plataformas de los candidatos en las elecciones presidenciales de 2018 en México.</p>
               <p style="text-align:left"><a href="/informe-desigualdades-2018.pdf" target="_blank" class="enlace"><span class="flaticon-open-book">Informe Desigualdades 2018</span> </a></p>
+              <p style="text-align:left"><a href="/inequalities-in-mexico-2018.pdf" target="_blank" class="enlace"><span class="flaticon-open-book">Inequialities in Mexico 2018</span> </a></p>
               <p style="text-align:left"><a href="/resumen-ejecutivo-2018.pdf" target="_blank" class="enlace"><span class="flaticon-open-book">Resumen Ejecutivo</span> </a></p>
               <p style="text-align:left"><a href="/informacion-colaboradores.jpg" target="_blank" class="enlace"><span class="flaticon-open-book">Información sobre colaboradoras y colaboradores</span> </a></p>
             </div>
@@ -32,11 +33,13 @@
           <!-- Fin de sección documentos -->
 
      <!-- Sección video Informe -->
-          <div class="titulo-desigualdades">
+				<div class="row">
+				<div class="col-xs-4">
+          <div class="titulo-desigualdades vids-juntos">
             <h3>Desigualdades en México 2018: una mirada interdisciplinaria</h3>
           </div>
           <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
               <div class="gallery-img">
                 <div class="sinlge-photo">
                   <div class="single-photo-inner" id="vid-inf"></div>
@@ -44,15 +47,17 @@
               </div>
             </div>
           </div>
+				</div>
 
           <!-- Fin de sección video Informe -->
 
      <!-- Sección video Laura -->
-          <div class="titulo-desigualdades">
+				<div class="col-xs-4">
+          <div class="titulo-desigualdades vids-juntos">
             <h3>Desigualdades en México 2018. Entrecruzamiento y acumulación de desventajas</h3>
           </div>
           <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
               <div class="gallery-img">
                 <div class="sinlge-photo">
                   <div class="single-photo-inner" id="vid-talk"></div>
@@ -60,15 +65,16 @@
               </div>
             </div>
           </div>
-
+				</div>
           <!-- Fin de sección video Laura -->
 
           <!-- Sección video -->
-      		<div class="titulo-desigualdades">
+				<div class="col-xs-4">
+      		<div class="titulo-desigualdades vids-juntos">
             <h3>Dos historias de vida. María y Matilde</h3>
           </div>
           <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
               <div class="gallery-img">
                 <div class="sinlge-photo">
                   <div class="single-photo-inner" id="vid-historias">  
@@ -77,6 +83,8 @@
               </div>
             </div>
           </div>
+				</div>
+				</div>
 
           <!-- Fin de sección video -->
 
@@ -187,6 +195,7 @@
   </section>
   <!-- Fin de medios -->
 
+<% if false %>
   <!-- Sección Twitter Móviles -->
   <section class="section helping-section visible-sm-block visible-xs-block">
     <div class="container ">
@@ -206,7 +215,12 @@
     </div>
   </section>
   <!-- Fin Sección Twitter Móviles -->
-
+<% end %>
+<script>
+$(document).ready(function(){
+	$(".titulo-desigualdades")
+});
+</script>
   <!-- Fin de medios -->
 <%= render 'inicio/footer' %>
 

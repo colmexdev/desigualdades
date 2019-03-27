@@ -35,11 +35,11 @@
      <!-- Sección video Informe -->
 				<div class="row">
 				<div class="col-xs-4">
-          <div class="titulo-desigualdades">
+          <div class="titulo-desigualdades vids-juntos">
             <h3>Desigualdades en México 2018: una mirada interdisciplinaria</h3>
           </div>
           <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
               <div class="gallery-img">
                 <div class="sinlge-photo">
                   <div class="single-photo-inner" id="vid-inf"></div>
@@ -53,11 +53,11 @@
 
      <!-- Sección video Laura -->
 				<div class="col-xs-4">
-          <div class="titulo-desigualdades">
+          <div class="titulo-desigualdades vids-juntos">
             <h3>Desigualdades en México 2018. Entrecruzamiento y acumulación de desventajas</h3>
           </div>
           <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
               <div class="gallery-img">
                 <div class="sinlge-photo">
                   <div class="single-photo-inner" id="vid-talk"></div>
@@ -70,11 +70,11 @@
 
           <!-- Sección video -->
 				<div class="col-xs-4">
-      		<div class="titulo-desigualdades">
+      		<div class="titulo-desigualdades vids-juntos">
             <h3>Dos historias de vida. María y Matilde</h3>
           </div>
           <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
               <div class="gallery-img">
                 <div class="sinlge-photo">
                   <div class="single-photo-inner" id="vid-historias">  
@@ -216,7 +216,11 @@
   </section>
   <!-- Fin Sección Twitter Móviles -->
 <% end %>
-
+<script>
+$(document).ready(function(){
+	$(".vids-juntos").height(Math.max.apply(Math, [...document.querySelectorAll(".titulo-desigualdades")].map(function(o) { return o.offsetHeight })));
+});
+</script>
   <!-- Fin de medios -->
 <%= render 'inicio/footer' %>
 
