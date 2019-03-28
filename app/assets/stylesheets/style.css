@@ -431,17 +431,17 @@ body.down #menu-fixed.clone .donation a {
     border: 0;
 }
 .navbar-default .navbar-nav>li>a {
-	font-size:13px;
+	font-size:12px;
 	text-transform:uppercase;
 	color:#FFF;
 	font-weight: 600;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:active, .navbar-default .navbar-nav>li>a:visited {
     color: #fff;
 }
 .navbar-nav>li>a {
-    padding: 25px 23px;
+    padding: 25px 15px;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     color: #fff;
