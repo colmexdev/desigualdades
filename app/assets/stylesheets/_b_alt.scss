@@ -1991,9 +1991,9 @@ pre code {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:1200px) {
     .container {
-        width: 1170px
+        /*width: 1170px*/
     }
 }
 
@@ -5044,7 +5044,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     overflow-y: auto
 }
 
-@media (min-width:1200px) {
+@media (min-width:768px) {
     .navbar-collapse {
         width: auto;
         border-top: 0;
@@ -7916,7 +7916,7 @@ button.close {
     }
 }
 
-@media (min-width:1200px) {
+@media (min-width:768px) {
     .visible-lg {
         display: block!important
     }
@@ -7932,19 +7932,19 @@ button.close {
     }
 }
 
-@media (min-width:1200px) {
+@media (min-width:768px) {
     .visible-lg-block {
         display: block!important
     }
 }
 
-@media (min-width:1200px) {
+@media (min-width:768px) {
     .visible-lg-inline {
         display: inline!important
     }
 }
 
-@media (min-width:1200px) {
+@media (min-width:768px) {
     .visible-lg-inline-block {
         display: inline-block!important
     }
@@ -7968,7 +7968,7 @@ button.close {
     }
 }
 
-@media (min-width:1200px) {
+@media (min-width:768px) {
     .hidden-lg {
         display: none!important
     }
