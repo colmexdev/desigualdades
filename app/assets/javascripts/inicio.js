@@ -116,7 +116,7 @@ function listo(){
 		$.ajax({
 			url: "https://coed.colmex.mx/catalogo_videos.json?id=HC7ikRzoDaM",
 			success: function(result){
-				var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:informeVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive vid-clip"></a>'
+				var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:documentales"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive vid-clip"></a>'
 				$("#vid-inf").html(html);
 				$('a[data-rel^=lightcase]').lightcase();
 			}
@@ -128,6 +128,17 @@ function listo(){
 				success: function(result){
 					var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:informeVideos"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive vid-clip"></a>'
 					$("#vid-historias").html(html);
+					$('a[data-rel^=lightcase]').lightcase();
+				}
+			});
+		}).done(function(){
+			$.ajax({
+				url: "https://coed.colmex.mx/catalogo_videos.json?id=sGGd4Bv6_nA",
+				method: "get",
+				dataType: "JSON",
+				success: function(result){
+					var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:documentales"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive vid-clip"></a>'
+					$("#vid-doc2").html(html);
 					$('a[data-rel^=lightcase]').lightcase();
 				}
 			});
