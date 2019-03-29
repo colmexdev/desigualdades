@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'panel/panel' => 'panel#panel', :as => :panel
   get 'panel/principal' => 'panel#principal', :as => :panel_princ
   get 'panel/index' => 'panel#index', :as => :panel_index
+  post 'panel/index_sf' => 'panel#index', :as => :panel_index_post
   get 'panel/generar' => 'panel#generar', :as => :panel_nuevo
   get 'panel/editar' => 'panel#editar', :as => :panel_editar
   post 'panel' => 'panel#crear'
@@ -27,7 +28,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root to: "inicio#index"
+  root to: "inicio#inicio"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
