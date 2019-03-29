@@ -36,7 +36,7 @@
 
      <!-- Sección video Informe -->
 				<div class="row" style="margin-top:35px;">
-				<div class="col-xs-12 col-md-6">
+				<div class="col-xs-12 col-md-4">
           <div class="titulo-desigualdades vids-juntos">
             <h3>Desigualdades en México 2018: una mirada interdisciplinaria</h3>
           </div>
@@ -50,9 +50,23 @@
             </div>
           </div>
 				</div>
-				<div class="col-xs-12 col-md-6">
+				<div class="col-xs-12 col-md-4">
           <div class="titulo-desigualdades vids-juntos">
-            <h3>Documental 2: Legados de desigualdad en México 2018</h3>
+            <h3>Legados de desigualdad en México 2018</h3>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="gallery-img">
+                <div class="sinlge-photo">
+                  <div class="single-photo-inner" id="vid-doc3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+				</div>
+				<div class="col-xs-12 col-md-4">
+          <div class="titulo-desigualdades vids-juntos">
+            <h3>Nuevos desafíos para la equidad en México 2018</h3>
           </div>
           <div class="row">
             <div class="col-xs-12">

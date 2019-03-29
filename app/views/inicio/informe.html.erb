@@ -251,7 +251,7 @@
 $(document).ready(function(){
 	$(window).on("resize",function(){
 		[".vids-juntos", ".vids-juntos-b"].forEach(function(clase){
-			$(calse).height(Math.max.apply(Math, [...document.querySelectorAll(clase + " h3")].map(function(o) { return o.offsetHeight })));
+			$(clase).height(Math.max.apply(Math, [...document.querySelectorAll(clase + " h3")].map(function(o) { return o.offsetHeight })));
 			$(clase).css({"position": "relative"});
 			$(clase + " h3").css({"position": "absolute", "bottom": "0"});
 		});
