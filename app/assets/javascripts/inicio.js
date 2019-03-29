@@ -144,6 +144,17 @@ function listo(){
 			});
 		}).done(function(){
 			$.ajax({
+				url: "https://coed.colmex.mx/catalogo_videos.json?id=li6ZnIRnGDE",
+				method: "get",
+				dataType: "JSON",
+				success: function(result){
+					var html = '<a href="https://www.youtube-nocookie.com/embed/' + result["vids"][0]["v_id"] + '?rel=0&amp;autoplay=1" data-rel="lightcase:documentales"><img src="' + result["vids"][0]["thumbnail"].replace("default.jpg","hqdefault.jpg") + '" alt="' + result["vids"][0]["titulo"] + '" class="img-responsive vid-clip"></a>'
+					$("#vid-doc3").html(html);
+					$('a[data-rel^=lightcase]').lightcase();
+				}
+			});
+		}).done(function(){
+			$.ajax({
 				url: "https://coed.colmex.mx/catalogo_videos.json?titulo=Desigualdades%20en%20M%C3%A9xico%202018.%20Entrecruzamiento%20y%20acumulaci%C3%B3n%20de%20desventajas",
 				method: "get",
 				dataType: "JSON",
