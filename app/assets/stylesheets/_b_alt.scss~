@@ -5204,7 +5204,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     margin: 7.5px -15px
 }
 
-.navbar-scrolled{
+#menu-fixed .navbar-nav{
 	left: 0;
 	-webkit-transform: translateX(0);
 	-moz-transform: translateX(0);
