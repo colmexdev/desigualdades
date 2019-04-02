@@ -29,11 +29,10 @@
 <!-- Pie de página -->
 <script>
 $(document).ready(function(){
-	$("object").height($("object").width()*9/8);
 	$(window).on("resize",function(){
 		$("object").height($("object").width()*9/8);
 	});
-	$(window).trigger("resize");
+	setTimeout(function(){ $(window).trigger("resize"); }, 150);
 });
 </script>
 <%= render 'inicio/footer' %>
