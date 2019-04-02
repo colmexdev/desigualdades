@@ -18,7 +18,7 @@
 <!-- Inicio de sección de seminarios -->
 <section class="section causes-section">
   <div class="container">
-    <div class="row" style="text-align:center;">
+    <div class="row">
 			<object type="application/pdf" data="https://desigualdades.colmex.mx/inequalities-in-mexico-2018.pdf">
 				<embed type="application.pdf" src="https://desigualdades.colmex.mx/inequalities-in-mexico-2018-pdf"></embed>
 			</object>
@@ -27,10 +27,5 @@
 </section>
 <!-- Fin de la sección de seminarios -->  
 <!-- Pie de página -->
-<script>
-$(document).ready(function(){
-	$("object").attr("width", "400").attr("height", "650");
-});
-</script>
 <%= render 'inicio/footer' %>
 <!-- End Footer Section -->
