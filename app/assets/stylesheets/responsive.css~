@@ -14,7 +14,7 @@
     }
     #menu-fixed.clone .navbar-default .navbar-nav>li>a {
         font-size: 1em;
-        padding: 25px 15px;
+        padding: 20px 10px;
     }
     /* Home Page One */
     .slider-content-inner h2 {
@@ -612,7 +612,7 @@
     .navbar-collapse {
         margin-left: 0px;
         padding-left: 0;
-        max-height: 242px;
+        /*max-height: 242px;*/
     }
     .navbar-nav>li.dropdown a span {
         display: block;

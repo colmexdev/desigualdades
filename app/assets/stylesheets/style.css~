@@ -441,7 +441,7 @@ body.down #menu-fixed.clone .donation a {
     color: #fff;
 }
 .navbar-nav>li>a {
-    padding: 25px 15px;
+    padding: 20px 10px;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     color: #fff;

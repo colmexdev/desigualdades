@@ -525,7 +525,7 @@
     }
     .navbar-default .navbar-nav>li>a {
         padding: 12px 37px 12px 30px;
-        font-size: 13px;
+        font-size: 15px;
         display: inherit;
     }  
     .navbar-collapse {
@@ -612,7 +612,7 @@
     .navbar-collapse {
         margin-left: 0px;
         padding-left: 0;
-        max-height: 242px;
+        /*max-height: 242px;*/
     }
     .navbar-nav>li.dropdown a span {
         display: block;
