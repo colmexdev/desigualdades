@@ -19,7 +19,7 @@
   </div>
   <div class="mainmenu-area" id="menu-fixed">
     <div class="container">
-      <div class="row"> <a href="<%= root_path %>" class="logo-menu"><img src="<%= image_url('fixed-logo.png') %>" alt="TRADES" /></a>
+      <div class="row"> <a href="<%= root_path %>" class="logo-menu"><img src="<%= image_url('fixed-logo.png') %>" alt="RED" style="max-height:43px;" /></a>
         <div class="nav-menu">
           <nav class="navbar navbar-default" style="background-color:transparent;border-color:transparent;"> 
             <!-- Marca y hamburguesa para dispositivos pequeños -->
