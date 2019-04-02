@@ -5204,6 +5204,15 @@ textarea.input-group-sm>.input-group-btn>.btn {
     margin: 7.5px -15px
 }
 
+.navbar-scrolled{
+	left: 0;
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+}
+
 .navbar-nav>li>a {
     padding-top: 10px;
     padding-bottom: 10px;
