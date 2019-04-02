@@ -1987,7 +1987,7 @@ pre code {
 
 @media (min-width:992px) {
     .container {
-        width: 970px
+        width: 990px
     }
 }
 
@@ -5204,7 +5204,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     margin: 7.5px -15px
 }
 
-#menu-fixed .navbar-nav{
+#menu-fixed.clone .navbar-nav{
 	left: 0;
 	-webkit-transform: translateX(0);
 	-moz-transform: translateX(0);
