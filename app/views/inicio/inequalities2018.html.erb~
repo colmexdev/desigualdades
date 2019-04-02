@@ -1,0 +1,60 @@
+<!--[if lt IE 8]>
+            <p class="browserupgrade">Está usando un navegador <strong>obsoleto</strong>. Le sugerimos <a href="http://browsehappy.com/">actualizar su navegador</a> para mejorar su navegación.</p>
+        <![endif]--> 
+<!-- Sección del encabezado -->
+<%= render 'inicio/header' %>
+<!-- Fin de sección de encabezado --> 
+<!-- Banner superior -->
+<section class="breadcrumb-section">
+  <div class="section-overlay">
+    <div class="container">
+      <div class="breadcrumb-area">
+        <h2 class="breadcrumb-title">Seminarios de investigación</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Fin de banner superior --> 
+<!-- Inicio de sección de seminarios -->
+<section class="section causes-section">
+  <div class="container">
+    <div class="row">
+      <div class="section-heading">
+        <h3><br>
+          Seminarios en curso</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="causes">
+        <div class="col-sm-4">
+          <div class="single-causes-box">
+            <div class="causes-img"> <img src="<%= image_url("trades.png") %>" alt="Seminario permanente sobre  bienestar, trabajo y desigualdad"> </div>
+            <div class="causes-content">
+				<p>Con financiamiento de la Fundación Ford y con la coordinación de <a href="http://cei.colmex.mx/Pprofesores/C_Alba.html" target="_blank">Carlos Alba</a>.<br><br></p>
+				<p class="text-center"><a href="http://trades.colmex.mx/" target="_blank" class="btn-two">Más información</a></p> </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="single-causes-box">
+            <div class="causes-img"> <img src="<%= image_url("migdep.png") %>" alt="Seminario permanente sobre migración, desigualdad y políticas públicas"> </div>
+            <div class="causes-content">
+				<p>Con financiamiento del Servicio Alemán de Intercambio Académico (DAAD) y con la coordinación de <a href="http://cedua.colmex.mx/masferrer_claudia.html" target="_blank">Claudia Masferrer</a>.</p>
+              <p class="text-center"><a href="http://migdep.colmex.mx/" target="_blank" class="btn-two">Más información</a></p> </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="single-causes-box">
+            <div class="causes-img"> <img src="<%= image_url("sedes.png") %>" alt="Seminario permanente sobre desigualdad socioeconómica, con énfasis en educación"> </div>
+            <div class="causes-content">
+				<p>Con la coordinación de <a href="http://ces.colmex.mx/140" target="_blank">Patricio Solís</a>.<br><br><br><br></p>
+              <p class="text-center"><a href="http://sedes.colmex.mx/" target="_blank" class="btn-two">Más información</a></p> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Fin de la sección de seminarios -->  
+<!-- Pie de página -->
+<%= render 'inicio/footer' %>
+<!-- End Footer Section -->
