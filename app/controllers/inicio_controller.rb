@@ -39,5 +39,6 @@ class InicioController < ApplicationController
   def inequalities
     @title = "Inequalities in Mexico 2018"
     @imagen_pauta = "inequalities-fb.png"
+    @imagen_menu = "logo-red-eng.png"
   end
 end
