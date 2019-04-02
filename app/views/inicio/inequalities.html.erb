@@ -29,8 +29,9 @@
 <!-- Pie de página -->
 <script>
 $(document).ready(function(){
+	$("object").height($("object").width()*9/8);
 	$(window).on("resize",function(){
-		$("object").height($("object").width()*13/8);
+		$("object").height($("object").width()*9/8);
 	});
 	$(window).trigger("resize");
 });
