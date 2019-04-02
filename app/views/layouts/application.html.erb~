@@ -34,13 +34,5 @@
 <body>
 
 <%= yield %>
-<script>
-/*$(window).on("scroll",function(){
-	if($(window).scrollTop() >= 200) document.querySelector("ul.nav.navbar-nav").classList.remove("navbar-scrolled");
-	else document.querySelector("ul.nav.navbar-nav").classList.add("navbar-scrolled");
-});
-
-$(window).trigger("scroll");*/
-</script>
 </body>
 </html>
