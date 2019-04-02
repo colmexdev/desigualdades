@@ -32,7 +32,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
+<% if false %>
                 <li><a href="<%= root_path %>"><span>Inicio</span></a></li>
+<% end %>
                 <li><a href="<%= red_path %>">Sobre la Red</a></li>
                 <li><a href="<%= seminarios_path %>"><span>Seminarios</span></a></li>
                 <li><a href="<%= publicaciones_path %>"><span>Publicaciones</span></a></li>
