@@ -32,7 +32,11 @@ class InicioController < ApplicationController
   end
 
   def informe
-    @noticias = Noticia.all.order(created_at: :desc)
+    @noticias = Noticia.all.order(fecha: :desc, created_at: :desc)
     @filtros = Filtro.all
+  end
+
+  def inequalities
+    @title = "Inequalities in Mexico 2018"
   end
 end

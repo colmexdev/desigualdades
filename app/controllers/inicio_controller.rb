@@ -35,4 +35,9 @@ class InicioController < ApplicationController
     @noticias = Noticia.all.order(fecha: :desc, created_at: :desc)
     @filtros = Filtro.all
   end
+
+  def inequalities
+    @title = "Inequalities in Mexico 2018"
+    @imagen_pauta = "inequalities-fb.png"
+  end
 end

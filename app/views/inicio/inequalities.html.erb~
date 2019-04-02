@@ -30,7 +30,7 @@
 <script>
 $(document).ready(function(){
 	$(window).on("resize",function(){
-		$("object").height($("object").width()*9/8);
+		$("object").height($("object").width()*5/4);
 	});
 	setTimeout(function(){ $(window).trigger("resize"); }, 150);
 });

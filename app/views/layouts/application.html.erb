@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html class="no-js" lang="es">
 <head>
-	<title>Red de estudios sobre desigualdades</title>
+	<title><%= @title || "Red de Estudios sobre Desigualdades" %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
-	<meta property="og:image" content="<%= asset_url('imagen-enlaces.png') %>" />
+	<meta property="og:image" content="<%= asset_url((@imagen_pauta || 'imagen-enlaces.png')) %>" />
 	<meta property="og:description" content="En El Colegio de México, el estudio de los distintos tipos de desigualdad es una tradición. Se han explorado las desigualdades económicas, educativas, sociales y de género; así mismo se han preparado numerosas investigaciones sobre desigualdades regionales, de capacidades gubernamentales, de organización social o culturales con perspectivas tanto históricas como contemporáneas. La agenda de investigación de El Colegio incluye estudios sobre su origen y evolución, las interacciones entre los diversos ámbitos donde se producen, así como sobre los procesos políticos, económicos e institucionales que les dan forma." />
 	<meta property="og:url"content="<%= informe_path %>" />
 	<meta property="og:title" content="Red de estudios sobre desigualdades" />
