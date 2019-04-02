@@ -19,7 +19,7 @@
 <section class="section causes-section">
   <div class="container">
     <div class="row" style="text-align:center;">
-			<object style="max-width:400px;width:90%;" type="application/pdf" data="https://desigualdades.colmex.mx/inequalities-in-mexico-2018.pdf#page=1&view=Fit">
+			<object style="max-width:1100px;width:90%;" type="application/pdf" data="https://desigualdades.colmex.mx/inequalities-in-mexico-2018.pdf#page=1&view=Fit">
 				<embed type="application.pdf" src="https://desigualdades.colmex.mx/inequalities-in-mexico-2018-pdf"></embed>
 			</object>
     </div>
@@ -29,11 +29,10 @@
 <!-- Pie de página -->
 <script>
 $(document).ready(function(){
-	$("object").height($("object").width()*9/8);
 	$(window).on("resize",function(){
 		$("object").height($("object").width()*9/8);
 	});
-	$(window).trigger("resize");
+	setTimeout(function(){ $(window).trigger("resize"); }, 150);
 });
 </script>
 <%= render 'inicio/footer' %>
