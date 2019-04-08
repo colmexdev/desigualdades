@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   get 'videos' => 'inicio#videos', :as => :videos
   get 'informe2018' => 'inicio#informe', :as => :informe
   get 'inequalities2018' => 'inicio#inequalities', :as => :inequalities
+  get 'informe2018/pdf' => 'inicio#pdf_informe', :as => :informe_pdf
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,0 +1,44 @@
+<!--[if lt IE 8]>
+            <p class="browserupgrade">Está usando un navegador <strong>obsoleto</strong>. Le sugerimos <a href="http://browsehappy.com/">actualizar su navegador</a> para mejorar su navegación.</p>
+        <![endif]--> 
+<!-- Sección del encabezado -->
+<%= render 'inicio/header' %>
+<!-- Fin de sección de encabezado --> 
+<!-- Banner superior -->
+<section class="breadcrumb-section">
+  <div class="section-overlay">
+    <div class="container">
+      <div class="breadcrumb-area">
+        <h2 class="breadcrumb-title">Informe de Desigualdades en México 2018</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Fin de banner superior --> 
+<!-- Inicio de sección de seminarios -->
+<section class="section causes-section">
+  <div class="container">
+<% if false %>
+		<div class="row" style="text-align:center;margin-bottom:50px;">
+			<img src="<%= asset_url('logo-red-eng.png') %>">
+		</div>
+<% end %>
+    <div class="row" style="text-align:center;">
+			<object style="max-width:1100px;width:90%;" type="application/pdf" data="https://desigualdades.colmex.mx/informe-desigualdades-2018.pdf#page=1&view=Fit">
+				<embed type="application.pdf" src="https://desigualdades.colmex.mx/informe-desigualdades-2018-pdf"></embed>
+			</object>
+    </div>
+  </div>
+</section>
+<!-- Fin de la sección de seminarios -->  
+<!-- Pie de página -->
+<script>
+$(document).ready(function(){
+	$(window).on("resize",function(){
+		$("object").height($("object").width()*5/4);
+	});
+	setTimeout(function(){ $(window).trigger("resize"); }, 150);
+});
+</script>
+<%= render 'inicio/footer' %>
+<!-- End Footer Section -->
