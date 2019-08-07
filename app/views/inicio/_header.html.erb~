@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="logo"> <a href="<%= root_path %>" style="float:left;display:inline-block;"><img src="<%= image_url(@imagen_menu || 'logo.png') %>" alt="RED" class="img-responsive" style="max-height:100px;max-width:273px;"></a>
-					<a href="http://mecila.net/es/828-2/" target="_blank" style="float:left; display:inline-block;padding-left:15px;"><img src="<%= image_url('mecila.png') %>" alt="RED" class="img-responsive" style="max-height:100px;max-width:273px;"></a>
+					<a href="http://mecila.net/es/828-2/" target="_blank" style="float:left; display:inline-block;padding-left:15px;"><img src="<%= image_url('mecila.svg') %>" alt="RED" class="img-responsive" style="max-height:100px;max-width:273px;"></a>
 				</div>
         <div class="header-top-right">
           <ul>
