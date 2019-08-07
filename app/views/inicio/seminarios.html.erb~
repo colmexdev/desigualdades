@@ -54,36 +54,19 @@
     </div>
   </div>
 </section>
+<script>
+$(document).on("ready",function(){
+	var cajas = document.querySelectorAll(".single-causes-box");
+	var alto = 0;
+	for(var i = 0; i < cajas.length; i++){
+		alto = Math.max(alto, cajas[i].offsetHeight);
+	}
+	for(var i = 0; i < cajas.length; i++){
+		cajas[i].style.height = alto + "px";
+	}
+});
+</script>
 <!-- Fin de la sección de seminarios -->  
 <!-- Pie de página -->
 <%= render 'inicio/footer' %>
 <!-- End Footer Section -->
-<% if false %> 
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> 
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.12.0.min.js"><\/script>')</script> 
-<!-- Bootstarp js --> 
-<script src="assets/js/bootstrap.min.js"></script> 
-<!-- Google Map --> 
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAQlXnmyNPAeN3c3HNyWoUMqDk6bDF31Cg"></script> 
-<script src="assets/js/gmap.script.js"></script> 
-<!-- Progressbar Js --> 
-<script src="assets/js/circle.progress.js"></script> 
-<!-- Count Down --> 
-<script src="assets/js/TimeCircles.js"></script> 
-<!-- Custom ScrollBar  --> 
-<script src="assets/js/enscroll-0.6.2.min.js"></script> 
-<!-- LightCase  --> 
-<script src="assets/js/lightcase.js"></script> 
-<!-- Isotop --> 
-<script src="assets/js/isotope.pkgd.min.js"></script> 
-<!-- Masonry --> 
-<script src="assets/js/masonry.js"></script> 
-<!-- Swipper --> 
-<script src="assets/js/swiper.min.js"></script> 
-<!-- Flex Slider --> 
-<script src="assets/js/jquery.flexslider.js"></script> 
-<!-- NST slider --> 
-<script src="assets/js/jquery.nstSlider.min.js"></script> 
-<!-- Main Js --> 
-<script src="assets/js/functions.js"></script>
-<% end %>

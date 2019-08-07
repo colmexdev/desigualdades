@@ -54,6 +54,18 @@
     </div>
   </div>
 </section>
+<script>
+$(document).on("ready",function(){
+	var cajas = document.querySelectorAll(".single-causes-box");
+	var alto = 0;
+	for(var i = 0; i < cajas.length; i++){
+		alto = Math.max(alto, cajas[i].offsetHeight);
+	}
+	for(var i = 0; i < cajas.length; i++){
+		cajas[i].style.height = alto + "px";
+	}
+});
+</script>
 <!-- Fin de la sección de seminarios -->  
 <!-- Pie de página -->
 <%= render 'inicio/footer' %>
