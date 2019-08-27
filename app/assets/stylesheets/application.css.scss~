@@ -11,10 +11,10 @@
  * file per style scope.
  *
  *= require uikit
+ *= require bootstrap-datepicker
  *= require_tree .
  *= require_self
  */
 @import "bootstrap-sprockets";
-*= require bootstrap-datepicker
 @import "font-awesome-sprockets";
 @import "font-awesome";

@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require jquery.remotipart
 //= require bootstrap-sprockets
 //= require bootstrap-datepicker
