@@ -154,7 +154,8 @@
 	});
 
 	$(window).on("resize",function(){
-
-		$("#myCarousel").height($("#myCarousel").height() < 793 ? $("#myCarousel").width() * (215/516) : 793);
+	var alto = $("#myCarousel").width() * (215/516);
+		$("#myCarousel").height($("#myCarousel").height() < 793 ? alto : 793);
+		$("#myCarousel .carousel-inner .item > img").height(alto);
 	});
 </script>
