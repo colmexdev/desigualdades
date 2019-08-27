@@ -7461,7 +7461,8 @@ button.close {
 .carousel-inner {
     position: relative;
     width: 100%;
-    overflow: hidden
+    overflow: hidden;
+		max-height: 793px;
 }
 
 .carousel-inner>.item {
