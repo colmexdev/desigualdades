@@ -850,12 +850,12 @@ body.down #header-style-two #menu-fixed.clone .mainmenu-icon {
     background: #fff;
     opacity: .3;
 }
-.item > img, .item.next.left > img {
+.item > img, .item.next.left > img, .item.active.left > img {
     width: 100%;
-    height: 930px ! important;
+    height: 930px !important;
 }
 
-.item.next.left .slider-content > h2 img { display: none; }
+.item.next.left .slider-content-inner > h2 img { display: none; }
 
 .slider-content {
     position: absolute;
