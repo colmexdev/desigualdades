@@ -855,7 +855,7 @@ body.down #header-style-two #menu-fixed.clone .mainmenu-icon {
     height: 793px !important;
 }
 
-.item.next.left .slider-content-inner > h2 img { display: none; }
+.item.left .slider-content-inner h2 { display: none; }
 
 .slider-content {
     position: absolute;
