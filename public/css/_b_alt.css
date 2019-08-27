@@ -7483,8 +7483,8 @@ button.close {
         -webkit-transition: -webkit-transform .4s ease-in-out;
         -o-transition: -o-transform .4s ease-in-out;
         transition: transform .4s ease-in-out;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
+        /*-webkit-backface-visibility: hidden;
+        backface-visibility: hidden;*/
         -webkit-perspective: 1000px;
         perspective: 1000px
     }
