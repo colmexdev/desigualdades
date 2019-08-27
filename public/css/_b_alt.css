@@ -7455,7 +7455,8 @@ button.close {
 }
 
 .carousel {
-    position: relative
+    position: relative;
+		overflow: hidden;
 }
 
 .carousel-inner {
@@ -7467,6 +7468,7 @@ button.close {
 
 .carousel-inner>.item {
     position: relative;
+		overflow: hidden;
     display: none;
     -webkit-transition: .4s ease-in-out left;
     -o-transition: .4s ease-in-out left;
