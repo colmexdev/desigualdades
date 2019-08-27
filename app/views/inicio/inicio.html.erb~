@@ -76,7 +76,7 @@
         <p>La agenda de investigación de El Colegio incluye estudios sobre su origen y evolución, las interacciones entre los diversos ámbitos donde se producen, así como sobre los procesos políticos, económicos e institucionales que les dan forma.</p>
         <a href="<%= red_path %>" class="btn-two">Más información</a> </div>
       	<div class="col-md-5">
-        	<div class="helping-img"><a class="twitter-timeline" data-lang="es" data-width="400" data-height="600" data-link-color="#E81C4F" href="https://twitter.com/des_igualdades">Tweets by des_igualdades</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
+        	<div class="helping-img"><a class="twitter-timeline" data-lang="es" data-width="400" data-height="600" data-link-color="#E81C4F" href="https://twitter.com/des_igualdades">Tweets by des_igualdades</a></div>
       	</div>
     	</div>
  		</div>
