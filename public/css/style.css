@@ -399,6 +399,11 @@ body.down #menu-fixed.clone {
     float: left;
     width:0;
 }
+
+@media omly screen and (max-width: 767px){
+	.mainmenu-area a.logo-menu img { width: 135px; }
+}
+
 body.down #menu-fixed.clone.mainmenu-area a.logo-menu img {
     width:20%;
     margin-right: 10px;
