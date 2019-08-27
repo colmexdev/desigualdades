@@ -152,4 +152,8 @@
 			scaleEvents(result["ev_big"],result["ev_med"],result["ev_small"]);
 		}
 	});
+
+	$(window).on("resize",function(){
+		$("#myCarousel").height($("#myCarousel").height() < 793 ? $("#myCarousel").width() * (215/516) : 793);
+	});
 </script>
