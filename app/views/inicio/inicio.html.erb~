@@ -23,6 +23,19 @@
           </div>
         </div>
       </div>
+      <div class="item active">
+        <div class="slider-overlay"></div>
+        <img src="<%= image_url("banner_des.jpg") %>" alt="Slider One Image">
+        <!-- <div class="slider-content">
+          <div class="container">
+            <div class="row">
+              <div class="slider-content-inner">
+                <h2><img src="<%= image_url("intro.png") %>" alt="Red de estudios sobre desigualdades" class="img-responsive"></h2>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
       
       <!-- Controles izquierdo y derecho --> 
     </div>
