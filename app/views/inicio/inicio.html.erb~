@@ -17,14 +17,14 @@
           <div class="container">
             <div class="row">
               <div class="slider-content-inner">
-                <img src="<%= image_url("intro.png") %>" alt="Red de estudios sobre desigualdades" class="img-responsive">
+                <h2><img src="<%= image_url("intro.png") %>" alt="Red de estudios sobre desigualdades" class="img-responsive"></h2>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="item">
-        <div class="slider-overlay"></div>
+        <div class="slider-overlay"><a href="https://agenda.colmex.mx/Actividad/1426/segunda-reunion-ampliada-del-grupo-de-desigualdades-territoriales/20190830" target="_blank"></a></div>
         <img src="<%= image_url("banner_des.jpg") %>" alt="Slider One Image">
         <div class="slider-content">
           <div class="container">

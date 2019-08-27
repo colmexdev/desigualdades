@@ -39,6 +39,7 @@
 	<link rel="stylesheet" href="/css/swiper.min.css">
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/inicio.css">
+	<script defer src="/js/inicio.js"></script>
 </head>
 <body>
 
@@ -59,6 +60,5 @@
 	<script src="/js/swiper.min.js"></script>
 	<script src="/js/TimeCircles.js"></script>
 	<script defer src="/js/functions.js"></script>
-	<script defer src="/js/inicio.js"></script>
 </body>
 </html>
