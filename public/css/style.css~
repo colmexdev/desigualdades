@@ -848,7 +848,7 @@ body.down #header-style-two #menu-fixed.clone .mainmenu-icon {
     height: 100%;
     position: absolute;
     background: #fff;
-    opacity: .6;
+    opacity: .3;
 }
 .item img {
     width: 100%;
