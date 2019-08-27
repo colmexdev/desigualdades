@@ -400,7 +400,7 @@ body.down #menu-fixed.clone {
     width:0;
 }
 
-@media omly screen and (max-width: 767px){
+@media only screen and (max-width: 767px){
 	.mainmenu-area a.logo-menu img { width: 135px; }
 }
 
