@@ -7522,7 +7522,7 @@ button.close {
 
 .carousel-inner>.next,
 .carousel-inner>.prev {
-    /*position: absolute;*/
+    position: absolute;
     top: 0;
     width: 100%
 }
