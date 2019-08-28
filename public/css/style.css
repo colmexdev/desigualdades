@@ -868,7 +868,7 @@ body.down #header-style-two #menu-fixed.clone .mainmenu-icon {
     transform: translateY(-50%)
 }
 .slider-content-inner {
-    margin: -15px;
+    margin: /*-15px*/ 0 auto;
     color: #fff;
     overflow: hidden;
 }
