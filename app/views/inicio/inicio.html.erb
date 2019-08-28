@@ -161,7 +161,7 @@
 			var img = new Image();
 			img.onload = function(){
 				var ancho = Math.min(1903, this.width);
-				var ancho_nuevo = ancho * ($("#myCarousel").width() < 1903 ? $("#myCarousel").width()/1903 : 1));
+				var ancho_nuevo = ancho * ($("#myCarousel").width() < 1903 ? $("#myCarousel").width()/1903 : 1);
 				t.style.width = ancho_nuevo + "px";
 			};
 			img.src = t.getAttribute("src");
