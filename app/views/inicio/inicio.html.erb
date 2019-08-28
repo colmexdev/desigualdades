@@ -158,7 +158,13 @@
 		$("#myCarousel").height($("#myCarousel").width() < 1903 ? alto : 793);
 		$("#myCarousel .carousel-inner .item > img").height($("#myCarousel").width() < 1903 ? alto : 793);
 		$("#myCarousel .carousel-inner .item h2 > img").each(function(i,t){
-			t.style.width = (t.offsetWidth * ($("#myCarousel").width() < 1903 ? $("#myCarousel").width()/1903 : 1)) + "px";
+			var img = new Image();
+			img.onload = function(){
+				var ancho = Math.min(1903, this.width);
+				var ancho_nuevo = ancho * ($("#myCarousel").width() < 1903 ? $("#myCarousel").width()/1903 : 1));
+				t.style.width = ancho_nuevo + "px";
+			};
+			img.src = t.getAttribute("src");
 		});
 	});
 
