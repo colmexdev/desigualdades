@@ -158,7 +158,7 @@
 		$("#myCarousel").height($("#myCarousel").width() < 1903 ? alto : 793);
 		$("#myCarousel .carousel-inner .item > img").height($("#myCarousel").width() < 1903 ? alto : 793);
 		$("#myCarousel .carousel-inner .item h2 > img").each(function(i,t){
-			t.style.width = (t.style.width / ($("#myCarousel").width() < 1903 ? alto : 1)) + "px";
+			t.style.width = (t.style.width * ($("#myCarousel").width() < 1903 ? $("#myCarousel").width)/1903 : 1)) + "px";
 		});
 	});
 
