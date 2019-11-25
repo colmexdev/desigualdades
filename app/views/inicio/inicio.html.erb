@@ -155,8 +155,8 @@
 
 	$(window).on("resize",function(){
 		var alto = $("#myCarousel").width() * (215/516);
-		$("#myCarousel").height($("#myCarousel").width() < 1903 ? alto : 793);
-		$("#myCarousel .carousel-inner .item > img").height($("#myCarousel").width() < 1903 ? alto : 793);
+		$("#myCarousel").height($("#myCarousel").width() < 1903 ? alto : 693);
+		$("#myCarousel .carousel-inner .item > img").height($("#myCarousel").width() < 1903 ? alto : 693);
 		$("#myCarousel .carousel-inner .item h2 > img").each(function(i,t){
 			var img = new Image();
 			img.onload = function(){
