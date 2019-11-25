@@ -41,4 +41,9 @@ class InicioController < ApplicationController
     @imagen_pauta = "inequalities-fb.jpg"
     @imagen_menu = "logo-red-eng.png"
   end
+
+  def pdf_informe
+    @title = "Informe de Desigualdades en México 2018"
+    @imagen_pauta = "portada-informe.jpg"
+  end
 end
