@@ -7,7 +7,7 @@ gem 'rails', '4.2.6'
 gem 'pg'
 gem 'active_record_union'
 # Use bootstrap compiled from SASS
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap-sass', '~> 3.4.1'
 gem 'font-awesome-sass', '~> 4.7.0'
 # UIkit para estilos diversos
 gem 'bootstrap-datepicker-rails', :require => 'bootstrap-datepicker-rails', :git => 'https://github.com/Nerian/bootstrap-datepicker-rails.git'
